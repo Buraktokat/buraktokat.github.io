@@ -1,30 +1,41 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Burak Tokat | DJ • Musician • Producer</title>
-  <meta name="description" content="Official website of Burak Tokat — DJ, musician and producer. Discover music, releases, Feels Like, Crescent and official platforms.">
+  <title>Burak Tokat | DJ, Musician & Producer</title>
 
-  <meta property="og:title" content="Burak Tokat | DJ • Musician • Producer">
-  <meta property="og:description" content="Official website of Burak Tokat.">
-  <meta property="og:type" content="website">
+  <meta name="description"
+        content="Official website of Burak Tokat — DJ, musician and electronic music producer. Discover Feels Like, Crescent and official artist information.">
+
+  <meta name="author" content="Burak Tokat">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://buraktokat.github.io/">
+
+  <meta property="og:title" content="Burak Tokat | DJ, Musician & Producer">
+  <meta property="og:description"
+        content="Official website of Burak Tokat — DJ, musician and electronic music producer.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://buraktokat.github.io/">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://buraktokat.github.io/#person",
     "name": "Burak Tokat",
-    "jobTitle": ["DJ", "Musician", "Record Producer"],
+    "url": "https://buraktokat.github.io/",
+    "jobTitle": [
+      "DJ",
+      "Musician",
+      "Record Producer"
+    ],
     "sameAs": [
       "https://www.wikidata.org/wiki/Q141105872",
-      "https://musicbrainz.org/",
       "https://www.instagram.com/burak_tkt/",
-      "https://open.spotify.com/",
-      "https://music.apple.com/",
-      "https://www.youtube.com/"
+      "https://musicbrainz.org/"
     ]
   }
   </script>
@@ -34,6 +45,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -51,24 +66,26 @@
       text-align: center;
       padding: 40px 20px;
       background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.88)),
         url("BurakTokatMusic.jpg") center/cover no-repeat;
     }
 
     .hero {
-      max-width: 850px;
+      max-width: 900px;
     }
 
     .hero h1 {
       font-size: clamp(48px, 9vw, 100px);
       letter-spacing: -4px;
-      margin-bottom: 15px;
+      line-height: 1;
+      margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 18px;
+      letter-spacing: 4px;
       color: #cccccc;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
 
     .buttons {
@@ -80,16 +97,16 @@
 
     .buttons a {
       text-decoration: none;
-      color: white;
+      color: #ffffff;
       border: 1px solid #ffffff;
-      padding: 12px 22px;
+      padding: 12px 24px;
       border-radius: 30px;
       transition: .2s;
     }
 
     .buttons a:hover {
-      background: white;
-      color: black;
+      background: #ffffff;
+      color: #000000;
     }
 
     section {
@@ -105,7 +122,7 @@
 
     .about {
       color: #cccccc;
-      max-width: 750px;
+      max-width: 760px;
       font-size: 18px;
     }
 
@@ -128,9 +145,9 @@
     }
 
     .release a {
-      color: white;
+      color: #ffffff;
       text-decoration: none;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #ffffff;
     }
 
     footer {
@@ -139,6 +156,21 @@
       color: #777777;
       border-top: 1px solid #202020;
     }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        letter-spacing: -3px;
+      }
+
+      .hero p {
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+
+      section {
+        padding: 65px 20px;
+      }
+    }
   </style>
 </head>
 
@@ -146,56 +178,116 @@
 
 <header>
   <div class="hero">
+
     <h1>BURAK TOKAT</h1>
+
     <p>DJ • MUSICIAN • PRODUCER</p>
 
     <div class="buttons">
-      <a href="https://www.instagram.com/burak_tkt/" target="_blank">Instagram</a>
-      <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-      <a href="https://music.apple.com/" target="_blank">Apple Music</a>
-      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+
+      <a
+        href="https://www.instagram.com/burak_tkt/"
+        target="_blank"
+        rel="noopener">
+        Instagram
+      </a>
+
+      <a href="#music">
+        Music
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
     </div>
+
   </div>
 </header>
 
-<section>
+<section id="about">
+
   <h2>About</h2>
 
   <p class="about">
-    Burak Tokat is a DJ, musician and record producer focused on electronic music.
-    His artistic direction combines modern electronic production with Afro House
-    influences and energetic club-oriented sounds.
+    Burak Tokat is a DJ, musician and electronic music producer.
+    His artistic direction combines contemporary electronic production,
+    Afro House influences, melodic elements and energetic club-oriented sounds.
   </p>
+
 </section>
 
-<section>
+<section id="music">
+
   <h2>Music</h2>
 
   <div class="release">
-    <h3>Feels Like</h3>
-    <p>Single • Surrealismo Records • 2024</p>
 
-    <a href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
-       target="_blank">
-      View release information
+    <h3>Feels Like</h3>
+
+    <p>
+      Burak Tokat — Feels Like
+      <br>
+      Surrealismo Records • 2024
+    </p>
+
+    <a
+      href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
+      target="_blank"
+      rel="noopener">
+      View release information →
     </a>
+
   </div>
 
   <div class="release">
+
     <h3>Crescent</h3>
-    <p>Electronic / Afro House</p>
+
+    <p>
+      Electronic / Afro House
+    </p>
+
   </div>
+
 </section>
 
 <section>
+
   <h2>Official Profiles</h2>
 
   <div class="buttons">
-    <a href="https://www.instagram.com/burak_tkt/" target="_blank">Instagram</a>
-    <a href="https://www.wikidata.org/wiki/Q141105872" target="_blank">Wikidata</a>
-    <a href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat" target="_blank">Wikimedia Commons</a>
-    <a href="https://musicbrainz.org/" target="_blank">MusicBrainz</a>
+
+    <a
+      href="https://www.instagram.com/burak_tkt/"
+      target="_blank"
+      rel="noopener">
+      Instagram
+    </a>
+
+    <a
+      href="https://www.wikidata.org/wiki/Q141105872"
+      target="_blank"
+      rel="noopener">
+      Wikidata
+    </a>
+
+    <a
+      href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
+      target="_blank"
+      rel="noopener">
+      Wikimedia Commons
+    </a>
+
+    <a
+      href="https://musicbrainz.org/"
+      target="_blank"
+      rel="noopener">
+      MusicBrainz
+    </a>
+
   </div>
+
 </section>
 
 <footer>
@@ -204,4 +296,3 @@
 
 </body>
 </html>
-```
