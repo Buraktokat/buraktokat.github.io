@@ -4,58 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BURAK TOKAT — DJ | Official Website</title>
+<title>Burak Tokat — DJ & Producer</title>
 
-<meta name="description"
-content="Official website of Burak Tokat, Turkish DJ. Discover music, DJ performances, artist profile and official platforms.">
-
+<meta name="description" content="Burak Tokat is a Turkish DJ and electronic music producer. Discover Feels Like, Crescent and official music releases.">
 <meta name="author" content="Burak Tokat">
 <meta name="robots" content="index, follow">
 
-<!-- Google Search Console -->
-<meta name="google-site-verification"
-content="qWdMcIKC4Lyfk50I0UIvySNEsOXRACHRJA0bc337qTg">
-
-<!-- Canonical -->
 <link rel="canonical" href="https://buraktokat.github.io/">
 
-<!-- Open Graph -->
-<meta property="og:title" content="BURAK TOKAT — DJ">
-<meta property="og:description"
-content="Official website of Burak Tokat — DJ. Music, performances and official artist profiles.">
+<meta property="og:title" content="Burak Tokat — DJ & Producer">
+<meta property="og:description" content="Official website of Burak Tokat — DJ and electronic music producer.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://buraktokat.github.io/">
-<meta property="og:site_name" content="Burak Tokat">
-<meta property="og:image"
-content="https://buraktokat.github.io/BurakTokatMusic.jpg">
+<meta property="og:image" content="https://buraktokat.github.io/BurakTokatMusic.jpg">
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BURAK TOKAT — DJ">
-<meta name="twitter:description"
-content="Official website of Burak Tokat — DJ.">
-<meta name="twitter:image"
-content="https://buraktokat.github.io/BurakTokatMusic.jpg">
+<meta name="twitter:title" content="Burak Tokat — DJ & Producer">
+<meta name="twitter:description" content="Official website of Burak Tokat.">
+<meta name="twitter:image" content="https://buraktokat.github.io/BurakTokatMusic.jpg">
 
-<!-- Structured Data -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://buraktokat.github.io/#burak-tokat",
-  "name": "Burak Tokat",
-  "alternateName": "BURAK TOKAT",
-  "url": "https://buraktokat.github.io/",
-  "image": [
-    "https://buraktokat.github.io/BurakTokatMusic.jpg"
-  ],
-  "jobTitle": "DJ",
-  "description": "Burak Tokat is a Turkish DJ known for electronic music and club performances.",
-  "nationality": {
-    "@type": "Country",
-    "name": "Türkiye"
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "@id":"https://buraktokat.github.io/#person",
+  "name":"Burak Tokat",
+  "url":"https://buraktokat.github.io/",
+  "image":"https://buraktokat.github.io/BurakTokatMusic.jpg",
+  "jobTitle":"DJ and Electronic Music Producer",
+  "description":"Burak Tokat is a Turkish DJ and electronic music producer active since 2020.",
+  "birthPlace":{
+    "@type":"Place",
+    "name":"Bursa, Türkiye"
   },
-  "sameAs": [
+  "sameAs":[
     "https://www.wikidata.org/wiki/Q141105872",
     "https://www.instagram.com/burak_tkt/",
     "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
@@ -70,451 +52,367 @@ content="https://buraktokat.github.io/BurakTokatMusic.jpg">
 
 <style>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+scroll-behavior:smooth;
 }
 
-body {
-  background: #050505;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
+body{
+background:#050505;
+color:#fff;
+font-family:Arial,Helvetica,sans-serif;
+overflow-x:hidden;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+a{
+color:inherit;
+text-decoration:none;
 }
 
-/* NAV */
+/* NAVIGATION */
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 25px 45px;
-
-  mix-blend-mode: difference;
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 6vw;
+z-index:100;
+background:linear-gradient(
+to bottom,
+rgba(0,0,0,.75),
+rgba(0,0,0,0)
+);
 }
 
-.logo {
-  font-size: 20px;
-  font-weight: 800;
-  letter-spacing: 2px;
+.logo{
+font-size:15px;
+font-weight:700;
+letter-spacing:3px;
 }
 
-.nav-links {
-  display: flex;
-  gap: 30px;
+.nav-links{
+display:flex;
+gap:30px;
+font-size:12px;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
-.nav-links a {
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: .3s;
+.nav-links a{
+opacity:.7;
+transition:.3s;
 }
 
-.nav-links a:hover {
-  opacity: .5;
+.nav-links a:hover{
+opacity:1;
 }
 
 /* HERO */
 
-.hero {
-  height: 100vh;
-  min-height: 700px;
-
-  position: relative;
-
-  display: flex;
-  align-items: flex-end;
-
-  padding: 60px 5vw;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,.05),
-      rgba(0,0,0,.25) 40%,
-      rgba(0,0,0,.95)
-    ),
-    url("BurakTokatMusic.jpg") center center / cover no-repeat;
+.hero{
+height:100vh;
+min-height:700px;
+position:relative;
+display:flex;
+align-items:flex-end;
+padding:0 6vw 9vh;
+overflow:hidden;
 }
 
-.hero-content {
-  width: 100%;
+.hero-bg{
+position:absolute;
+inset:0;
+background:
+linear-gradient(
+to top,
+rgba(0,0,0,.95) 0%,
+rgba(0,0,0,.35) 55%,
+rgba(0,0,0,.25) 100%
+),
+url("BurakTokatMusic.jpg") center/cover no-repeat;
+transform:scale(1.03);
 }
 
-.hero-small {
-  font-size: 13px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  opacity: .7;
+.hero-content{
+position:relative;
+z-index:2;
+width:100%;
 }
 
-.hero h1 {
-  font-size: clamp(70px, 15vw, 220px);
-  line-height: .78;
-  letter-spacing: -10px;
-  font-weight: 900;
-  text-transform: uppercase;
+.hero-label{
+font-size:11px;
+letter-spacing:5px;
+text-transform:uppercase;
+color:#aaa;
+margin-bottom:22px;
 }
 
-.hero-sub {
-  margin-top: 35px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 900px;
+.hero h1{
+font-size:clamp(70px,13vw,190px);
+line-height:.82;
+letter-spacing:-8px;
+font-weight:800;
+margin-left:-8px;
 }
 
-.hero-sub span {
-  font-size: 14px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+.hero-bottom{
+display:flex;
+justify-content:space-between;
+align-items:flex-end;
+margin-top:45px;
+gap:30px;
 }
 
-.scroll {
-  opacity: .5;
+.hero-description{
+max-width:470px;
+font-size:15px;
+line-height:1.7;
+color:#aaa;
+}
+
+.hero-links{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.hero-links a{
+border:1px solid rgba(255,255,255,.3);
+padding:12px 20px;
+border-radius:50px;
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+transition:.3s;
+}
+
+.hero-links a:hover{
+background:#fff;
+color:#000;
+border-color:#fff;
 }
 
 /* SECTIONS */
 
-section {
-  padding: 150px 6vw;
-  border-top: 1px solid #222;
+section{
+padding:140px 6vw;
 }
 
-.section-number {
-  font-size: 11px;
-  letter-spacing: 4px;
-  color: #777;
-  margin-bottom: 30px;
+.section-label{
+font-size:10px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#777;
+margin-bottom:35px;
 }
 
-.section-title {
-  font-size: clamp(55px, 9vw, 130px);
-  line-height: .85;
-  letter-spacing: -6px;
-  text-transform: uppercase;
-  margin-bottom: 70px;
+.section-title{
+font-size:clamp(45px,7vw,90px);
+letter-spacing:-4px;
+line-height:.95;
+margin-bottom:60px;
+}
+
+/* RELEASE */
+
+.release{
+border-top:1px solid #292929;
+border-bottom:1px solid #292929;
+padding:55px 0;
+display:grid;
+grid-template-columns:1fr auto;
+gap:40px;
+align-items:end;
+}
+
+.release-number{
+font-size:11px;
+color:#666;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.release h3{
+font-size:clamp(45px,7vw,90px);
+letter-spacing:-4px;
+line-height:.9;
+margin-bottom:25px;
+}
+
+.release-meta{
+color:#888;
+font-size:13px;
+line-height:1.8;
+}
+
+.release-action{
+display:inline-flex;
+align-items:center;
+gap:15px;
+border-bottom:1px solid #fff;
+padding-bottom:8px;
+font-size:11px;
+letter-spacing:2px;
+text-transform:uppercase;
+}
+
+/* SECOND RELEASE */
+
+.next-release{
+margin-top:1px;
+opacity:.8;
+}
+
+.next-release h3{
+font-size:clamp(35px,5vw,65px);
+letter-spacing:-3px;
 }
 
 /* ABOUT */
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10vw;
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
 }
 
-.about-text {
-  font-size: clamp(22px, 3vw, 42px);
-  line-height: 1.2;
-  max-width: 700px;
+.about-text{
+font-size:24px;
+line-height:1.5;
+max-width:650px;
 }
 
-.about-meta {
-  border-top: 1px solid #333;
+.about-side{
+color:#777;
+font-size:13px;
+line-height:2;
 }
 
-.meta-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 0;
-  border-bottom: 1px solid #333;
+/* LINKS */
 
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.platforms{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+border-top:1px solid #292929;
 }
 
-.meta-row span:last-child {
-  color: #777;
+.platform{
+padding:35px 15px;
+border-right:1px solid #292929;
+border-bottom:1px solid #292929;
+font-size:12px;
+letter-spacing:2px;
+text-transform:uppercase;
+transition:.3s;
 }
 
-/* MUSIC */
-
-.music-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 35px 0;
-
-  border-top: 1px solid #333;
-
-  transition: .3s;
-}
-
-.music-item:last-child {
-  border-bottom: 1px solid #333;
-}
-
-.music-item:hover {
-  padding-left: 20px;
-}
-
-.music-title {
-  font-size: clamp(35px, 6vw, 80px);
-  font-weight: 800;
-  letter-spacing: -3px;
-  text-transform: uppercase;
-}
-
-.music-info {
-  text-align: right;
-  color: #777;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.music-link {
-  display: inline-block;
-  margin-top: 12px;
-  color: #fff;
-}
-
-/* DJ EXPERIENCE */
-
-.experience {
-  max-width: 1100px;
-}
-
-.experience-row {
-  display: grid;
-  grid-template-columns: 150px 1fr auto;
-  gap: 40px;
-
-  padding: 30px 0;
-
-  border-top: 1px solid #333;
-}
-
-.experience-row:last-child {
-  border-bottom: 1px solid #333;
-}
-
-.year {
-  color: #777;
-  letter-spacing: 2px;
-}
-
-.club {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.location {
-  color: #777;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 11px;
-}
-
-/* PLATFORMS */
-
-.platforms {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.platform {
-  border: 1px solid #292929;
-  padding: 35px;
-
-  font-size: 28px;
-  font-weight: 700;
-
-  transition: .3s;
-}
-
-.platform:hover {
-  background: #fff;
-  color: #000;
-}
-
-/* SOCIAL */
-
-.socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.social {
-  border: 1px solid #333;
-  border-radius: 100px;
-
-  padding: 18px 28px;
-
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-
-  transition: .3s;
-}
-
-.social:hover {
-  background: #fff;
-  color: #000;
-}
-
-/* BOOKING */
-
-.booking {
-  min-height: 70vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.booking-text {
-  font-size: clamp(40px, 7vw, 100px);
-  line-height: .95;
-  letter-spacing: -4px;
-  max-width: 1100px;
-  margin-bottom: 60px;
-}
-
-.booking-button {
-  display: inline-block;
-
-  width: fit-content;
-
-  border: 1px solid #fff;
-  border-radius: 100px;
-
-  padding: 20px 40px;
-
-  font-size: 12px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-
-  transition: .3s;
-}
-
-.booking-button:hover {
-  background: #fff;
-  color: #000;
+.platform:hover{
+background:#fff;
+color:#000;
 }
 
 /* FOOTER */
 
-footer {
-  padding: 40px 6vw;
+footer{
+padding:60px 6vw;
+border-top:1px solid #222;
+display:flex;
+justify-content:space-between;
+color:#666;
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+}
 
-  display: flex;
-  justify-content: space-between;
-
-  border-top: 1px solid #222;
-
-  color: #666;
-
-  font-size: 10px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.footer-name{
+color:#fff;
 }
 
 /* MOBILE */
 
-@media(max-width: 800px) {
+@media(max-width:800px){
 
-  nav {
-    padding: 20px;
-  }
+nav{
+padding:0 5vw;
+}
 
-  .nav-links {
-    display: none;
-  }
+.nav-links{
+gap:15px;
+}
 
-  .hero {
-    padding: 35px 20px;
-    min-height: 650px;
-  }
+.nav-links a:nth-child(2),
+.nav-links a:nth-child(3){
+display:none;
+}
 
-  .hero h1 {
-    font-size: 19vw;
-    letter-spacing: -5px;
-  }
+.hero{
+padding:0 5vw 7vh;
+min-height:650px;
+}
 
-  .hero-sub {
-    display: block;
-  }
+.hero h1{
+font-size:19vw;
+letter-spacing:-5px;
+margin-left:-5px;
+}
 
-  .scroll {
-    display: none;
-  }
+.hero-bottom{
+display:block;
+margin-top:35px;
+}
 
-  section {
-    padding: 90px 20px;
-  }
+.hero-description{
+font-size:14px;
+margin-bottom:25px;
+}
 
-  .section-title {
-    font-size: 18vw;
-    letter-spacing: -4px;
-  }
+section{
+padding:90px 5vw;
+}
 
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
+.section-title{
+font-size:55px;
+}
 
-  .about-text {
-    font-size: 27px;
-  }
+.release{
+grid-template-columns:1fr;
+}
 
-  .music-item {
-    display: block;
-  }
+.release h3{
+font-size:60px;
+}
 
-  .music-info {
-    text-align: left;
-    margin-top: 15px;
-  }
+.about-grid{
+grid-template-columns:1fr;
+gap:40px;
+}
 
-  .experience-row {
-    grid-template-columns: 80px 1fr;
-    gap: 15px;
-  }
+.about-text{
+font-size:21px;
+}
 
-  .location {
-    grid-column: 2;
-  }
+.platforms{
+grid-template-columns:1fr 1fr;
+}
 
-  .platforms {
-    grid-template-columns: 1fr;
-  }
+.platform{
+border-right:1px solid #292929;
+}
 
-  .platform {
-    padding: 25px;
-  }
-
-  .booking-text {
-    font-size: 48px;
-  }
-
-  footer {
-    display: block;
-    line-height: 2;
-  }
+footer{
+display:block;
+line-height:2;
+}
 
 }
 
@@ -523,358 +421,252 @@ footer {
 
 <body>
 
-<!-- NAV -->
-
 <nav>
 
-  <div class="logo">
-    BT
-  </div>
+<div class="logo">
+BURAK TOKAT
+</div>
 
-  <div class="nav-links">
-
-    <a href="#about">About</a>
-    <a href="#music">Music</a>
-    <a href="#experience">Live</a>
-    <a href="#profiles">Profiles</a>
-    <a href="#booking">Booking</a>
-
-  </div>
+<div class="nav-links">
+<a href="#music">Music</a>
+<a href="#about">About</a>
+<a href="#profiles">Profiles</a>
+</div>
 
 </nav>
 
-
-<!-- HERO -->
-
 <header class="hero">
 
-  <div class="hero-content">
+<div class="hero-bg"></div>
 
-    <div class="hero-small">
-      Turkish DJ · 2020 — 2026
-    </div>
+<div class="hero-content">
 
-    <h1>
-      Burak<br>
-      Tokat
-    </h1>
+<div class="hero-label">
+DJ / Producer — Türkiye
+</div>
 
-    <div class="hero-sub">
+<h1>
+BURAK<br>TOKAT
+</h1>
 
-      <span>
-        DJ
-      </span>
+<div class="hero-bottom">
 
-      <span class="scroll">
-        Scroll to explore ↓
-      </span>
+<p class="hero-description">
+Electronic music shaped for clubs, late nights and movement.
+Burak Tokat is a Turkish DJ and producer exploring melodic,
+Afro House and contemporary electronic sounds.
+</p>
 
-    </div>
+<div class="hero-links">
 
-  </div>
+<a href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5" target="_blank">
+Spotify
+</a>
+
+<a href="https://music.apple.com/tr/artist/burak-tokat/1721994034" target="_blank">
+Apple Music
+</a>
+
+<a href="https://www.instagram.com/burak_tkt/" target="_blank">
+Instagram
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </header>
 
-
-<!-- ABOUT -->
-
-<section id="about">
-
-  <div class="section-number">
-    01 — ABOUT
-  </div>
-
-  <h2 class="section-title">
-    The DJ
-  </h2>
-
-  <div class="about-grid">
-
-    <p class="about-text">
-      Burak Tokat is a Turkish DJ with a strong focus on
-      electronic music and club culture.
-      His DJ journey began in 2020 and developed through
-      performances in clubs and nightlife venues across Türkiye.
-    </p>
-
-    <div class="about-meta">
-
-      <div class="meta-row">
-        <span>Artist</span>
-        <span>Burak Tokat</span>
-      </div>
-
-      <div class="meta-row">
-        <span>Role</span>
-        <span>DJ</span>
-      </div>
-
-      <div class="meta-row">
-        <span>Active</span>
-        <span>2020 — Present</span>
-      </div>
-
-      <div class="meta-row">
-        <span>Origin</span>
-        <span>Türkiye</span>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- MUSIC -->
+<main>
 
 <section id="music">
 
-  <div class="section-number">
-    02 — MUSIC
-  </div>
+<div class="section-label">
+01 — Selected Music
+</div>
 
-  <h2 class="section-title">
-    Selected
-  </h2>
+<h2 class="section-title">
+LATEST<br>RELEASE
+</h2>
 
-  <div class="music-item">
+<div class="release">
 
-    <div class="music-title">
-      Feels Like
-    </div>
+<div>
 
-    <div class="music-info">
+<div class="release-number">
+01 / 2024
+</div>
 
-      2024 · Original Mix<br>
-      Surrealismo Records<br>
+<h3>
+FEELS LIKE
+</h3>
 
-      <a
-        class="music-link"
-        href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-        target="_blank"
-        rel="noopener">
-        Listen on Spotify →
-      </a>
+<div class="release-meta">
+BURAK TOKAT — ORIGINAL MIX<br>
+SURREALISMO RECORDS<br>
+123 BPM — G MINOR — 6:40
+</div>
 
-    </div>
+</div>
 
-  </div>
+<a class="release-action"
+href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
+target="_blank">
 
+VIEW RELEASE →
 
-  <div class="music-item">
+</a>
 
-    <div class="music-title">
-      Crescent
-    </div>
+</div>
 
-    <div class="music-info">
-      Electronic · Afro House<br>
-      Burak Tokat
+<div class="release next-release">
 
-    </div>
+<div>
 
-  </div>
+<div class="release-number">
+02 — UPCOMING
+</div>
 
-</section>
+<h3>
+CRESCENT
+</h3>
 
+<div class="release-meta">
+BURAK TOKAT<br>
+ELECTRONIC / AFRO HOUSE
+</div>
 
-<!-- EXPERIENCE -->
+</div>
 
-<section id="experience">
+<div class="release-meta">
+COMING SOON
+</div>
 
-  <div class="section-number">
-    03 — DJ / LIVE
-  </div>
-
-  <h2 class="section-title">
-    Experience
-  </h2>
-
-  <div class="experience">
-
-    <div class="experience-row">
-
-      <div class="year">
-        2020 —
-      </div>
-
-      <div class="club">
-        Club Inferno Mania
-      </div>
-
-      <div class="location">
-        Konya
-      </div>
-
-    </div>
-
-
-    <div class="experience-row">
-
-      <div class="year">
-        2020 — 2026
-      </div>
-
-      <div class="club">
-        Club Inferno Mania
-      </div>
-
-      <div class="location">
-        Bursa
-      </div>
-
-    </div>
-
-
-    <div class="experience-row">
-
-      <div class="year">
-        2020 — 2026
-      </div>
-
-      <div class="club">
-        Mr Frog
-      </div>
-
-      <div class="location">
-        Konya
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
+<section id="about">
 
-<!-- OFFICIAL PROFILES -->
+<div class="section-label">
+02 — About
+</div>
+
+<h2 class="section-title">
+THE<br>ARTIST
+</h2>
+
+<div class="about-grid">
+
+<p class="about-text">
+Burak Tokat is a Turkish DJ and electronic music producer,
+active since 2020. His sound moves between melodic house,
+techno and Afro House, combining atmospheric melodies,
+driving rhythms and modern club energy.
+</p>
+
+<div class="about-side">
+
+ARTIST<br>
+BURAK TOKAT<br><br>
+
+BASED IN<br>
+TÜRKIYE<br><br>
+
+ACTIVE SINCE<br>
+2020<br><br>
+
+GENRES<br>
+ELECTRONIC<br>
+AFRO HOUSE<br>
+MELODIC HOUSE<br>
+TECHNO
+
+</div>
+
+</div>
+
+</section>
 
 <section id="profiles">
 
-  <div class="section-number">
-    04 — OFFICIAL
-  </div>
+<div class="section-label">
+03 — Official Platforms
+</div>
 
-  <h2 class="section-title">
-    Profiles
-  </h2>
+<h2 class="section-title">
+FIND<br>THE MUSIC
+</h2>
 
-  <div class="platforms">
+<div class="platforms">
 
-    <a
-      class="platform"
-      href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-      target="_blank"
-      rel="noopener">
-      Spotify ↗
-    </a>
+<a class="platform"
+href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+target="_blank">
+Spotify ↗
+</a>
 
-    <a
-      class="platform"
-      href="https://music.apple.com/tr/artist/burak-tokat/1721994034"
-      target="_blank"
-      rel="noopener">
-      Apple Music ↗
-    </a>
+<a class="platform"
+href="https://music.apple.com/tr/artist/burak-tokat/1721994034"
+target="_blank">
+Apple Music ↗
+</a>
 
-    <a
-      class="platform"
-      href="https://www.beatport.com/artist/_/1174596"
-      target="_blank"
-      rel="noopener">
-      Beatport ↗
-    </a>
+<a class="platform"
+href="https://www.beatport.com/artist/_/1174596"
+target="_blank">
+Beatport ↗
+</a>
 
-    <a
-      class="platform"
-      href="https://tidal.com/artist/44539316"
-      target="_blank"
-      rel="noopener">
-      TIDAL ↗
-    </a>
+<a class="platform"
+href="https://tidal.com/artist/44539316"
+target="_blank">
+Tidal ↗
+</a>
 
-  </div>
+<a class="platform"
+href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
+target="_blank">
+MusicBrainz ↗
+</a>
 
-  <br><br>
+<a class="platform"
+href="https://www.wikidata.org/wiki/Q141105872"
+target="_blank">
+Wikidata ↗
+</a>
 
-  <div class="socials">
+<a class="platform"
+href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
+target="_blank">
+Wikimedia ↗
+</a>
 
-    <a
-      class="social"
-      href="https://www.instagram.com/burak_tkt/"
-      target="_blank"
-      rel="noopener">
-      Instagram
-    </a>
+<a class="platform"
+href="https://www.instagram.com/burak_tkt/"
+target="_blank">
+Instagram ↗
+</a>
 
-    <a
-      class="social"
-      href="https://www.wikidata.org/wiki/Q141105872"
-      target="_blank"
-      rel="noopener">
-      Wikidata
-    </a>
-
-    <a
-      class="social"
-      href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
-      target="_blank"
-      rel="noopener">
-      MusicBrainz
-    </a>
-
-    <a
-      class="social"
-      href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
-      target="_blank"
-      rel="noopener">
-      Wikimedia
-    </a>
-
-  </div>
+</div>
 
 </section>
 
-
-<!-- BOOKING -->
-
-<section id="booking" class="booking">
-
-  <div class="section-number">
-    05 — BOOKING
-  </div>
-
-  <div class="booking-text">
-    BOOK BURAK<br>
-    TOKAT.
-  </div>
-
-  <a
-    class="booking-button"
-    href="https://www.instagram.com/burak_tkt/"
-    target="_blank"
-    rel="noopener">
-    Booking & Inquiries →
-  </a>
-
-</section>
-
-
-<!-- FOOTER -->
+</main>
 
 <footer>
 
-  <span>
-    © 2026 Burak Tokat
-  </span>
+<div class="footer-name">
+BURAK TOKAT
+</div>
 
-  <span>
-    DJ · Türkiye
-  </span>
+<div>
+DJ / PRODUCER — © 2026
+</div>
 
 </footer>
-
 
 </body>
 </html>
