@@ -180,108 +180,54 @@ nav{
 ========================= */
 
 .hero{
-  min-height:100svh;
+  min-height:100vh;
   position:relative;
   display:flex;
   align-items:flex-end;
   overflow:hidden;
   isolation:isolate;
-  background:#050008;
 }
-
-/* Full screen artist photograph */
 
 .hero-photo{
   position:absolute;
   inset:0;
   z-index:-3;
-  overflow:hidden;
-  background:#050008;
+  background:
+    radial-gradient(circle at 30% 35%,rgba(255,53,200,.5),transparent 30%),
+    radial-gradient(circle at 75% 70%,rgba(139,61,255,.5),transparent 35%),
+    linear-gradient(135deg,#190021,#050008);
 }
-
-/* Main photograph */
 
 .hero-photo img{
-  position:absolute;
-  inset:-2%;
-  width:104%;
-  height:104%;
+  width:100%;
+  height:100%;
   object-fit:cover;
-
-  /*
-    Change this if you want to move the face/body.
-    Examples:
-    center 30%
-    center 40%
-    45% center
-  */
-  object-position:center 35%;
-
+  object-position:center center;
   display:block;
-
-  filter:
-    saturate(.88)
-    contrast(1.08)
-    brightness(.78);
-
-  transform:scale(1.03);
-
-  animation:heroCinematicZoom 16s ease-out forwards;
+  filter:saturate(.85) contrast(1.08);
+  animation:heroZoom 18s ease-in-out infinite alternate;
 }
-
-/* Dark cinematic layer */
-
-.hero-photo:before{
-  content:"";
-  position:absolute;
-  inset:0;
-  z-index:2;
-  pointer-events:none;
-
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(5,0,8,.58) 0%,
-      rgba(5,0,8,.20) 18%,
-      rgba(5,0,8,.03) 43%,
-      rgba(5,0,8,.10) 60%,
-      rgba(5,0,8,.78) 100%
-    );
-}
-
-/* Very subtle pink / purple atmosphere */
 
 .hero-photo:after{
   content:"";
   position:absolute;
   inset:0;
-  z-index:3;
-  pointer-events:none;
-
   background:
-    radial-gradient(
-      circle at 78% 32%,
-      rgba(139,61,255,.15),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 18% 72%,
-      rgba(255,53,200,.10),
-      transparent 30%
+    linear-gradient(
+      to top,
+      rgba(7,0,13,1) 0%,
+      rgba(7,0,13,.72) 30%,
+      rgba(7,0,13,.12) 75%,
+      rgba(7,0,13,.25) 100%
     );
-
-  mix-blend-mode:screen;
 }
 
-/* Cinematic slow movement */
-
-@keyframes heroCinematicZoom{
+@keyframes heroZoom{
   from{
-    transform:scale(1.03);
+    transform:scale(1);
   }
-
   to{
-    transform:scale(1.09);
+    transform:scale(1.06);
   }
 }
 
@@ -289,7 +235,7 @@ nav{
   width:100%;
   padding:170px 0 80px;
   position:relative;
-  z-index:5;
+  z-index:2;
 }
 
 .eyebrow{
@@ -306,18 +252,14 @@ h1{
   line-height:.8;
   letter-spacing:-.08em;
   font-weight:900;
-  text-shadow:
-    0 5px 35px rgba(0,0,0,.35);
 }
 
 .hero-copy{
   max-width:620px;
   margin-top:38px;
-  color:rgba(255,255,255,.72);
+  color:rgba(255,255,255,.7);
   font-size:18px;
   line-height:1.65;
-  text-shadow:
-    0 2px 20px rgba(0,0,0,.7);
 }
 
 .buttons{
@@ -341,7 +283,6 @@ h1{
   letter-spacing:.15em;
   text-transform:uppercase;
   transition:.25s;
-  backdrop-filter:blur(10px);
 }
 
 .btn:hover{
@@ -352,11 +293,7 @@ h1{
 
 .primary{
   border:0;
-  background:linear-gradient(
-    100deg,
-    var(--pink),
-    var(--purple)
-  );
+  background:linear-gradient(100deg,var(--pink),var(--purple));
 }
 
 /* =========================
@@ -398,24 +335,10 @@ section{
   position:relative;
   overflow:hidden;
   border-radius:20px;
-
   background:
-    radial-gradient(
-      circle at 30% 25%,
-      rgba(255,53,200,.9),
-      transparent 23%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
-      rgba(139,61,255,.9),
-      transparent 30%
-    ),
-    linear-gradient(
-      135deg,
-      #1b0025,
-      #050008
-    );
-
+    radial-gradient(circle at 30% 25%,rgba(255,53,200,.9),transparent 23%),
+    radial-gradient(circle at 75% 75%,rgba(139,61,255,.9),transparent 30%),
+    linear-gradient(135deg,#1b0025,#050008);
   box-shadow:
     0 40px 100px rgba(0,0,0,.45),
     0 0 80px rgba(255,53,200,.12);
@@ -523,23 +446,10 @@ section{
   border-radius:20px;
   overflow:hidden;
   position:relative;
-
   background:
-    radial-gradient(
-      circle at 30% 20%,
-      rgba(255,53,200,.45),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(139,61,255,.5),
-      transparent 35%
-    ),
-    linear-gradient(
-      135deg,
-      #190021,
-      #050008
-    );
+    radial-gradient(circle at 30% 20%,rgba(255,53,200,.45),transparent 30%),
+    radial-gradient(circle at 80% 80%,rgba(139,61,255,.5),transparent 35%),
+    linear-gradient(135deg,#190021,#050008);
 }
 
 .artist-photo img{
@@ -659,13 +569,8 @@ section{
   padding:55px;
   border:1px solid var(--line);
   border-radius:20px;
-
   background:
-    radial-gradient(
-      circle at 90% 10%,
-      rgba(255,53,200,.15),
-      transparent 30%
-    ),
+    radial-gradient(circle at 90% 10%,rgba(255,53,200,.15),transparent 30%),
     rgba(255,255,255,.025);
 }
 
@@ -737,66 +642,15 @@ footer{
   }
 
   .hero{
-    min-height:100svh;
+    min-height:92vh;
   }
-
-  /*
-    Mobile portrait framing.
-    This prevents the main subject from being
-    accidentally cropped too aggressively.
-  */
 
   .hero-photo img{
-    width:110%;
-    height:110%;
-    inset:-5%;
-
-    object-position:center 30%;
-
-    filter:
-      saturate(.88)
-      contrast(1.06)
-      brightness(.72);
-
-    animation:heroMobileZoom 16s ease-out forwards;
-  }
-
-  .hero-photo:before{
-    background:
-      linear-gradient(
-        to bottom,
-        rgba(5,0,8,.58) 0%,
-        rgba(5,0,8,.14) 24%,
-        rgba(5,0,8,.05) 48%,
-        rgba(5,0,8,.82) 100%
-      );
-  }
-
-  @keyframes heroMobileZoom{
-
-    from{
-      transform:scale(1.03);
-    }
-
-    to{
-      transform:scale(1.08);
-    }
-
-  }
-
-  .hero-content{
-    padding:130px 0 55px;
+    object-position:center top;
   }
 
   h1{
     font-size:clamp(62px,18vw,110px);
-  }
-
-  .hero-copy{
-    max-width:500px;
-    font-size:16px;
-    line-height:1.55;
-    margin-top:30px;
   }
 
   section{
@@ -832,30 +686,12 @@ footer{
 
 }
 
-/* =========================
-   REDUCED MOTION
-========================= */
-
-@media(prefers-reduced-motion:reduce){
-
-  html{
-    scroll-behavior:auto;
-  }
-
-  .hero-photo img{
-    animation:none;
-    transform:scale(1.04);
-  }
-
-}
-
 </style>
 </head>
 
 <body>
 
 <nav>
-
   <div class="container nav-inner">
 
     <a href="#top" class="logo">
@@ -863,37 +699,16 @@ footer{
     </a>
 
     <div class="nav-links">
-
-      <a href="#release">
-        Release
-      </a>
-
-      <a href="#sound">
-        Sound
-      </a>
-
-      <a href="#artist">
-        Artist
-      </a>
-
-      <a href="#music">
-        Music
-      </a>
-
-      <a href="#press">
-        Press
-      </a>
-
-      <a href="#booking">
-        Booking
-      </a>
-
+      <a href="#release">Release</a>
+      <a href="#sound">Sound</a>
+      <a href="#artist">Artist</a>
+      <a href="#music">Music</a>
+      <a href="#press">Press</a>
+      <a href="#booking">Booking</a>
     </div>
 
   </div>
-
 </nav>
-
 
 <main id="top">
 
@@ -930,15 +745,15 @@ footer{
 
     <div class="buttons">
 
-      <a
-        class="btn primary"
-        href="#release">
+      <a class="btn primary" href="#release">
         Latest Release
       </a>
 
       <a
         class="btn"
-        href="#press">
+        href="Burak_Tokat_EPK_2026.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
         Press Kit ↗
       </a>
 
@@ -977,9 +792,7 @@ footer{
           and late-night club energy.
         </p>
 
-        <div
-          class="eyebrow"
-          style="margin-top:30px;">
+        <div class="eyebrow" style="margin-top:30px;">
           SURREALISMO RECORDS
         </div>
 
@@ -1208,9 +1021,7 @@ footer{
 
       <div>
 
-        <h3>
-          Feels Like
-        </h3>
+        <h3>Feels Like</h3>
 
         <p>
           Original Mix · Melodic House / Techno · 06:40
@@ -1364,10 +1175,13 @@ footer{
 
       <div class="buttons">
 
+        <!-- EPK PDF -->
         <a
           class="btn primary"
-          href="mailto:buraktokatmr@gmail.com?subject=Burak%20Tokat%20Press%20Kit">
-          Request Press Kit
+          href="Burak_Tokat_EPK_2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+          Open Press Kit ↗
         </a>
 
         <a
