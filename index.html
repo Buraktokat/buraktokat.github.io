@@ -13,11 +13,11 @@
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#08000f">
 
-<!-- FAVICON -->
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
-
 <link rel="canonical" href="https://buraktokat.github.io/">
+
+<!-- FAVICON -->
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2308000f'/%3E%3Ctext x='50' y='65' text-anchor='middle' font-family='Arial' font-size='42' font-weight='900' fill='white'%3EBT%3C/text%3E%3C/svg%3E">
 
 <!-- OPEN GRAPH -->
 
@@ -30,7 +30,6 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Burak Tokat — DJ & Electronic Music Producer">
 <meta name="twitter:description" content="Official website of Burak Tokat.">
-
 
 <!-- STRUCTURED DATA -->
 
@@ -51,7 +50,6 @@
   ]
 }
 </script>
-
 
 <script type="application/ld+json">
 {
@@ -75,38 +73,20 @@
 }
 </script>
 
-
 <style>
 
-/* =========================
-   ROOT
-========================= */
-
 :root{
-
   --bg:#07000d;
   --bg2:#100017;
-
   --pink:#ff35c8;
   --purple:#8b3dff;
   --violet:#c84dff;
-
   --white:#fff;
-
   --muted:rgba(255,255,255,.62);
-
   --line:rgba(255,255,255,.11);
-
   --glass:rgba(255,255,255,.045);
-
   --max:1180px;
-
 }
-
-
-/* =========================
-   RESET
-========================= */
 
 *{
   margin:0;
@@ -119,53 +99,36 @@ html{
 }
 
 body{
-
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-
+  font-family:Arial,Helvetica,sans-serif;
   color:#fff;
 
   background:
-
     radial-gradient(
       circle at 15% 10%,
       rgba(255,53,200,.17),
       transparent 28%
     ),
-
     radial-gradient(
       circle at 90% 25%,
       rgba(139,61,255,.18),
       transparent 30%
     ),
-
     radial-gradient(
       circle at 50% 90%,
       rgba(200,77,255,.12),
       transparent 35%
     ),
-
     var(--bg);
 
   overflow-x:hidden;
-
 }
 
-
 body:before{
-
   content:"";
-
   position:fixed;
-
   inset:0;
-
   pointer-events:none;
-
   z-index:100;
-
   opacity:.035;
 
   background:
@@ -176,176 +139,117 @@ body:before{
       transparent 1px,
       transparent 4px
     );
-
 }
-
 
 a{
   color:inherit;
   text-decoration:none;
 }
 
-
 .container{
-
-  width:
-    min(
-      var(--max),
-      calc(100% - 48px)
-    );
-
+  width:min(var(--max),calc(100% - 48px));
   margin:auto;
-
 }
 
-
 /* =========================
-   NAVIGATION
+   NAV
 ========================= */
 
 nav{
-
   position:fixed;
-
   top:0;
   left:0;
   right:0;
-
   z-index:50;
 
-  background:
-    rgba(7,0,13,.68);
+  background:rgba(7,0,13,.68);
+  backdrop-filter:blur(20px);
 
-  backdrop-filter:
-    blur(20px);
-
-  border-bottom:
-    1px solid var(--line);
-
+  border-bottom:1px solid var(--line);
 }
 
-
 .nav-inner{
-
   min-height:76px;
 
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
 }
-
 
 .logo{
-
   font-size:21px;
-
   font-weight:900;
-
   letter-spacing:-.07em;
-
 }
-
 
 .logo span{
   color:var(--pink);
 }
 
-
 .nav-links{
-
   display:flex;
-
   gap:28px;
-
   align-items:center;
-
 }
-
 
 .nav-links a{
-
   font-size:10px;
-
   text-transform:uppercase;
-
   letter-spacing:.16em;
 
-  color:
-    rgba(255,255,255,.7);
+  color:rgba(255,255,255,.7);
 
   transition:.25s;
-
 }
-
 
 .nav-links a:hover{
   color:var(--pink);
 }
-
 
 /* =========================
    HERO
 ========================= */
 
 .hero{
-
   min-height:100vh;
 
   position:relative;
 
   display:flex;
-
   align-items:flex-end;
 
   overflow:hidden;
-
   isolation:isolate;
-
 }
 
-
 .hero-photo{
-
   position:absolute;
-
   inset:0;
-
   z-index:-3;
 
   background:
-
     radial-gradient(
       circle at 30% 35%,
       rgba(255,53,200,.5),
       transparent 30%
     ),
-
     radial-gradient(
       circle at 75% 70%,
       rgba(139,61,255,.5),
       transparent 35%
     ),
-
     linear-gradient(
       135deg,
       #190021,
       #050008
     );
-
 }
 
-
 .hero-photo img{
-
   width:100%;
-
   height:100%;
 
   object-fit:cover;
-
   object-position:center;
 
   display:block;
@@ -353,165 +257,108 @@ nav{
   filter:
     saturate(.85)
     contrast(1.08);
-
 }
 
-
 .hero-photo:after{
-
   content:"";
 
   position:absolute;
-
   inset:0;
 
   background:
-
     linear-gradient(
       to top,
-
       rgba(7,0,13,1) 0%,
-
       rgba(7,0,13,.72) 30%,
-
       rgba(7,0,13,.12) 75%,
-
       rgba(7,0,13,.25) 100%
     );
-
 }
-
 
 .hero-content{
-
   width:100%;
 
-  padding:
-    170px
-    0
-    80px;
+  padding:170px 0 80px;
 
   position:relative;
-
   z-index:2;
-
 }
 
-
 .eyebrow{
-
   color:var(--pink);
 
   font-size:10px;
-
   font-weight:800;
 
   letter-spacing:.3em;
-
   text-transform:uppercase;
 
   margin-bottom:22px;
-
 }
 
-
 h1{
-
-  font-size:
-    clamp(
-      72px,
-      14vw,
-      175px
-    );
+  font-size:clamp(72px,14vw,175px);
 
   line-height:.8;
-
   letter-spacing:-.08em;
 
   font-weight:900;
-
 }
 
-
 .hero-copy{
-
   max-width:620px;
 
   margin-top:38px;
 
-  color:
-    rgba(255,255,255,.7);
+  color:rgba(255,255,255,.7);
 
   font-size:18px;
-
   line-height:1.65;
-
 }
 
-
 .buttons{
-
   display:flex;
-
   flex-wrap:wrap;
 
   gap:12px;
 
   margin-top:32px;
-
 }
 
-
 .btn{
-
   display:inline-flex;
 
   align-items:center;
-
   justify-content:center;
 
   min-height:48px;
 
   padding:0 22px;
 
-  border:
-    1px solid var(--line);
-
+  border:1px solid var(--line);
   border-radius:999px;
 
-  background:
-    rgba(255,255,255,.035);
+  background:rgba(255,255,255,.035);
 
   font-size:10px;
-
   font-weight:800;
 
   letter-spacing:.15em;
-
   text-transform:uppercase;
 
   transition:.25s;
-
 }
-
 
 .btn:hover{
+  transform:translateY(-2px);
 
-  transform:
-    translateY(-2px);
-
-  border-color:
-    rgba(255,53,200,.7);
+  border-color:rgba(255,53,200,.7);
 
   box-shadow:
-    0 0 30px
-    rgba(255,53,200,.16);
-
+    0 0 30px rgba(255,53,200,.16);
 }
 
-
 .primary{
-
   border:0;
 
   background:
@@ -520,9 +367,7 @@ h1{
       var(--pink),
       var(--purple)
     );
-
 }
-
 
 /* =========================
    SECTIONS
@@ -532,60 +377,41 @@ section{
   padding:125px 0;
 }
 
-
 .number{
-
   color:var(--pink);
 
   font-size:10px;
 
   letter-spacing:.25em;
-
   text-transform:uppercase;
 
   margin-bottom:20px;
-
 }
 
-
 .title{
-
-  font-size:
-    clamp(
-      48px,
-      8vw,
-      95px
-    );
+  font-size:clamp(48px,8vw,95px);
 
   line-height:.87;
-
   letter-spacing:-.07em;
 
   margin-bottom:42px;
-
 }
-
 
 /* =========================
    RELEASE
 ========================= */
 
 .release{
-
   display:grid;
 
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
   gap:70px;
 
   align-items:center;
-
 }
 
-
 .cover{
-
   aspect-ratio:1;
 
   position:relative;
@@ -595,19 +421,16 @@ section{
   border-radius:20px;
 
   background:
-
     radial-gradient(
       circle at 30% 25%,
       rgba(255,53,200,.9),
       transparent 23%
     ),
-
     radial-gradient(
       circle at 75% 75%,
       rgba(139,61,255,.9),
       transparent 30%
     ),
-
     linear-gradient(
       135deg,
       #1b0025,
@@ -615,18 +438,11 @@ section{
     );
 
   box-shadow:
-
-    0 40px 100px
-    rgba(0,0,0,.45),
-
-    0 0 80px
-    rgba(255,53,200,.12);
-
+    0 40px 100px rgba(0,0,0,.45),
+    0 0 80px rgba(255,53,200,.12);
 }
 
-
 .cover:before{
-
   content:"FEELS\A LIKE";
 
   white-space:pre;
@@ -634,80 +450,55 @@ section{
   position:absolute;
 
   left:8%;
-
   bottom:7%;
 
-  font-size:
-    clamp(
-      50px,
-      7vw,
-      100px
-    );
+  font-size:clamp(50px,7vw,100px);
 
   line-height:.77;
 
   letter-spacing:-.08em;
 
   font-weight:900;
-
 }
 
-
 .cover:after{
-
   content:"BURAK TOKAT";
 
   position:absolute;
 
   right:8%;
-
   top:8%;
 
   font-size:9px;
 
   letter-spacing:.22em;
-
 }
 
-
 .release-text{
-
   color:var(--muted);
 
   font-size:17px;
 
   line-height:1.7;
-
 }
 
-
 .meta{
-
   display:grid;
 
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
   margin-top:30px;
 
-  border-top:
-    1px solid var(--line);
-
+  border-top:1px solid var(--line);
 }
-
 
 .meta div{
-
   padding:18px 0;
 
-  border-bottom:
-    1px solid var(--line);
-
+  border-bottom:1px solid var(--line);
 }
 
-
 .meta small{
-
   display:block;
 
   color:var(--muted);
@@ -719,21 +510,17 @@ section{
   letter-spacing:.15em;
 
   margin-bottom:7px;
-
 }
-
 
 .meta strong{
   font-size:13px;
 }
-
 
 /* =========================
    SOUND
 ========================= */
 
 .sound-copy{
-
   max-width:750px;
 
   color:var(--muted);
@@ -743,77 +530,50 @@ section{
   line-height:1.7;
 
   margin-bottom:55px;
-
 }
-
 
 .sound-list{
-
-  border-top:
-    1px solid var(--line);
-
+  border-top:1px solid var(--line);
 }
 
-
 .sound-item{
-
   min-height:105px;
 
   display:flex;
 
   align-items:center;
-
   justify-content:space-between;
 
-  border-bottom:
-    1px solid var(--line);
-
+  border-bottom:1px solid var(--line);
 }
 
-
 .sound-item span{
-
   color:var(--pink);
 
   font-size:10px;
-
 }
-
 
 .sound-item h3{
-
-  font-size:
-    clamp(
-      25px,
-      4vw,
-      56px
-    );
+  font-size:clamp(25px,4vw,56px);
 
   letter-spacing:-.05em;
-
 }
-
 
 /* =========================
    ARTIST
 ========================= */
 
 .artist-grid{
-
   display:grid;
 
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
   gap:70px;
 
   align-items:center;
-
 }
 
-
 .artist-photo{
-
   aspect-ratio:4/5;
 
   border-radius:20px;
@@ -823,32 +583,25 @@ section{
   position:relative;
 
   background:
-
     radial-gradient(
       circle at 30% 20%,
       rgba(255,53,200,.45),
       transparent 30%
     ),
-
     radial-gradient(
       circle at 80% 80%,
       rgba(139,61,255,.5),
       transparent 35%
     ),
-
     linear-gradient(
       135deg,
       #190021,
       #050008
     );
-
 }
 
-
 .artist-photo img{
-
   width:100%;
-
   height:100%;
 
   object-fit:cover;
@@ -858,18 +611,14 @@ section{
   filter:
     saturate(.8)
     contrast(1.05);
-
 }
 
-
 .artist-photo:after{
-
   content:"BURAK TOKAT";
 
   position:absolute;
 
   left:25px;
-
   bottom:25px;
 
   font-size:10px;
@@ -877,124 +626,87 @@ section{
   letter-spacing:.25em;
 
   color:#fff;
-
 }
 
-
 .artist-copy{
-
   color:var(--muted);
 
   font-size:18px;
 
   line-height:1.8;
-
 }
 
-
 /* =========================
-   ARTIST DNA
+   DNA
 ========================= */
 
 .dna{
-
   display:flex;
 
   flex-wrap:wrap;
 
   gap:10px;
-
 }
 
-
 .tag{
-
   padding:14px 18px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:999px;
 
-  color:
-    rgba(255,255,255,.82);
+  color:rgba(255,255,255,.82);
 
   font-size:10px;
 
   text-transform:uppercase;
 
   letter-spacing:.14em;
-
 }
-
 
 /* =========================
    MUSIC
 ========================= */
 
 .music-card{
-
   padding:35px 0;
 
-  border-top:
-    1px solid var(--line);
-
-  border-bottom:
-    1px solid var(--line);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
 
   display:flex;
 
   justify-content:space-between;
-
   align-items:center;
 
   gap:30px;
-
 }
-
 
 .music-card h3{
-
-  font-size:
-    clamp(
-      34px,
-      5vw,
-      65px
-    );
+  font-size:clamp(34px,5vw,65px);
 
   letter-spacing:-.06em;
-
 }
 
-
 .music-card p{
-
   color:var(--muted);
 
   margin-top:10px;
-
 }
-
 
 /* =========================
    PLATFORMS
 ========================= */
 
 .platforms{
-
   display:grid;
 
-  grid-template-columns:
-    1fr 1fr;
+  grid-template-columns:1fr 1fr;
 
-  border-top:
-    1px solid var(--line);
-
+  border-top:1px solid var(--line);
 }
 
-
 .platform{
-
   min-height:105px;
 
   padding:0 18px;
@@ -1002,36 +714,24 @@ section{
   display:flex;
 
   align-items:center;
-
   justify-content:space-between;
 
-  border-bottom:
-    1px solid var(--line);
+  border-bottom:1px solid var(--line);
 
   transition:.25s;
-
 }
-
 
 .platform:nth-child(odd){
-
-  border-right:
-    1px solid var(--line);
-
+  border-right:1px solid var(--line);
 }
 
-
 .platform:hover{
-
   background:var(--glass);
 
   color:var(--pink);
-
 }
 
-
 .platform-name{
-
   font-size:12px;
 
   font-weight:800;
@@ -1039,47 +739,35 @@ section{
   text-transform:uppercase;
 
   letter-spacing:.1em;
-
 }
 
-
 .platform-type{
-
   color:var(--muted);
 
   font-size:10px;
-
 }
-
 
 /* =========================
    PRESS
 ========================= */
 
 .press{
-
   padding:55px;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   border-radius:20px;
 
   background:
-
     radial-gradient(
       circle at 90% 10%,
       rgba(255,53,200,.15),
       transparent 30%
     ),
-
     rgba(255,255,255,.025);
-
 }
 
-
 .press p{
-
   max-width:720px;
 
   color:var(--muted);
@@ -1087,88 +775,59 @@ section{
   line-height:1.7;
 
   margin-bottom:30px;
-
 }
-
 
 /* =========================
    BOOKING
 ========================= */
 
 .booking{
-
   text-align:center;
-
 }
 
-
 .booking h2{
-
-  font-size:
-    clamp(
-      55px,
-      10vw,
-      125px
-    );
+  font-size:clamp(55px,10vw,125px);
 
   line-height:.84;
 
   letter-spacing:-.08em;
 
   margin-bottom:35px;
-
 }
 
-
 .booking p{
-
   color:var(--muted);
 
   margin-bottom:22px;
-
 }
 
-
 .email{
-
   display:inline-block;
 
   color:var(--pink);
 
-  font-size:
-    clamp(
-      18px,
-      3vw,
-      28px
-    );
+  font-size:clamp(18px,3vw,28px);
 
   margin-bottom:30px;
-
 }
-
 
 /* =========================
    FOOTER
 ========================= */
 
 footer{
-
   padding:30px 0;
 
-  border-top:
-    1px solid var(--line);
+  border-top:1px solid var(--line);
 
   color:var(--muted);
 
   font-size:10px;
 
   letter-spacing:.1em;
-
 }
 
-
 .footer{
-
   display:flex;
 
   justify-content:space-between;
@@ -1176,9 +835,7 @@ footer{
   flex-wrap:wrap;
 
   gap:20px;
-
 }
-
 
 /* =========================
    MOBILE
@@ -1187,76 +844,49 @@ footer{
 @media(max-width:800px){
 
   .container{
-
-    width:
-      min(
-        100% - 32px,
-        var(--max)
-      );
-
+    width:min(100% - 32px,var(--max));
   }
-
 
   .nav-links{
     display:none;
   }
 
-
   .hero{
     min-height:92vh;
   }
 
-
   h1{
-
-    font-size:
-      clamp(
-        62px,
-        18vw,
-        110px
-      );
-
+    font-size:clamp(62px,18vw,110px);
   }
-
 
   section{
     padding:90px 0;
   }
 
-
   .release,
   .artist-grid{
-
     grid-template-columns:1fr;
 
     gap:45px;
-
   }
-
 
   .platforms{
     grid-template-columns:1fr;
   }
 
-
   .platform:nth-child(odd){
     border-right:0;
   }
 
-
   .music-card{
-
     flex-direction:column;
 
     align-items:flex-start;
-
   }
-
 
   .press{
     padding:30px;
   }
-
 
   .footer{
     flex-direction:column;
@@ -1268,29 +898,19 @@ footer{
 
 </head>
 
-
 <body>
 
-
 <!-- =========================
-     NAV
+     NAVIGATION
 ========================= -->
 
 <nav>
 
   <div class="container nav-inner">
 
-
-    <!-- BT LOGO -->
-
-    <a
-      href="#top"
-      class="logo">
-
+    <a href="#top" class="logo">
       B<span>T</span>
-
     </a>
-
 
     <div class="nav-links">
 
@@ -1334,19 +954,18 @@ footer{
 
 <section class="hero">
 
-
   <div class="hero-photo">
 
     <img
       src="burak-tokat-hero.jpg"
       alt="Burak Tokat"
-      onerror="this.style.display='none'">
+      onerror="this.style.display='none'"
+    >
 
   </div>
 
 
   <div class="container hero-content">
-
 
     <div class="eyebrow">
       DJ / Electronic Music Producer
@@ -1360,8 +979,7 @@ footer{
 
     <p class="hero-copy">
 
-      Melodic tension.
-      Hypnotic rhythm.
+      Melodic tension. Hypnotic rhythm.
       Late-night electronic energy built for
       dance floors, clubs and unforgettable moments.
 
@@ -1369,7 +987,6 @@ footer{
 
 
     <div class="buttons">
-
 
       <a
         class="btn primary"
@@ -1388,7 +1005,6 @@ footer{
 
       </a>
 
-
     </div>
 
   </div>
@@ -1397,13 +1013,12 @@ footer{
 
 
 <!-- =========================
-     LATEST RELEASE
+     RELEASE
 ========================= -->
 
 <section id="release">
 
   <div class="container">
-
 
     <div class="number">
       01 / Latest Release
@@ -1412,12 +1027,10 @@ footer{
 
     <div class="release">
 
-
       <div class="cover"></div>
 
 
       <div>
-
 
         <h2 class="title">
           FEELS<br>LIKE
@@ -1444,90 +1057,45 @@ footer{
 
         <div class="meta">
 
-
           <div>
-
-            <small>
-              Artist
-            </small>
-
-            <strong>
-              Burak Tokat
-            </strong>
-
+            <small>Artist</small>
+            <strong>Burak Tokat</strong>
           </div>
 
 
           <div>
-
-            <small>
-              Release
-            </small>
-
-            <strong>
-              Feels Like
-            </strong>
-
+            <small>Release</small>
+            <strong>Feels Like</strong>
           </div>
 
 
           <div>
-
-            <small>
-              Label
-            </small>
-
-            <strong>
-              Surrealismo Records
-            </strong>
-
+            <small>Label</small>
+            <strong>Surrealismo Records</strong>
           </div>
 
 
           <div>
-
-            <small>
-              Genre
-            </small>
-
-            <strong>
-              Melodic House / Techno
-            </strong>
-
+            <small>Genre</small>
+            <strong>Melodic House / Techno</strong>
           </div>
 
 
           <div>
-
-            <small>
-              BPM
-            </small>
-
-            <strong>
-              123
-            </strong>
-
+            <small>BPM</small>
+            <strong>123</strong>
           </div>
 
 
           <div>
-
-            <small>
-              Length
-            </small>
-
-            <strong>
-              06:40
-            </strong>
-
+            <small>Length</small>
+            <strong>06:40</strong>
           </div>
-
 
         </div>
 
 
         <div class="buttons">
-
 
           <a
             class="btn primary"
@@ -1561,9 +1129,7 @@ footer{
 
           </a>
 
-
         </div>
-
 
       </div>
 
@@ -1581,7 +1147,6 @@ footer{
 <section id="sound">
 
   <div class="container">
-
 
     <div class="number">
       02 / The Sound
@@ -1603,12 +1168,9 @@ footer{
 
     <div class="sound-list">
 
-
       <div class="sound-item">
 
-        <span>
-          01
-        </span>
+        <span>01</span>
 
         <h3>
           MELODIC HOUSE
@@ -1619,9 +1181,7 @@ footer{
 
       <div class="sound-item">
 
-        <span>
-          02
-        </span>
+        <span>02</span>
 
         <h3>
           MELODIC TECHNO
@@ -1632,9 +1192,7 @@ footer{
 
       <div class="sound-item">
 
-        <span>
-          03
-        </span>
+        <span>03</span>
 
         <h3>
           TECHNO
@@ -1645,16 +1203,13 @@ footer{
 
       <div class="sound-item">
 
-        <span>
-          04
-        </span>
+        <span>04</span>
 
         <h3>
           ELECTRONIC
         </h3>
 
       </div>
-
 
     </div>
 
@@ -1671,7 +1226,6 @@ footer{
 
   <div class="container">
 
-
     <div class="number">
       03 / The Artist
     </div>
@@ -1685,13 +1239,13 @@ footer{
         <img
           src="burak-tokat-artist.jpg"
           alt="Burak Tokat artist portrait"
-          onerror="this.style.display='none'">
+          onerror="this.style.display='none'"
+        >
 
       </div>
 
 
       <div>
-
 
         <h2 class="title">
           THE<br>ARTIST
@@ -1712,9 +1266,7 @@ footer{
 
         </p>
 
-
       </div>
-
 
     </div>
 
@@ -1724,13 +1276,12 @@ footer{
 
 
 <!-- =========================
-     ARTIST DNA
+     DNA
 ========================= -->
 
 <section>
 
   <div class="container">
-
 
     <div class="number">
       04 / Artist DNA
@@ -1791,7 +1342,6 @@ footer{
 
   <div class="container">
 
-
     <div class="number">
       05 / Selected Music
     </div>
@@ -1803,7 +1353,6 @@ footer{
 
 
     <div class="music-card">
-
 
       <div>
 
@@ -1828,7 +1377,6 @@ footer{
 
       </a>
 
-
     </div>
 
   </div>
@@ -1837,13 +1385,12 @@ footer{
 
 
 <!-- =========================
-     OFFICIAL PLATFORMS
+     PLATFORMS
 ========================= -->
 
 <section>
 
   <div class="container">
-
 
     <div class="number">
       06 / Official Platforms
@@ -1942,7 +1489,6 @@ footer{
 
       </a>
 
-
     </div>
 
   </div>
@@ -1951,13 +1497,12 @@ footer{
 
 
 <!-- =========================
-     PRESS KIT
+     PRESS
 ========================= -->
 
 <section id="press">
 
   <div class="container">
-
 
     <div class="number">
       07 / Press
@@ -1965,7 +1510,6 @@ footer{
 
 
     <div class="press">
-
 
       <h2 class="title">
         PRESS<br>KIT
@@ -1984,19 +1528,15 @@ footer{
       <div class="buttons">
 
 
-        <!--
-          EPK / PRESS KIT
-          GitHub file:
-          Burak_tokat presskit.pptx
-        -->
+        <!-- PRESS KIT -->
 
         <a
           class="btn primary"
-          href="Burak_tokat%20presskit.pptx"
+          href="./Burak_Tokat%20presskit.pptx"
           target="_blank"
           rel="noopener noreferrer">
 
-          Open EPK ↗
+          OPEN PRESS KIT ↗
 
         </a>
 
@@ -2008,7 +1548,6 @@ footer{
           Booking ↗
 
         </a>
-
 
       </div>
 
@@ -2026,7 +1565,6 @@ footer{
 <section id="booking">
 
   <div class="container booking">
-
 
     <div class="number">
       08 / Booking
@@ -2066,7 +1604,6 @@ footer{
 
     </a>
 
-
   </div>
 
 </section>
@@ -2082,7 +1619,6 @@ footer{
 <footer>
 
   <div class="container footer">
-
 
     <span>
       BURAK TOKAT
@@ -2103,11 +1639,9 @@ footer{
 
     </a>
 
-
   </div>
 
 </footer>
-
 
 </body>
 </html>
