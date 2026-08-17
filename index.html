@@ -6,9 +6,7 @@
 
 <title>Burak Tokat — DJ & Electronic Music Producer</title>
 
-<meta name="description"
-content="Burak Tokat — DJ and electronic music producer creating melodic, hypnotic and atmospheric electronic music. Official website, music, press and booking.">
-
+<meta name="description" content="Burak Tokat — DJ and electronic music producer creating melodic, hypnotic and atmospheric electronic music. Official website, music, press and booking.">
 <meta name="author" content="Burak Tokat">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#08000f">
@@ -24,10 +22,6 @@ content="Burak Tokat — DJ and electronic music producer creating melodic, hypn
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Burak Tokat — DJ & Electronic Music Producer">
 <meta name="twitter:description" content="Official website of Burak Tokat.">
-
-<!-- =========================
-     STRUCTURED DATA
-========================= -->
 
 <script type="application/ld+json">
 {
@@ -69,21 +63,6 @@ content="Burak Tokat — DJ and electronic music producer creating melodic, hypn
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"MusicRecording",
-  "name":"Feels Like",
-  "byArtist":{
-    "@type":"MusicGroup",
-    "name":"Burak Tokat"
-  },
-  "genre":"Melodic House / Techno",
-  "duration":"PT6M40S",
-  "url":"https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-}
-</script>
-
 <style>
 
 :root{
@@ -111,23 +90,11 @@ html{
 
 body{
   font-family:Arial,Helvetica,sans-serif;
-  color:var(--white);
+  color:#fff;
   background:
-    radial-gradient(
-      circle at 15% 10%,
-      rgba(255,53,200,.17),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 90% 25%,
-      rgba(139,61,255,.18),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 50% 90%,
-      rgba(200,77,255,.12),
-      transparent 35%
-    ),
+    radial-gradient(circle at 15% 10%,rgba(255,53,200,.17),transparent 28%),
+    radial-gradient(circle at 90% 25%,rgba(139,61,255,.18),transparent 30%),
+    radial-gradient(circle at 50% 90%,rgba(200,77,255,.12),transparent 35%),
     var(--bg);
   overflow-x:hidden;
 }
@@ -139,14 +106,13 @@ body:before{
   pointer-events:none;
   z-index:100;
   opacity:.035;
-  background:
-    repeating-linear-gradient(
-      0deg,
-      rgba(255,255,255,.8) 0,
-      rgba(255,255,255,.8) 1px,
-      transparent 1px,
-      transparent 4px
-    );
+  background:repeating-linear-gradient(
+    0deg,
+    rgba(255,255,255,.8) 0,
+    rgba(255,255,255,.8) 1px,
+    transparent 1px,
+    transparent 4px
+  );
 }
 
 a{
@@ -167,7 +133,7 @@ nav{
   left:0;
   right:0;
   z-index:50;
-  background:rgba(7,0,13,.7);
+  background:rgba(7,0,13,.68);
   backdrop-filter:blur(20px);
   border-bottom:1px solid var(--line);
 }
@@ -211,35 +177,51 @@ nav{
 
 .hero{
   min-height:100vh;
-  display:flex;
-  align-items:center;
   position:relative;
+  display:flex;
+  align-items:flex-end;
   overflow:hidden;
+  isolation:isolate;
 }
 
-.hero:after{
+.hero-photo{
+  position:absolute;
+  inset:0;
+  z-index:-3;
+  background:
+    radial-gradient(circle at 30% 35%,rgba(255,53,200,.5),transparent 30%),
+    radial-gradient(circle at 75% 70%,rgba(139,61,255,.5),transparent 35%),
+    linear-gradient(135deg,#190021,#050008);
+}
+
+.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.85) contrast(1.08);
+}
+
+.hero-photo:after{
   content:"";
   position:absolute;
-  width:650px;
-  height:650px;
-  right:-220px;
-  top:5%;
-  border-radius:50%;
+  inset:0;
   background:
-    radial-gradient(
-      circle,
-      rgba(255,53,200,.38),
-      rgba(139,61,255,.17) 42%,
-      transparent 70%
+    linear-gradient(
+      to top,
+      rgba(7,0,13,1) 0%,
+      rgba(7,0,13,.72) 30%,
+      rgba(7,0,13,.12) 75%,
+      rgba(7,0,13,.25) 100%
     );
-  filter:blur(18px);
-  animation:float 10s ease-in-out infinite alternate;
 }
 
 .hero-content{
+  width:100%;
+  padding:170px 0 80px;
   position:relative;
   z-index:2;
-  padding-top:80px;
 }
 
 .eyebrow{
@@ -261,7 +243,7 @@ h1{
 .hero-copy{
   max-width:620px;
   margin-top:38px;
-  color:var(--muted);
+  color:rgba(255,255,255,.7);
   font-size:18px;
   line-height:1.65;
 }
@@ -297,11 +279,7 @@ h1{
 
 .primary{
   border:0;
-  background:linear-gradient(
-    100deg,
-    var(--pink),
-    var(--purple)
-  );
+  background:linear-gradient(100deg,var(--pink),var(--purple));
 }
 
 /* SECTIONS */
@@ -339,24 +317,10 @@ section{
   position:relative;
   overflow:hidden;
   border-radius:20px;
-
   background:
-    radial-gradient(
-      circle at 30% 25%,
-      rgba(255,53,200,.9),
-      transparent 23%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
-      rgba(139,61,255,.9),
-      transparent 30%
-    ),
-    linear-gradient(
-      135deg,
-      #1b0025,
-      #050008
-    );
-
+    radial-gradient(circle at 30% 25%,rgba(255,53,200,.9),transparent 23%),
+    radial-gradient(circle at 75% 75%,rgba(139,61,255,.9),transparent 30%),
+    linear-gradient(135deg,#1b0025,#050008);
   box-shadow:
     0 40px 100px rgba(0,0,0,.45),
     0 0 80px rgba(255,53,200,.12);
@@ -412,7 +376,6 @@ section{
 
 .meta strong{
   font-size:13px;
-  color:#fff;
 }
 
 /* SOUND */
@@ -445,6 +408,50 @@ section{
 .sound-item h3{
   font-size:clamp(25px,4vw,56px);
   letter-spacing:-.05em;
+}
+
+/* ARTIST */
+
+.artist-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.artist-photo{
+  aspect-ratio:4/5;
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  background:
+    radial-gradient(circle at 30% 20%,rgba(255,53,200,.45),transparent 30%),
+    radial-gradient(circle at 80% 80%,rgba(139,61,255,.5),transparent 35%),
+    linear-gradient(135deg,#190021,#050008);
+}
+
+.artist-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  filter:saturate(.8) contrast(1.05);
+}
+
+.artist-photo:after{
+  content:"BURAK TOKAT";
+  position:absolute;
+  left:25px;
+  bottom:25px;
+  font-size:10px;
+  letter-spacing:.25em;
+  color:#fff;
+}
+
+.artist-copy{
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.8;
 }
 
 /* DNA */
@@ -533,11 +540,7 @@ section{
   border:1px solid var(--line);
   border-radius:20px;
   background:
-    radial-gradient(
-      circle at 90% 10%,
-      rgba(255,53,200,.15),
-      transparent 30%
-    ),
+    radial-gradient(circle at 90% 10%,rgba(255,53,200,.15),transparent 30%),
     rgba(255,255,255,.025);
 }
 
@@ -590,15 +593,6 @@ footer{
   gap:20px;
 }
 
-@keyframes float{
-  from{
-    transform:translate(0,0) scale(1);
-  }
-  to{
-    transform:translate(-70px,60px) scale(1.14);
-  }
-}
-
 /* MOBILE */
 
 @media(max-width:800px){
@@ -623,7 +617,8 @@ footer{
     padding:90px 0;
   }
 
-  .release{
+  .release,
+  .artist-grid{
     grid-template-columns:1fr;
     gap:45px;
   }
@@ -656,10 +651,6 @@ footer{
 
 <body>
 
-<!-- =========================
-     NAV
-========================= -->
-
 <nav>
   <div class="container nav-inner">
 
@@ -670,6 +661,7 @@ footer{
     <div class="nav-links">
       <a href="#release">Release</a>
       <a href="#sound">Sound</a>
+      <a href="#artist">Artist</a>
       <a href="#music">Music</a>
       <a href="#press">Press</a>
       <a href="#booking">Booking</a>
@@ -681,11 +673,18 @@ footer{
 
 <main id="top">
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="hero">
+
+  <div class="hero-photo">
+
+    <img
+      src="burak-tokat-hero.jpg"
+      alt="Burak Tokat"
+      onerror="this.style.display='none'">
+
+  </div>
 
   <div class="container hero-content">
 
@@ -705,15 +704,11 @@ footer{
 
     <div class="buttons">
 
-      <a
-        class="btn primary"
-        href="#release">
-        Listen to Music
+      <a class="btn primary" href="#release">
+        Latest Release
       </a>
 
-      <a
-        class="btn"
-        href="#press">
+      <a class="btn" href="#press">
         Press Kit ↗
       </a>
 
@@ -724,9 +719,7 @@ footer{
 </section>
 
 
-<!-- =========================
-     LATEST RELEASE
-========================= -->
+<!-- RELEASE -->
 
 <section id="release">
 
@@ -738,11 +731,7 @@ footer{
 
     <div class="release">
 
-      <div
-        class="cover"
-        aria-label="Burak Tokat — Feels Like"
-        role="img">
-      </div>
+      <div class="cover"></div>
 
       <div>
 
@@ -831,9 +820,7 @@ footer{
 </section>
 
 
-<!-- =========================
-     SOUND
-========================= -->
+<!-- SOUND -->
 
 <section id="sound">
 
@@ -881,16 +868,62 @@ footer{
 </section>
 
 
-<!-- =========================
-     ARTIST DNA
-========================= -->
+<!-- ARTIST -->
+
+<section id="artist">
+
+  <div class="container">
+
+    <div class="number">
+      03 / The Artist
+    </div>
+
+    <div class="artist-grid">
+
+      <div class="artist-photo">
+
+        <img
+          src="burak-tokat-artist.jpg"
+          alt="Burak Tokat artist portrait"
+          onerror="this.style.display='none'">
+
+      </div>
+
+      <div>
+
+        <h2 class="title">
+          THE<br>ARTIST
+        </h2>
+
+        <p class="artist-copy">
+          Burak Tokat is a DJ and electronic music producer
+          focused on melodic, hypnotic and atmospheric
+          electronic music.
+
+          <br><br>
+
+          His sound moves between emotional melodies,
+          deep grooves and modern club-oriented production,
+          creating a distinctive late-night electronic identity.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- DNA -->
 
 <section>
 
   <div class="container">
 
     <div class="number">
-      03 / Artist DNA
+      04 / Artist DNA
     </div>
 
     <h2 class="title">
@@ -915,16 +948,14 @@ footer{
 </section>
 
 
-<!-- =========================
-     MUSIC
-========================= -->
+<!-- MUSIC -->
 
 <section id="music">
 
   <div class="container">
 
     <div class="number">
-      04 / Selected Music
+      05 / Selected Music
     </div>
 
     <h2 class="title">
@@ -958,16 +989,14 @@ footer{
 </section>
 
 
-<!-- =========================
-     PLATFORMS
-========================= -->
+<!-- PLATFORMS -->
 
 <section>
 
   <div class="container">
 
     <div class="number">
-      05 / Official Platforms
+      06 / Official Platforms
     </div>
 
     <h2 class="title">
@@ -992,7 +1021,6 @@ footer{
 
       </a>
 
-
       <a
         class="platform"
         href="https://www.instagram.com/burak_tkt/"
@@ -1008,7 +1036,6 @@ footer{
         </span>
 
       </a>
-
 
       <a
         class="platform"
@@ -1026,7 +1053,6 @@ footer{
 
       </a>
 
-
       <a
         class="platform"
         href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
@@ -1042,7 +1068,6 @@ footer{
         </span>
 
       </a>
-
 
       <a
         class="platform"
@@ -1067,16 +1092,14 @@ footer{
 </section>
 
 
-<!-- =========================
-     PRESS KIT
-========================= -->
+<!-- PRESS -->
 
 <section id="press">
 
   <div class="container">
 
     <div class="number">
-      06 / Press
+      07 / Press
     </div>
 
     <div class="press">
@@ -1114,16 +1137,14 @@ footer{
 </section>
 
 
-<!-- =========================
-     BOOKING
-========================= -->
+<!-- BOOKING -->
 
 <section id="booking">
 
   <div class="container booking">
 
     <div class="number">
-      07 / Booking
+      08 / Booking
     </div>
 
     <h2>
@@ -1155,10 +1176,6 @@ footer{
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
