@@ -1,378 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Burak Tokat | DJ, Musician & Electronic Music Producer</title>
+<title>BURAK TOKAT — DJ | Official Website</title>
 
-  <meta name="description"
-        content="Official website of Burak Tokat, Turkish DJ, musician and electronic music producer. Discover Feels Like, Crescent, music releases and official artist profiles.">
+<meta name="description"
+content="Official website of Burak Tokat, Turkish DJ. Discover music, DJ performances, artist profile and official platforms.">
 
-  <meta name="author" content="Burak Tokat">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Burak Tokat">
+<meta name="robots" content="index, follow">
 
-  <meta name="google-site-verification"
-        content="qWdMcIKC4Lyfk50I0UIvySNEsOXRACHRJA0bc337qTg">
+<!-- Google Search Console -->
+<meta name="google-site-verification"
+content="qWdMcIKC4Lyfk50I0UIvySNEsOXRACHRJA0bc337qTg">
 
-  <link rel="canonical" href="https://buraktokat.github.io/">
+<!-- Canonical -->
+<link rel="canonical" href="https://buraktokat.github.io/">
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title"
-        content="Burak Tokat | DJ, Musician & Electronic Music Producer">
-  <meta property="og:description"
-        content="Official website of Burak Tokat — Turkish DJ, musician and electronic music producer.">
-  <meta property="og:url"
-        content="https://buraktokat.github.io/">
-  <meta property="og:site_name" content="Burak Tokat">
-  <meta property="og:image"
-        content="https://buraktokat.github.io/BurakTokatMusic.jpg">
-  <meta property="og:image:alt" content="Burak Tokat">
+<!-- Open Graph -->
+<meta property="og:title" content="BURAK TOKAT — DJ">
+<meta property="og:description"
+content="Official website of Burak Tokat — DJ. Music, performances and official artist profiles.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://buraktokat.github.io/">
+<meta property="og:site_name" content="Burak Tokat">
+<meta property="og:image"
+content="https://buraktokat.github.io/BurakTokatMusic.jpg">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title"
-        content="Burak Tokat | DJ, Musician & Electronic Music Producer">
-  <meta name="twitter:description"
-        content="Official website of Burak Tokat.">
-  <meta name="twitter:image"
-        content="https://buraktokat.github.io/BurakTokatMusic.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BURAK TOKAT — DJ">
+<meta name="twitter:description"
+content="Official website of Burak Tokat — DJ.">
+<meta name="twitter:image"
+content="https://buraktokat.github.io/BurakTokatMusic.jpg">
 
-  <!--
-    ============================================================
-    STRUCTURED DATA
-    ============================================================
-  -->
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://buraktokat.github.io/#burak-tokat",
+  "name": "Burak Tokat",
+  "alternateName": "BURAK TOKAT",
+  "url": "https://buraktokat.github.io/",
+  "image": [
+    "https://buraktokat.github.io/BurakTokatMusic.jpg"
+  ],
+  "jobTitle": "DJ",
+  "description": "Burak Tokat is a Turkish DJ known for electronic music and club performances.",
+  "nationality": {
+    "@type": "Country",
+    "name": "Türkiye"
+  },
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q141105872",
+    "https://www.instagram.com/burak_tkt/",
+    "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
+    "https://music.apple.com/tr/artist/burak-tokat/1721994034",
+    "https://www.beatport.com/artist/_/1174596",
+    "https://tidal.com/artist/44539316",
+    "https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70",
+    "https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
+  ]
+}
+</script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+<style>
 
-      {
-        "@type": "Person",
-        "@id": "https://buraktokat.github.io/#person",
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        "name": "Burak Tokat",
-        "givenName": "Burak",
-        "familyName": "Tokat",
+html {
+  scroll-behavior: smooth;
+}
 
-        "url": "https://buraktokat.github.io/",
+body {
+  background: #050505;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
 
-        "image": [
-          "https://buraktokat.github.io/BurakTokatMusic.jpg"
-        ],
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-        "description": "Burak Tokat is a Turkish DJ, musician and electronic music producer.",
+/* NAV */
 
-        "jobTitle": [
-          "DJ",
-          "Musician",
-          "Record Producer"
-        ],
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-        "nationality": {
-          "@type": "Country",
-          "name": "Türkiye"
-        },
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-        "birthPlace": {
-          "@type": "Place",
-          "name": "Bursa, Türkiye"
-        },
+  padding: 25px 45px;
 
-        "knowsAbout": [
-          "DJ",
-          "Electronic music",
-          "Music production",
-          "Afro House",
-          "Melodic House",
-          "Techno",
-          "DJ performance",
-          "Electronic music production"
-        ],
+  mix-blend-mode: difference;
+}
 
-        "genre": [
-          "Electronic",
-          "Afro House",
-          "Melodic House",
-          "Techno"
-        ],
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
 
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q141105872",
-          "https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70",
-          "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-          "https://music.apple.com/tr/artist/burak-tokat/1721994034",
-          "https://www.beatport.com/artist/_/1174596",
-          "https://tidal.com/artist/44539316",
-          "https://www.instagram.com/burak_tkt/",
-          "https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
-        ],
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
 
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://buraktokat.github.io/"
-        }
-      },
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: .3s;
+}
 
-      {
-        "@type": "WebSite",
-        "@id": "https://buraktokat.github.io/#website",
+.nav-links a:hover {
+  opacity: .5;
+}
 
-        "url": "https://buraktokat.github.io/",
-        "name": "Burak Tokat",
+/* HERO */
 
-        "description": "Official website of Burak Tokat, DJ, musician and electronic music producer.",
+.hero {
+  height: 100vh;
+  min-height: 700px;
 
-        "publisher": {
-          "@id": "https://buraktokat.github.io/#person"
-        }
-      },
+  position: relative;
 
-      {
-        "@type": "MusicGroup",
-        "@id": "https://buraktokat.github.io/#artist",
+  display: flex;
+  align-items: flex-end;
 
-        "name": "Burak Tokat",
-        "url": "https://buraktokat.github.io/",
+  padding: 60px 5vw;
 
-        "image": "https://buraktokat.github.io/BurakTokatMusic.jpg",
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.05),
+      rgba(0,0,0,.25) 40%,
+      rgba(0,0,0,.95)
+    ),
+    url("BurakTokatMusic.jpg") center center / cover no-repeat;
+}
 
-        "genre": [
-          "Electronic",
-          "Afro House",
-          "Melodic House",
-          "Techno"
-        ],
+.hero-content {
+  width: 100%;
+}
 
-        "sameAs": [
-          "https://www.wikidata.org/wiki/Q141105872",
-          "https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70",
-          "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-          "https://music.apple.com/tr/artist/burak-tokat/1721994034",
-          "https://www.beatport.com/artist/_/1174596",
-          "https://tidal.com/artist/44539316",
-          "https://www.instagram.com/burak_tkt/"
-        ]
-      },
+.hero-small {
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  opacity: .7;
+}
 
-      {
-        "@type": "MusicRecording",
-        "@id": "https://buraktokat.github.io/#feels-like",
+.hero h1 {
+  font-size: clamp(70px, 15vw, 220px);
+  line-height: .78;
+  letter-spacing: -10px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
-        "name": "Feels Like",
+.hero-sub {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+}
 
-        "byArtist": {
-          "@id": "https://buraktokat.github.io/#artist"
-        },
+.hero-sub span {
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
 
-        "datePublished": "2024",
+.scroll {
+  opacity: .5;
+}
 
-        "genre": [
-          "Electronic",
-          "Melodic House"
-        ],
+/* SECTIONS */
 
-        "url": "https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
-      },
+section {
+  padding: 150px 6vw;
+  border-top: 1px solid #222;
+}
 
-      {
-        "@type": "MusicRecording",
-        "@id": "https://buraktokat.github.io/#crescent",
+.section-number {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #777;
+  margin-bottom: 30px;
+}
 
-        "name": "Crescent",
+.section-title {
+  font-size: clamp(55px, 9vw, 130px);
+  line-height: .85;
+  letter-spacing: -6px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
 
-        "byArtist": {
-          "@id": "https://buraktokat.github.io/#artist"
-        },
+/* ABOUT */
 
-        "genre": [
-          "Electronic",
-          "Afro House"
-        ]
-      }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
 
-    ]
+.about-text {
+  font-size: clamp(22px, 3vw, 42px);
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.about-meta {
+  border-top: 1px solid #333;
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 1px solid #333;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.meta-row span:last-child {
+  color: #777;
+}
+
+/* MUSIC */
+
+.music-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 35px 0;
+
+  border-top: 1px solid #333;
+
+  transition: .3s;
+}
+
+.music-item:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.music-item:hover {
+  padding-left: 20px;
+}
+
+.music-title {
+  font-size: clamp(35px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+}
+
+.music-info {
+  text-align: right;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.music-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #fff;
+}
+
+/* DJ EXPERIENCE */
+
+.experience {
+  max-width: 1100px;
+}
+
+.experience-row {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  gap: 40px;
+
+  padding: 30px 0;
+
+  border-top: 1px solid #333;
+}
+
+.experience-row:last-child {
+  border-bottom: 1px solid #333;
+}
+
+.year {
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.club {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.location {
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+/* PLATFORMS */
+
+.platforms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.platform {
+  border: 1px solid #292929;
+  padding: 35px;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  transition: .3s;
+}
+
+.platform:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* SOCIAL */
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social {
+  border: 1px solid #333;
+  border-radius: 100px;
+
+  padding: 18px 28px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  transition: .3s;
+}
+
+.social:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* BOOKING */
+
+.booking {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.booking-text {
+  font-size: clamp(40px, 7vw, 100px);
+  line-height: .95;
+  letter-spacing: -4px;
+  max-width: 1100px;
+  margin-bottom: 60px;
+}
+
+.booking-button {
+  display: inline-block;
+
+  width: fit-content;
+
+  border: 1px solid #fff;
+  border-radius: 100px;
+
+  padding: 20px 40px;
+
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  transition: .3s;
+}
+
+.booking-button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 40px 6vw;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 1px solid #222;
+
+  color: #666;
+
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* MOBILE */
+
+@media(max-width: 800px) {
+
+  nav {
+    padding: 20px;
   }
-  </script>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  .nav-links {
+    display: none;
+  }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  .hero {
+    padding: 35px 20px;
+    min-height: 650px;
+  }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #080808;
-      color: #ffffff;
-      line-height: 1.6;
-    }
+  .hero h1 {
+    font-size: 19vw;
+    letter-spacing: -5px;
+  }
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
+  .hero-sub {
+    display: block;
+  }
 
-      background:
-        linear-gradient(
-          rgba(0,0,0,.55),
-          rgba(0,0,0,.88)
-        ),
-        url("BurakTokatMusic.jpg")
-        center/cover no-repeat;
-    }
+  .scroll {
+    display: none;
+  }
 
-    .hero {
-      max-width: 900px;
-    }
+  section {
+    padding: 90px 20px;
+  }
 
-    .hero h1 {
-      font-size: clamp(48px, 9vw, 100px);
-      letter-spacing: -4px;
-      line-height: 1;
-      margin-bottom: 20px;
-    }
+  .section-title {
+    font-size: 18vw;
+    letter-spacing: -4px;
+  }
 
-    .hero p {
-      font-size: 18px;
-      letter-spacing: 4px;
-      color: #cccccc;
-      margin-bottom: 35px;
-    }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
 
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
+  .about-text {
+    font-size: 27px;
+  }
 
-    .buttons a {
-      text-decoration: none;
-      color: #ffffff;
-      border: 1px solid #ffffff;
-      padding: 12px 24px;
-      border-radius: 30px;
-      transition: .2s;
-    }
+  .music-item {
+    display: block;
+  }
 
-    .buttons a:hover {
-      background: #ffffff;
-      color: #000000;
-    }
+  .music-info {
+    text-align: left;
+    margin-top: 15px;
+  }
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 90px 25px;
-    }
+  .experience-row {
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+  }
 
-    h2 {
-      font-size: 42px;
-      margin-bottom: 25px;
-    }
+  .location {
+    grid-column: 2;
+  }
 
-    .about {
-      color: #cccccc;
-      max-width: 760px;
-      font-size: 18px;
-    }
+  .platforms {
+    grid-template-columns: 1fr;
+  }
 
-    .release {
-      border: 1px solid #292929;
-      border-radius: 18px;
-      padding: 30px;
-      margin-top: 20px;
-      background: #101010;
-    }
+  .platform {
+    padding: 25px;
+  }
 
-    .release h3 {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
+  .booking-text {
+    font-size: 48px;
+  }
 
-    .release p {
-      color: #aaaaaa;
-      margin-bottom: 20px;
-    }
+  footer {
+    display: block;
+    line-height: 2;
+  }
 
-    .release a {
-      color: #ffffff;
-      text-decoration: none;
-      border-bottom: 1px solid #ffffff;
-    }
+}
 
-    footer {
-      text-align: center;
-      padding: 50px 20px;
-      color: #777777;
-      border-top: 1px solid #202020;
-    }
-
-    @media (max-width: 600px) {
-
-      .hero h1 {
-        letter-spacing: -3px;
-      }
-
-      .hero p {
-        font-size: 14px;
-        letter-spacing: 2px;
-      }
-
-      section {
-        padding: 65px 20px;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-<header>
+<!-- NAV -->
 
-  <div class="hero">
+<nav>
 
-    <h1>BURAK TOKAT</h1>
+  <div class="logo">
+    BT
+  </div>
 
-    <p>DJ • MUSICIAN • PRODUCER</p>
+  <div class="nav-links">
 
-    <div class="buttons">
+    <a href="#about">About</a>
+    <a href="#music">Music</a>
+    <a href="#experience">Live</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#booking">Booking</a>
 
-      <a
-        href="https://www.instagram.com/burak_tkt/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram
-      </a>
+  </div>
 
-      <a
-        href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Spotify
-      </a>
+</nav>
 
-      <a href="#music">
-        Music
-      </a>
 
-      <a href="#about">
-        About
-      </a>
+<!-- HERO -->
+
+<header class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-small">
+      Turkish DJ · 2020 — 2026
+    </div>
+
+    <h1>
+      Burak<br>
+      Tokat
+    </h1>
+
+    <div class="hero-sub">
+
+      <span>
+        DJ
+      </span>
+
+      <span class="scroll">
+        Scroll to explore ↓
+      </span>
 
     </div>
 
@@ -380,141 +575,261 @@
 
 </header>
 
-<main>
+
+<!-- ABOUT -->
 
 <section id="about">
 
-  <h2>About Burak Tokat</h2>
+  <div class="section-number">
+    01 — ABOUT
+  </div>
 
-  <p class="about">
+  <h2 class="section-title">
+    The DJ
+  </h2>
 
-    Burak Tokat is a Turkish DJ, musician and electronic music producer.
-    Active in electronic music since 2020, he combines contemporary
-    electronic production with Afro House, melodic house and techno
-    influences, creating energetic and atmospheric club-oriented music.
+  <div class="about-grid">
 
-  </p>
+    <p class="about-text">
+      Burak Tokat is a Turkish DJ with a strong focus on
+      electronic music and club culture.
+      His DJ journey began in 2020 and developed through
+      performances in clubs and nightlife venues across Türkiye.
+    </p>
+
+    <div class="about-meta">
+
+      <div class="meta-row">
+        <span>Artist</span>
+        <span>Burak Tokat</span>
+      </div>
+
+      <div class="meta-row">
+        <span>Role</span>
+        <span>DJ</span>
+      </div>
+
+      <div class="meta-row">
+        <span>Active</span>
+        <span>2020 — Present</span>
+      </div>
+
+      <div class="meta-row">
+        <span>Origin</span>
+        <span>Türkiye</span>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
+
+<!-- MUSIC -->
 
 <section id="music">
 
-  <h2>Music</h2>
+  <div class="section-number">
+    02 — MUSIC
+  </div>
 
+  <h2 class="section-title">
+    Selected
+  </h2>
 
-  <div class="release">
+  <div class="music-item">
 
-    <h3>Feels Like</h3>
+    <div class="music-title">
+      Feels Like
+    </div>
 
-    <p>
+    <div class="music-info">
 
-      Burak Tokat — Feels Like
+      2024 · Original Mix<br>
+      Surrealismo Records<br>
 
-      <br>
+      <a
+        class="music-link"
+        href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+        target="_blank"
+        rel="noopener">
+        Listen on Spotify →
+      </a>
 
-      Original Mix • Surrealismo Records • 2024
-
-      <br>
-
-      123 BPM • G minor • 6:40
-
-    </p>
-
-    <a
-      href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View release information →
-    </a>
+    </div>
 
   </div>
 
 
-  <div class="release">
+  <div class="music-item">
 
-    <h3>Crescent</h3>
+    <div class="music-title">
+      Crescent
+    </div>
 
-    <p>
-      Burak Tokat — Crescent
-      <br>
-      Electronic / Afro House
-    </p>
+    <div class="music-info">
+      Electronic · Afro House<br>
+      Burak Tokat
+
+    </div>
 
   </div>
 
 </section>
 
 
-<section>
+<!-- EXPERIENCE -->
 
-  <h2>Official Profiles</h2>
+<section id="experience">
 
-  <div class="buttons">
+  <div class="section-number">
+    03 — DJ / LIVE
+  </div>
+
+  <h2 class="section-title">
+    Experience
+  </h2>
+
+  <div class="experience">
+
+    <div class="experience-row">
+
+      <div class="year">
+        2020 —
+      </div>
+
+      <div class="club">
+        Club Inferno Mania
+      </div>
+
+      <div class="location">
+        Konya
+      </div>
+
+    </div>
+
+
+    <div class="experience-row">
+
+      <div class="year">
+        2020 — 2026
+      </div>
+
+      <div class="club">
+        Club Inferno Mania
+      </div>
+
+      <div class="location">
+        Bursa
+      </div>
+
+    </div>
+
+
+    <div class="experience-row">
+
+      <div class="year">
+        2020 — 2026
+      </div>
+
+      <div class="club">
+        Mr Frog
+      </div>
+
+      <div class="location">
+        Konya
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OFFICIAL PROFILES -->
+
+<section id="profiles">
+
+  <div class="section-number">
+    04 — OFFICIAL
+  </div>
+
+  <h2 class="section-title">
+    Profiles
+  </h2>
+
+  <div class="platforms">
 
     <a
+      class="platform"
       href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Spotify
+      rel="noopener">
+      Spotify ↗
     </a>
 
     <a
+      class="platform"
       href="https://music.apple.com/tr/artist/burak-tokat/1721994034"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Apple Music
+      rel="noopener">
+      Apple Music ↗
     </a>
 
     <a
+      class="platform"
       href="https://www.beatport.com/artist/_/1174596"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Beatport
+      rel="noopener">
+      Beatport ↗
     </a>
 
     <a
+      class="platform"
       href="https://tidal.com/artist/44539316"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Tidal
+      rel="noopener">
+      TIDAL ↗
     </a>
 
+  </div>
+
+  <br><br>
+
+  <div class="socials">
+
     <a
-      href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
+      class="social"
+      href="https://www.instagram.com/burak_tkt/"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      MusicBrainz
+      rel="noopener">
+      Instagram
     </a>
 
     <a
+      class="social"
       href="https://www.wikidata.org/wiki/Q141105872"
       target="_blank"
-      rel="noopener noreferrer"
-    >
+      rel="noopener">
       Wikidata
     </a>
 
     <a
-      href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
+      class="social"
+      href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Wikimedia Commons
+      rel="noopener">
+      MusicBrainz
     </a>
 
     <a
-      href="https://www.instagram.com/burak_tkt/"
+      class="social"
+      href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
       target="_blank"
-      rel="noopener noreferrer"
-    >
-      Instagram
+      rel="noopener">
+      Wikimedia
     </a>
 
   </div>
@@ -522,50 +837,44 @@
 </section>
 
 
-<section>
+<!-- BOOKING -->
 
-  <h2>Artist Information</h2>
+<section id="booking" class="booking">
 
-  <p class="about">
+  <div class="section-number">
+    05 — BOOKING
+  </div>
 
-    Artist: Burak Tokat
+  <div class="booking-text">
+    BOOK BURAK<br>
+    TOKAT.
+  </div>
 
-    <br>
-
-    Profession: DJ, Musician, Record Producer
-
-    <br>
-
-    Origin: Türkiye
-
-    <br>
-
-    Born in: Bursa, Türkiye
-
-    <br>
-
-    Active since: 2020
-
-    <br>
-
-    Genres: Electronic, Afro House, Melodic House, Techno
-
-    <br>
-
-    Record Label: Surrealismo Records
-
-  </p>
+  <a
+    class="booking-button"
+    href="https://www.instagram.com/burak_tkt/"
+    target="_blank"
+    rel="noopener">
+    Booking & Inquiries →
+  </a>
 
 </section>
 
-</main>
 
+<!-- FOOTER -->
 
 <footer>
 
-  © 2026 Burak Tokat. All rights reserved.
+  <span>
+    © 2026 Burak Tokat
+  </span>
+
+  <span>
+    DJ · Türkiye
+  </span>
 
 </footer>
+
 
 </body>
 </html>
