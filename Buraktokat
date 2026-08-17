@@ -1,0 +1,207 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Burak Tokat | DJ • Musician • Producer</title>
+  <meta name="description" content="Official website of Burak Tokat — DJ, musician and producer. Discover music, releases, Feels Like, Crescent and official platforms.">
+
+  <meta property="og:title" content="Burak Tokat | DJ • Musician • Producer">
+  <meta property="og:description" content="Official website of Burak Tokat.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Burak Tokat",
+    "jobTitle": ["DJ", "Musician", "Record Producer"],
+    "sameAs": [
+      "https://www.wikidata.org/wiki/Q141105872",
+      "https://musicbrainz.org/",
+      "https://www.instagram.com/burak_tkt/",
+      "https://open.spotify.com/",
+      "https://music.apple.com/",
+      "https://www.youtube.com/"
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #080808;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.85)),
+        url("BurakTokatMusic.jpg") center/cover no-repeat;
+    }
+
+    .hero {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 9vw, 100px);
+      letter-spacing: -4px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cccccc;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: white;
+      border: 1px solid #ffffff;
+      padding: 12px 22px;
+      border-radius: 30px;
+      transition: .2s;
+    }
+
+    .buttons a:hover {
+      background: white;
+      color: black;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 90px 25px;
+    }
+
+    h2 {
+      font-size: 42px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      color: #cccccc;
+      max-width: 750px;
+      font-size: 18px;
+    }
+
+    .release {
+      border: 1px solid #292929;
+      border-radius: 18px;
+      padding: 30px;
+      margin-top: 20px;
+      background: #101010;
+    }
+
+    .release h3 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .release p {
+      color: #aaaaaa;
+      margin-bottom: 20px;
+    }
+
+    .release a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #777777;
+      border-top: 1px solid #202020;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>BURAK TOKAT</h1>
+    <p>DJ • MUSICIAN • PRODUCER</p>
+
+    <div class="buttons">
+      <a href="https://www.instagram.com/burak_tkt/" target="_blank">Instagram</a>
+      <a href="https://open.spotify.com/" target="_blank">Spotify</a>
+      <a href="https://music.apple.com/" target="_blank">Apple Music</a>
+      <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>About</h2>
+
+  <p class="about">
+    Burak Tokat is a DJ, musician and record producer focused on electronic music.
+    His artistic direction combines modern electronic production with Afro House
+    influences and energetic club-oriented sounds.
+  </p>
+</section>
+
+<section>
+  <h2>Music</h2>
+
+  <div class="release">
+    <h3>Feels Like</h3>
+    <p>Single • Surrealismo Records • 2024</p>
+
+    <a href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
+       target="_blank">
+      View release information
+    </a>
+  </div>
+
+  <div class="release">
+    <h3>Crescent</h3>
+    <p>Electronic / Afro House</p>
+  </div>
+</section>
+
+<section>
+  <h2>Official Profiles</h2>
+
+  <div class="buttons">
+    <a href="https://www.instagram.com/burak_tkt/" target="_blank">Instagram</a>
+    <a href="https://www.wikidata.org/wiki/Q141105872" target="_blank">Wikidata</a>
+    <a href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat" target="_blank">Wikimedia Commons</a>
+    <a href="https://musicbrainz.org/" target="_blank">MusicBrainz</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Burak Tokat. All rights reserved.
+</footer>
+
+</body>
+</html>
+```
