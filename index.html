@@ -1,2542 +1,1443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Burak Tokat — DJ / Electronic Music Producer</title>
+<title>Burak Tokat — DJ / Electronic Music Producer</title>
 
-  <meta name="description" content="Burak Tokat — DJ and electronic music producer. Melodic House, Melodic Techno and electronic music.">
-  <meta name="author" content="Burak Tokat">
-  <meta name="theme-color" content="#09000f">
+<meta name="description" content="Burak Tokat — DJ and electronic music producer. Melodic House, Melodic Techno and electronic music.">
+<meta name="author" content="Burak Tokat">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#09000f">
 
-  <meta property="og:title" content="Burak Tokat — Electronic Music">
-  <meta property="og:description" content="DJ / Electronic Music Producer">
-  <meta property="og:type" content="website">
+<meta property="og:title" content="Burak Tokat — DJ / Electronic Music Producer">
+<meta property="og:description" content="Melodic House • Melodic Techno • Electronic Music">
+<meta property="og:type" content="website">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Burak Tokat",
+  "jobTitle":"DJ / Electronic Music Producer",
+  "description":"DJ and electronic music producer focused on Melodic House, Melodic Techno and electronic music.",
+  "sameAs":[
+    "https://www.instagram.com/burak_tkt/",
+    "https://volumo.com/artist/636066-burak-tokat",
+    "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+  ]
+}
+</script>
 
-  <!--
-    GOOGLE STRUCTURED DATA
+<style>
+:root{
+  --bg:#08000f;
+  --bg2:#110018;
+  --text:#fff;
+  --muted:#a99ab2;
+  --pink:#ff32d1;
+  --pink2:#ff75e4;
+  --purple:#8b4dff;
+  --violet:#5318bd;
+  --line:rgba(255,255,255,.10);
+  --glass:rgba(255,255,255,.045);
+  --max:1240px;
+}
 
-    Replace the placeholder URLs once the exact official profiles
-    are confirmed.
-  -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Burak Tokat",
-    "jobTitle": "DJ / Electronic Music Producer",
-    "description": "DJ and electronic music producer focused on Melodic House, Melodic Techno and electronic music.",
-    "url": "YOUR-DOMAIN-HERE",
-    "sameAs": [
-      "https://www.instagram.com/burak_tkt/"
-    ]
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+  background:
+    radial-gradient(circle at 85% 5%,rgba(255,0,204,.16),transparent 30%),
+    radial-gradient(circle at 10% 30%,rgba(103,28,255,.12),transparent 30%),
+    var(--bg);
+  color:var(--text);
+  font-family:Inter,sans-serif;
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:999;
+  opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+  width:min(var(--max),calc(100% - 48px));
+  margin:auto;
+}
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:100;
+  padding:22px 0;
+  transition:.35s;
+}
+
+nav.scrolled{
+  background:rgba(8,0,15,.78);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+  padding:15px 0;
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:"Space Grotesk";
+  font-weight:700;
+  font-size:18px;
+  letter-spacing:.18em;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.nav-links a{
+  opacity:.72;
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  opacity:1;
+  color:var(--pink);
+}
+
+.nav-press{
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:100px;
+  padding:10px 16px;
+}
+
+.hero{
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+
+.orb{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(80px);
+  pointer-events:none;
+  animation:float 11s ease-in-out infinite;
+}
+
+.orb1{
+  width:430px;
+  height:430px;
+  right:-130px;
+  top:5%;
+  background:rgba(255,0,200,.27);
+}
+
+.orb2{
+  width:370px;
+  height:370px;
+  left:-170px;
+  bottom:5%;
+  background:rgba(100,30,255,.22);
+  animation-delay:-4s;
+}
+
+.orb3{
+  width:190px;
+  height:190px;
+  left:48%;
+  top:28%;
+  background:rgba(255,50,210,.12);
+  animation-delay:-7s;
+}
+
+@keyframes float{
+  0%,100%{transform:translate(0,0) scale(1)}
+  50%{transform:translate(25px,-30px) scale(1.08)}
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding-top:70px;
+}
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#d6c6dc;
+  font-size:10px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  margin-bottom:25px;
+}
+
+.eyebrow:before{
+  content:"";
+  width:36px;
+  height:1px;
+  background:linear-gradient(90deg,var(--pink),var(--purple));
+}
+
+.hero h1{
+  font-family:"Space Grotesk";
+  font-size:clamp(70px,13vw,185px);
+  line-height:.82;
+  letter-spacing:-.075em;
+  font-weight:700;
+}
+
+.hero h1 span{
+  display:block;
+  background:linear-gradient(100deg,#fff,#ff75e4,#9665ff);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.hero-sub{
+  max-width:550px;
+  margin-top:38px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.8;
+}
+
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:34px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  border-radius:100px;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.primary{
+  background:linear-gradient(100deg,var(--pink),var(--purple));
+  box-shadow:0 0 35px rgba(255,40,200,.18);
+}
+
+.primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 0 55px rgba(255,40,200,.35);
+}
+
+.secondary{
+  border:1px solid rgba(255,255,255,.18);
+}
+
+.secondary:hover{
+  border-color:var(--pink);
+  color:var(--pink);
+}
+
+.scroll{
+  position:absolute;
+  bottom:34px;
+  left:0;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  color:#75677d;
+  font-size:9px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+.scroll i{
+  display:block;
+  width:45px;
+  height:1px;
+  background:linear-gradient(90deg,var(--pink),transparent);
+}
+
+section{
+  padding:130px 0;
+  position:relative;
+}
+
+.label{
+  color:var(--pink);
+  font-size:10px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.title{
+  font-family:"Space Grotesk";
+  font-size:clamp(44px,7vw,82px);
+  line-height:.92;
+  letter-spacing:-.06em;
+}
+
+.intro{
+  max-width:560px;
+  margin-top:24px;
+  color:var(--muted);
+  line-height:1.8;
+  font-size:14px;
+}
+
+.release{
+  background:
+    radial-gradient(circle at 85% 50%,rgba(255,0,200,.12),transparent 30%),
+    radial-gradient(circle at 15% 30%,rgba(91,32,201,.10),transparent 35%);
+}
+
+.release-grid{
+  margin-top:65px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:60px;
+  align-items:center;
+}
+
+.cover{
+  aspect-ratio:1;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 60% 40%,#ff36ce,transparent 22%),
+    radial-gradient(circle at 35% 65%,#702cff,transparent 34%),
+    linear-gradient(145deg,#10001b,#29003d 55%,#08000e);
+  box-shadow:0 30px 100px rgba(125,0,150,.25);
+}
+
+.cover:before{
+  content:"";
+  position:absolute;
+  width:62%;
+  height:62%;
+  left:19%;
+  top:19%;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:50%;
+  box-shadow:0 0 70px rgba(255,40,210,.32);
+  animation:spin 18s linear infinite;
+}
+
+.cover:after{
+  content:"";
+  position:absolute;
+  width:21%;
+  height:21%;
+  left:39.5%;
+  top:39.5%;
+  border-radius:50%;
+  background:#0b0011;
+  border:1px solid rgba(255,255,255,.22);
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
+
+.cover-text{
+  position:absolute;
+  left:32px;
+  bottom:30px;
+  z-index:2;
+}
+
+.cover-small{
+  font-size:9px;
+  letter-spacing:.3em;
+  color:rgba(255,255,255,.6);
+  text-transform:uppercase;
+}
+
+.cover-name{
+  font-family:"Space Grotesk";
+  font-size:clamp(35px,5vw,65px);
+  font-weight:700;
+  letter-spacing:-.06em;
+  margin-top:6px;
+}
+
+.release-info h3{
+  font-family:"Space Grotesk";
+  font-size:clamp(55px,7vw,90px);
+  line-height:.82;
+  letter-spacing:-.07em;
+}
+
+.release-info h3 span{color:var(--pink)}
+
+.meta{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+}
+
+.meta-item{
+  border-left:1px solid rgba(255,255,255,.16);
+  padding-left:14px;
+}
+
+.meta-label{
+  color:#75677d;
+  font-size:8px;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+}
+
+.meta-value{
+  font-size:11px;
+  margin-top:5px;
+}
+
+.platforms{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:35px;
+}
+
+.platform{
+  border:1px solid var(--line);
+  border-radius:100px;
+  padding:11px 15px;
+  font-size:9px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.platform:hover{
+  color:var(--pink);
+  border-color:var(--pink);
+}
+
+.player{
+  margin-top:55px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.025);
+  backdrop-filter:blur(15px);
+  padding:20px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.play{
+  width:48px;
+  height:48px;
+  flex-shrink:0;
+  border-radius:50%;
+  border:0;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  color:#fff;
+  cursor:pointer;
+}
+
+.player-main{flex:1}
+
+.player-title{
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+
+.player-time{
+  color:#74667d;
+  font-size:9px;
+  margin-top:5px;
+}
+
+.progress{
+  height:2px;
+  background:rgba(255,255,255,.12);
+  margin-top:13px;
+  cursor:pointer;
+}
+
+.progress-fill{
+  width:0;
+  height:100%;
+  background:linear-gradient(90deg,var(--pink),var(--purple));
+}
+
+.sound-grid{
+  margin-top:65px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid var(--line);
+}
+
+.sound-card{
+  min-height:180px;
+  padding:28px 20px;
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  transition:.35s;
+}
+
+.sound-card:hover{
+  background:linear-gradient(135deg,rgba(255,40,210,.08),rgba(120,50,255,.08));
+}
+
+.sound-number{
+  color:var(--pink);
+  font-size:9px;
+}
+
+.sound-card h3{
+  font-family:"Space Grotesk";
+  font-size:24px;
+  margin-top:50px;
+  letter-spacing:-.04em;
+}
+
+.dna{
+  background:linear-gradient(180deg,transparent,rgba(98,24,150,.08),transparent);
+}
+
+.dna-cloud{
+  min-height:420px;
+  margin-top:60px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.dna-word{
+  position:absolute;
+  font-family:"Space Grotesk";
+  font-weight:700;
+  letter-spacing:-.06em;
+  transition:.4s;
+}
+
+.dna-word:hover{
+  color:var(--pink);
+  transform:scale(1.08);
+}
+
+.dna-center{
+  font-size:clamp(48px,7vw,90px);
+  background:linear-gradient(90deg,#fff,var(--pink),var(--purple));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  z-index:3;
+}
+
+.d1{top:7%;left:18%;font-size:24px}
+.d2{top:24%;right:13%;font-size:18px}
+.d3{bottom:15%;left:12%;font-size:17px}
+.d4{bottom:5%;right:18%;font-size:25px}
+.d5{top:48%;left:5%;font-size:11px;color:#695c71}
+.d6{top:58%;right:4%;font-size:11px;color:#695c71}
+
+.music-list{
+  margin-top:60px;
+  border-top:1px solid var(--line);
+}
+
+.track{
+  display:grid;
+  grid-template-columns:60px 1fr 200px 80px;
+  gap:20px;
+  align-items:center;
+  padding:25px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.track-num{
+  color:var(--pink);
+  font-size:10px;
+}
+
+.track-title{
+  font-family:"Space Grotesk";
+  font-size:22px;
+}
+
+.track-sub{
+  color:#74667d;
+  font-size:9px;
+  margin-top:5px;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+}
+
+.track-genre{
+  color:#918394;
+  font-size:9px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.track-time{
+  text-align:right;
+  color:#918394;
+  font-size:10px;
+}
+
+.platform-grid{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--line);
+}
+
+.big-platform{
+  min-height:155px;
+  background:var(--bg);
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:.35s;
+}
+
+.big-platform:hover{
+  background:#14001f;
+}
+
+.big-platform strong{
+  font-family:"Space Grotesk";
+  font-size:25px;
+}
+
+.big-platform small{
+  color:#6d6073;
+  font-size:9px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+
+.press-box{
+  margin-top:60px;
+  padding:60px;
+  border:1px solid var(--line);
+  background:
+    radial-gradient(circle at 80% 50%,rgba(255,0,190,.14),transparent 35%),
+    rgba(255,255,255,.025);
+}
+
+.press-box h3{
+  font-family:"Space Grotesk";
+  font-size:clamp(42px,6vw,76px);
+  letter-spacing:-.06em;
+}
+
+.press-box p{
+  max-width:560px;
+  margin-top:18px;
+  color:var(--muted);
+  line-height:1.8;
+  font-size:14px;
+}
+
+.booking{
+  border-top:1px solid var(--line);
+  text-align:center;
+  padding:150px 0;
+}
+
+.booking h2{
+  font-family:"Space Grotesk";
+  font-size:clamp(60px,12vw,150px);
+  line-height:.82;
+  letter-spacing:-.08em;
+  background:linear-gradient(90deg,#fff,var(--pink),var(--purple));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+.booking p{
+  max-width:500px;
+  margin:35px auto 0;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.email{
+  display:inline-block;
+  margin-top:28px;
+  font-family:"Space Grotesk";
+  font-size:18px;
+  border-bottom:1px solid rgba(255,255,255,.3);
+  padding-bottom:8px;
+  transition:.25s;
+}
+
+.email:hover{
+  color:var(--pink);
+  border-color:var(--pink);
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:28px 0;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.footer-logo{
+  font-family:"Space Grotesk";
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.2em;
+}
+
+.footer-copy{
+  color:#5f5364;
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.socials{
+  display:flex;
+  gap:18px;
+  font-size:9px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.socials a:hover{color:var(--pink)}
+
+.reveal{
+  opacity:0;
+  transform:translateY(25px);
+  transition:opacity .8s,transform .8s;
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media(max-width:850px){
+
+  .container{
+    width:calc(100% - 32px);
   }
-  </script>
 
-  <style>
-
-    :root {
-      --bg: #08000f;
-      --bg2: #12001d;
-      --text: #ffffff;
-      --muted: #a99ab2;
-      --pink: #ff3bd4;
-      --pink2: #ff72e2;
-      --purple: #8f4dff;
-      --violet: #5b20c9;
-      --line: rgba(255,255,255,.10);
-      --glass: rgba(255,255,255,.045);
-      --max: 1240px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background:
-        radial-gradient(
-          circle at 80% 5%,
-          rgba(255,0,204,.14),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 20% 20%,
-          rgba(119,0,255,.12),
-          transparent 28%
-        ),
-        var(--bg);
-
-      color: var(--text);
-      font-family: Inter, sans-serif;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 100;
-      opacity: .045;
-
-      background-image:
-        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .container {
-      width: min(var(--max), calc(100% - 48px));
-      margin: auto;
-    }
-
-    /* =========================
-       NAVIGATION
-    ========================= */
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 50;
-
-      padding: 22px 0;
-
-      transition: .35s ease;
-    }
-
-    nav.scrolled {
-      background: rgba(8,0,15,.75);
-      backdrop-filter: blur(18px);
-      border-bottom: 1px solid var(--line);
-      padding: 15px 0;
-    }
-
-    .nav-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-family: "Space Grotesk", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: .18em;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-
-      font-size: 11px;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    .nav-links a {
-      opacity: .72;
-      transition: .25s;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-      color: var(--pink);
-    }
-
-    .nav-press {
-      padding: 10px 16px;
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 100px;
-    }
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      min-height: 100vh;
-      position: relative;
-
-      display: flex;
-      align-items: center;
-
-      overflow: hidden;
-    }
-
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(70px);
-      pointer-events: none;
-
-      animation: float 10s ease-in-out infinite;
-    }
-
-    .orb.one {
-      width: 420px;
-      height: 420px;
-
-      right: -120px;
-      top: 8%;
-
-      background: rgba(255,0,200,.27);
-    }
-
-    .orb.two {
-      width: 360px;
-      height: 360px;
-
-      left: -160px;
-      bottom: 5%;
-
-      background: rgba(100,30,255,.23);
-
-      animation-delay: -3s;
-    }
-
-    .orb.three {
-      width: 180px;
-      height: 180px;
-
-      left: 48%;
-      top: 28%;
-
-      background: rgba(255,60,190,.13);
-
-      animation-delay: -6s;
-    }
-
-    @keyframes float {
-
-      0%,100% {
-        transform: translate3d(0,0,0) scale(1);
-      }
-
-      50% {
-        transform: translate3d(20px,-30px,0) scale(1.08);
-      }
-
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-
-      padding-top: 80px;
-    }
-
-    .eyebrow {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      color: #d6c6dc;
-
-      font-size: 11px;
-      letter-spacing: .24em;
-      text-transform: uppercase;
-
-      margin-bottom: 24px;
-    }
-
-    .eyebrow::before {
-      content: "";
-
-      width: 34px;
-      height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--pink),
-          var(--purple)
-        );
-    }
-
-    .hero h1 {
-      font-family: "Space Grotesk", sans-serif;
-
-      font-size: clamp(
-        65px,
-        13vw,
-        190px
-      );
-
-      line-height: .82;
-      letter-spacing: -.075em;
-      font-weight: 700;
-
-      max-width: 1100px;
-    }
-
-    .hero h1 span {
-      display: block;
-
-      background:
-        linear-gradient(
-          100deg,
-          #fff 10%,
-          #ff7ce5 45%,
-          #9e6aff 85%
-        );
-
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      color: transparent;
-    }
-
-    .hero-sub {
-      margin-top: 36px;
-
-      max-width: 530px;
-
-      color: var(--muted);
-
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-
-      margin-top: 34px;
-
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 14px 22px;
-
-      border-radius: 100px;
-
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: .13em;
-      text-transform: uppercase;
-
-      transition: .3s;
-
-      border: 1px solid rgba(255,255,255,.16);
-    }
-
-    .btn-primary {
-      background:
-        linear-gradient(
-          100deg,
-          var(--pink),
-          var(--purple)
-        );
-
-      border: none;
-
-      box-shadow:
-        0 0 35px
-        rgba(255,40,200,.18);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-
-      box-shadow:
-        0 0 50px
-        rgba(255,40,200,.35);
-    }
-
-    .btn-secondary:hover {
-      border-color:
-        rgba(255,255,255,.45);
-
-      background:
-        rgba(255,255,255,.06);
-    }
-
-    .scroll-indicator {
-      position: absolute;
-      bottom: 35px;
-      left: 0;
-
-      display: flex;
-      align-items: center;
-
-      gap: 12px;
-
-      font-size: 9px;
-      letter-spacing: .2em;
-
-      color: #827486;
-
-      text-transform: uppercase;
-    }
-
-    .scroll-line {
-      width: 45px;
-      height: 1px;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--pink),
-          transparent
-        );
-    }
-
-    /* =========================
-       GENERAL SECTIONS
-    ========================= */
-
-    section {
-      padding: 130px 0;
-      position: relative;
-    }
-
-    .section-label {
-      color: var(--pink);
-
-      font-size: 10px;
-      letter-spacing: .28em;
-
-      text-transform: uppercase;
-
-      margin-bottom: 18px;
-    }
-
-    .section-title {
-      font-family: "Space Grotesk", sans-serif;
-
-      font-size:
-        clamp(
-          42px,
-          7vw,
-          82px
-        );
-
-      letter-spacing: -.06em;
-      line-height: .95;
-    }
-
-    .section-intro {
-      max-width: 530px;
-
-      color: var(--muted);
-
-      line-height: 1.8;
-
-      margin-top: 24px;
-    }
-
-    /* =========================
-       RELEASE
-    ========================= */
-
-    .release {
-      background:
-        radial-gradient(
-          circle at 85% 50%,
-          rgba(255,0,200,.12),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 20% 30%,
-          rgba(91,32,201,.10),
-          transparent 35%
-        );
-    }
-
-    .release-grid {
-      margin-top: 65px;
-
-      display: grid;
-
-      grid-template-columns:
-        1.1fr .9fr;
-
-      gap: 55px;
-
-      align-items: center;
-    }
-
-    .cover {
-      aspect-ratio: 1 / 1;
-
-      max-width: 570px;
-
-      position: relative;
-
-      overflow: hidden;
-
-      background:
-        radial-gradient(
-          circle at 60% 40%,
-          #ff36ce 0%,
-          transparent 22%
-        ),
-        radial-gradient(
-          circle at 35% 65%,
-          #702cff 0%,
-          transparent 34%
-        ),
-        linear-gradient(
-          145deg,
-          #10001b,
-          #29003d 55%,
-          #08000e
-        );
-
-      box-shadow:
-        0 30px 100px
-        rgba(125,0,150,.25),
-
-        inset 0 0 100px
-        rgba(255,0,200,.08);
-    }
-
-    .cover::before {
-      content: "";
-
-      position: absolute;
-
-      width: 62%;
-      height: 62%;
-
-      left: 19%;
-      top: 19%;
-
-      border:
-        1px solid
-        rgba(255,255,255,.18);
-
-      border-radius: 50%;
-
-      box-shadow:
-        0 0 70px
-        rgba(255,40,210,.32),
-
-        inset 0 0 60px
-        rgba(120,30,255,.22);
-
-      animation:
-        spin 18s linear infinite;
-    }
-
-    .cover::after {
-      content: "";
-
-      position: absolute;
-
-      width: 22%;
-      height: 22%;
-
-      left: 39%;
-      top: 39%;
-
-      border-radius: 50%;
-
-      background: #0b0011;
-
-      border:
-        1px solid
-        rgba(255,255,255,.22);
-
-      box-shadow:
-        0 0 35px
-        rgba(255,50,220,.3);
-    }
-
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .cover-text {
-      position: absolute;
-
-      left: 34px;
-      bottom: 32px;
-
-      z-index: 2;
-    }
-
-    .cover-small {
-      font-size: 9px;
-
-      letter-spacing: .3em;
-
-      text-transform: uppercase;
-
-      color:
-        rgba(255,255,255,.65);
-    }
-
-    .cover-name {
-      font-family: "Space Grotesk";
-
-      font-size:
-        clamp(
-          32px,
-          5vw,
-          64px
-        );
-
-      font-weight: 700;
-
-      letter-spacing: -.06em;
-
-      margin-top: 6px;
-    }
-
-    .release-info h3 {
-      font-family: "Space Grotesk";
-
-      font-size:
-        clamp(
-          50px,
-          7vw,
-          88px
-        );
-
-      letter-spacing: -.07em;
-
-      line-height: .85;
-    }
-
-    .release-info h3 span {
-      color: var(--pink);
-    }
-
-    .release-meta {
-      margin-top: 30px;
-
-      display: flex;
-
-      gap: 28px;
-
-      flex-wrap: wrap;
-    }
-
-    .meta-item {
-      border-left:
-        1px solid
-        rgba(255,255,255,.16);
-
-      padding-left: 14px;
-    }
-
-    .meta-label {
-      font-size: 8px;
-
-      color: #75677d;
-
-      text-transform: uppercase;
-
-      letter-spacing: .2em;
-    }
-
-    .meta-value {
-      font-size: 12px;
-
-      margin-top: 5px;
-    }
-
-    .release-buttons {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 9px;
-
-      margin-top: 38px;
-    }
-
-    .platform {
-      font-size: 9px;
-
-      letter-spacing: .15em;
-
-      text-transform: uppercase;
-
-      padding: 11px 15px;
-
-      border:
-        1px solid
-        var(--line);
-
-      border-radius: 100px;
-
-      transition: .25s;
-    }
-
-    .platform:hover {
-      border-color: var(--pink);
-      color: var(--pink);
-    }
-
-    /* =========================
-       PLAYER
-    ========================= */
-
-    .player {
-      margin-top: 55px;
-
-      border:
-        1px solid
-        var(--line);
-
-      background:
-        rgba(255,255,255,.025);
-
-      backdrop-filter:
-        blur(15px);
-
-      padding: 22px;
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 20px;
-    }
-
-    .play-btn {
-      width: 48px;
-      height: 48px;
-
-      border-radius: 50%;
-
-      border:
-        1px solid
-        rgba(255,255,255,.25);
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--pink),
-          var(--purple)
-        );
-
-      color: white;
-
-      cursor: pointer;
-
-      font-size: 15px;
-
-      flex-shrink: 0;
-    }
-
-    .player-main {
-      flex: 1;
-    }
-
-    .player-title {
-      font-size: 11px;
-
-      font-weight: 700;
-
-      letter-spacing: .08em;
-    }
-
-    .player-time {
-      font-size: 9px;
-
-      color: #74667d;
-
-      margin-top: 5px;
-    }
-
-    .progress {
-      height: 2px;
-
-      background:
-        rgba(255,255,255,.12);
-
-      margin-top: 13px;
-
-      position: relative;
-
-      cursor: pointer;
-    }
-
-    .progress-fill {
-      position: absolute;
-
-      height: 100%;
-
-      width: 0%;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--pink),
-          var(--purple)
-        );
-    }
-
-    /* =========================
-       SOUND
-    ========================= */
-
-    .sound-grid {
-      margin-top: 70px;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
-      border-top:
-        1px solid
-        var(--line);
-    }
-
-    .sound-card {
-      min-height: 180px;
-
-      padding: 28px 20px;
-
-      border-right:
-        1px solid
-        var(--line);
-
-      border-bottom:
-        1px solid
-        var(--line);
-
-      transition: .35s;
-    }
-
-    .sound-card:hover {
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,40,210,.08),
-          rgba(120,50,255,.08)
-        );
-    }
-
-    .sound-number {
-      font-size: 9px;
-
-      color: var(--pink);
-
-      letter-spacing: .15em;
-    }
-
-    .sound-card h3 {
-      font-family: "Space Grotesk";
-
-      font-size: 25px;
-
-      margin-top: 50px;
-
-      letter-spacing: -.04em;
-    }
-
-    /* =========================
-       ARTIST DNA
-    ========================= */
-
-    .dna {
-      background:
-        linear-gradient(
-          180deg,
-          transparent,
-          rgba(98,24,150,.08),
-          transparent
-        );
-    }
-
-    .dna-cloud {
-      margin-top: 70px;
-
-      display: flex;
-
-      justify-content: center;
-
-      align-items: center;
-
-      min-height: 420px;
-
-      position: relative;
-
-      overflow: hidden;
-    }
-
-    .dna-word {
-      position: absolute;
-
-      font-family: "Space Grotesk";
-
-      font-weight: 700;
-
-      letter-spacing: -.06em;
-
-      transition: .5s;
-
-      cursor: default;
-    }
-
-    .dna-word:hover {
-      color: var(--pink);
-
-      transform:
-        scale(1.08);
-    }
-
-    .dna-center {
-      font-size:
-        clamp(
-          48px,
-          7vw,
-          90px
-        );
-
-      background:
-        linear-gradient(
-          90deg,
-          #fff,
-          var(--pink),
-          var(--purple)
-        );
-
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      color: transparent;
-
-      z-index: 3;
-    }
-
-    .dna-one {
-      top: 5%;
-      left: 18%;
-      font-size: 24px;
-    }
-
-    .dna-two {
-      top: 25%;
-      right: 13%;
-      font-size: 18px;
-    }
-
-    .dna-three {
-      bottom: 15%;
-      left: 12%;
-      font-size: 17px;
-    }
-
-    .dna-four {
-      bottom: 5%;
-      right: 18%;
-      font-size: 25px;
-    }
-
-    .dna-five {
-      top: 48%;
-      left: 5%;
-      font-size: 12px;
-      color: #695c71;
-    }
-
-    .dna-six {
-      top: 58%;
-      right: 4%;
-      font-size: 11px;
-      color: #695c71;
-    }
-
-    /* =========================
-       SELECTED MUSIC
-    ========================= */
-
-    .music-list {
-      margin-top: 60px;
-
-      border-top:
-        1px solid
-        var(--line);
-    }
-
-    .track {
-      display: grid;
-
-      grid-template-columns:
-        70px
-        1fr
-        180px
-        100px;
-
-      gap: 20px;
-
-      align-items: center;
-
-      padding: 24px 0;
-
-      border-bottom:
-        1px solid
-        var(--line);
-    }
-
-    .track-number {
-      color: var(--pink);
-
-      font-size: 10px;
-    }
-
-    .track-title {
-      font-family: "Space Grotesk";
-
-      font-size: 22px;
-    }
-
-    .track-sub {
-      font-size: 9px;
-
-      color: #74667d;
-
-      letter-spacing: .13em;
-
-      text-transform: uppercase;
-
-      margin-top: 5px;
-    }
-
-    .track-genre {
-      font-size: 9px;
-
-      color: #918394;
-
-      text-transform: uppercase;
-
-      letter-spacing: .1em;
-    }
-
-    .track-time {
-      text-align: right;
-
-      color: #918394;
-
-      font-size: 10px;
-    }
-
-    /* =========================
-       OFFICIAL PLATFORMS
-    ========================= */
-
-    .platform-grid {
-      margin-top: 60px;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap: 1px;
-
-      background: var(--line);
-    }
-
-    .big-platform {
-      min-height: 160px;
-
-      background: var(--bg);
-
-      padding: 30px;
-
-      display: flex;
-
-      flex-direction: column;
-
-      justify-content: space-between;
-
-      transition: .35s;
-    }
-
-    .big-platform:hover {
-      background: #13001e;
-    }
-
-    .big-platform span:first-child {
-      font-family: "Space Grotesk";
-
-      font-size: 26px;
-    }
-
-    .big-platform span:last-child {
-      color: #6d6073;
-
-      font-size: 9px;
-
-      letter-spacing: .2em;
-
-      text-transform: uppercase;
-    }
-
-    /* =========================
-       PRESS KIT
-    ========================= */
-
-    .press {
-      padding-bottom: 150px;
-    }
-
-    .press-box {
-      margin-top: 60px;
-
-      padding: 60px;
-
-      border:
-        1px solid
-        var(--line);
-
-      position: relative;
-
-      overflow: hidden;
-
-      background:
-        radial-gradient(
-          circle at 80% 50%,
-          rgba(255,0,190,.15),
-          transparent 35%
-        ),
-        rgba(255,255,255,.025);
-    }
-
-    .press-box h3 {
-      font-family: "Space Grotesk";
-
-      font-size:
-        clamp(
-          40px,
-          6vw,
-          75px
-        );
-
-      letter-spacing: -.06em;
-    }
-
-    .press-box p {
-      color: var(--muted);
-
-      margin-top: 18px;
-
-      max-width: 520px;
-
-      line-height: 1.7;
-
-      font-size: 14px;
-    }
-
-    .press-box .btn {
-      display: inline-block;
-
-      margin-top: 30px;
-    }
-
-    /* =========================
-       BOOKING
-    ========================= */
-
-    .booking {
-      border-top:
-        1px solid
-        var(--line);
-
-      text-align: center;
-
-      padding: 150px 0;
-    }
-
-    .booking h2 {
-      font-family: "Space Grotesk";
-
-      font-size:
-        clamp(
-          60px,
-          12vw,
-          150px
-        );
-
-      line-height: .82;
-
-      letter-spacing: -.08em;
-
-      background:
-        linear-gradient(
-          90deg,
-          #fff,
-          var(--pink),
-          var(--purple)
-        );
-
-      -webkit-background-clip: text;
-      background-clip: text;
-
-      color: transparent;
-    }
-
-    .booking p {
-      margin: 35px auto 0;
-
-      max-width: 500px;
-
-      color: var(--muted);
-
-      line-height: 1.8;
-    }
-
-    .booking-email {
-      display: inline-block;
-
-      margin-top: 30px;
-
-      font-family: "Space Grotesk";
-
-      font-size: 18px;
-
-      border-bottom:
-        1px solid
-        rgba(255,255,255,.3);
-
-      padding-bottom: 8px;
-
-      transition: .25s;
-    }
-
-    .booking-email:hover {
-      color: var(--pink);
-
-      border-color:
-        var(--pink);
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      border-top:
-        1px solid
-        var(--line);
-
-      padding: 28px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-
-      justify-content: space-between;
-
-      align-items: center;
-
-      gap: 20px;
-    }
-
-    .footer-logo {
-      font-family: "Space Grotesk";
-
-      font-size: 13px;
-
-      font-weight: 700;
-
-      letter-spacing: .2em;
-    }
-
-    .footer-copy {
-      color: #5f5364;
-
-      font-size: 9px;
-
-      letter-spacing: .12em;
-
-      text-transform: uppercase;
-    }
-
-    .socials {
-      display: flex;
-
-      gap: 18px;
-
-      font-size: 9px;
-
-      letter-spacing: .12em;
-
-      text-transform: uppercase;
-    }
-
-    .socials a:hover {
-      color: var(--pink);
-    }
-
-    /* =========================
-       REVEAL ANIMATION
-    ========================= */
-
-    .reveal {
-      opacity: 0;
-
-      transform:
-        translateY(25px);
-
-      transition:
-        opacity .8s ease,
-        transform .8s ease;
-    }
-
-    .reveal.visible {
-      opacity: 1;
-
-      transform:
-        translateY(0);
-    }
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media(max-width: 850px) {
-
-      .container {
-        width:
-          min(
-            100% - 32px,
-            var(--max)
-          );
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero h1 {
-        font-size:
-          clamp(
-            58px,
-            18vw,
-            105px
-          );
-      }
-
-      section {
-        padding: 90px 0;
-      }
-
-      .release-grid {
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-      }
-
-      .cover {
-        max-width: none;
-      }
-
-      .sound-grid {
-        grid-template-columns:
-          repeat(2,1fr);
-      }
-
-      .platform-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .track {
-        grid-template-columns:
-          40px
-          1fr
-          60px;
-      }
-
-      .track-genre {
-        display: none;
-      }
-
-      .press-box {
-        padding: 35px 25px;
-      }
-
-      .footer-inner {
-        flex-direction: column;
-
-        align-items: flex-start;
-      }
-
-      .scroll-indicator {
-        display: none;
-      }
-    }
-
-    @media(max-width: 500px) {
-
-      .hero-sub {
-        font-size: 13px;
-      }
-
-      .sound-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .sound-card {
-        min-height: 130px;
-      }
-
-      .sound-card h3 {
-        margin-top: 25px;
-      }
-
-      .dna-cloud {
-        min-height: 350px;
-      }
-
-      .dna-one {
-        left: 5%;
-      }
-
-      .dna-two {
-        right: 5%;
-      }
-
-      .dna-three {
-        left: 3%;
-      }
-
-      .dna-four {
-        right: 4%;
-      }
-
-      .booking {
-        padding: 100px 0;
-      }
-
-    }
-
-  </style>
+  .nav-links{
+    display:none;
+  }
+
+  .hero h1{
+    font-size:clamp(60px,18vw,105px);
+  }
+
+  section{
+    padding:90px 0;
+  }
+
+  .release-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sound-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .platform-grid{
+    grid-template-columns:1fr;
+  }
+
+  .track{
+    grid-template-columns:40px 1fr 60px;
+  }
+
+  .track-genre{
+    display:none;
+  }
+
+  .press-box{
+    padding:35px 25px;
+  }
+
+  .footer{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .scroll{
+    display:none;
+  }
+}
+
+@media(max-width:500px){
+
+  .hero-sub{
+    font-size:13px;
+  }
+
+  .sound-grid{
+    grid-template-columns:1fr;
+  }
+
+  .sound-card{
+    min-height:130px;
+  }
+
+  .sound-card h3{
+    margin-top:25px;
+  }
+
+  .dna-cloud{
+    min-height:350px;
+  }
+
+  .d1{left:5%}
+  .d2{right:5%}
+  .d3{left:3%}
+  .d4{right:4%}
+
+  .booking{
+    padding:100px 0;
+  }
+}
+</style>
 </head>
-
 
 <body>
 
-  <!-- =========================
-       NAVIGATION
-  ========================= -->
+<nav id="nav">
+  <div class="container nav-inner">
 
-  <nav id="nav">
+    <a href="#top" class="logo">BT</a>
 
-    <div class="container nav-inner">
+    <div class="nav-links">
+      <a href="#release">Release</a>
+      <a href="#sound">Sound</a>
+      <a href="#music">Music</a>
+      <a href="#press">Press</a>
+      <a href="#booking" class="nav-press">Booking ↗</a>
+    </div>
 
-      <a href="#top" class="logo">
-        BT
+  </div>
+</nav>
+
+<header class="hero" id="top">
+
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+  <div class="orb orb3"></div>
+
+  <div class="container hero-content">
+
+    <div class="eyebrow">
+      DJ / ELECTRONIC MUSIC PRODUCER
+    </div>
+
+    <h1>
+      BURAK
+      <span>TOKAT</span>
+    </h1>
+
+    <p class="hero-sub">
+      Melodic tension. Hypnotic rhythm.
+      Late-night electronic energy built for
+      dance floors, clubs and unforgettable moments.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="#release" class="btn primary">
+        Listen to Music
       </a>
 
-      <div class="nav-links">
-
-        <a href="#release">
-          Release
-        </a>
-
-        <a href="#sound">
-          Sound
-        </a>
-
-        <a href="#music">
-          Music
-        </a>
-
-        <a href="#press">
-          Press
-        </a>
-
-        <a href="#booking" class="nav-press">
-          Booking ↗
-        </a>
-
-      </div>
+      <a href="#press" class="btn secondary">
+        Press Kit ↗
+      </a>
 
     </div>
 
-  </nav>
+  </div>
 
+  <div class="container">
+    <div class="scroll">
+      <i></i>
+      Scroll to explore
+    </div>
+  </div>
 
-  <!-- =========================
-       HERO
-  ========================= -->
+</header>
 
-  <header class="hero" id="top">
+<section class="release" id="release">
 
-    <div class="orb one"></div>
-    <div class="orb two"></div>
-    <div class="orb three"></div>
+  <div class="container">
 
-    <div class="container hero-content">
+    <div class="label">01 / Latest Release</div>
 
-      <div class="eyebrow">
-        DJ / ELECTRONIC MUSIC PRODUCER
-      </div>
-
-      <h1>
-        BURAK
-        <span>TOKAT</span>
-      </h1>
-
-      <p class="hero-sub">
-        Melodic tension. Hypnotic rhythm.
-        Dark electronic energy designed for late nights,
-        dance floors and moments that stay with you.
-      </p>
-
-      <div class="hero-actions">
-
-        <a href="#release"
-           class="btn btn-primary">
-          Listen to Music
-        </a>
-
-        <a href="#press"
-           class="btn btn-secondary">
-          Press Kit ↗
-        </a>
-
-      </div>
-
+    <div class="title reveal">
+      FEELS LIKE
     </div>
 
+    <p class="intro reveal">
+      A melodic electronic release by Burak Tokat,
+      combining atmospheric tension, hypnotic rhythm
+      and late-night club energy.
+    </p>
 
-    <div class="container">
+    <div class="release-grid">
 
-      <div class="scroll-indicator">
+      <div class="cover reveal">
 
-        <span class="scroll-line"></span>
+        <div class="cover-text">
 
-        Scroll to explore
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- =========================
-       LATEST RELEASE
-  ========================= -->
-
-  <section class="release" id="release">
-
-    <div class="container">
-
-      <div class="section-label">
-        01 / Latest Release
-      </div>
-
-      <div class="section-title reveal">
-        FEELS LIKE
-      </div>
-
-      <p class="section-intro reveal">
-        The first release presented through the Burak Tokat
-        sound identity — melodic, atmospheric and built for
-        the electronic dance floor.
-      </p>
-
-
-      <div class="release-grid">
-
-
-        <!-- COVER -->
-
-        <div class="cover reveal">
-
-          <div class="cover-text">
-
-            <div class="cover-small">
-              SURREALISMO RECORDS
-            </div>
-
-            <div class="cover-name">
-              FEELS LIKE
-            </div>
-
+          <div class="cover-small">
+            SURREALISMO RECORDS
           </div>
 
-        </div>
-
-
-        <!-- RELEASE INFO -->
-
-        <div class="release-info reveal">
-
-          <div class="section-label">
-            BURAK TOKAT
-          </div>
-
-          <h3>
-            FEELS<br>
-            <span>LIKE</span>
-          </h3>
-
-
-          <div class="release-meta">
-
-            <div class="meta-item">
-
-              <div class="meta-label">
-                Label
-              </div>
-
-              <div class="meta-value">
-                Surrealismo Records
-              </div>
-
-            </div>
-
-
-            <div class="meta-item">
-
-              <div class="meta-label">
-                Genre
-              </div>
-
-              <div class="meta-value">
-                Melodic House / Techno
-              </div>
-
-            </div>
-
-
-            <div class="meta-item">
-
-              <div class="meta-label">
-                BPM
-              </div>
-
-              <div class="meta-value">
-                123
-              </div>
-
-            </div>
-
-
-            <div class="meta-item">
-
-              <div class="meta-label">
-                Key
-              </div>
-
-              <div class="meta-value">
-                G Minor
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="release-buttons">
-
-            <!--
-              VERIFIED DISCOVERY LINKS
-            -->
-
-            <a
-              href="https://volumo.com/artist/636066-burak-tokat"
-              target="_blank"
-              rel="noopener"
-              class="platform"
-            >
-              Volumo ↗
-            </a>
-
-            <a
-              href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-              target="_blank"
-              rel="noopener"
-              class="platform"
-            >
-              Amazon Music ↗
-            </a>
-
-            <!--
-              Add official Spotify / Apple / Beatport
-              links here once confirmed.
-            -->
-
+          <div class="cover-name">
+            FEELS LIKE
           </div>
 
         </div>
 
       </div>
 
+      <div class="release-info reveal">
 
-      <!-- =========================
-           PLAYER
-      ========================= -->
-
-      <div class="player reveal">
-
-        <button
-          class="play-btn"
-          id="playBtn"
-          aria-label="Play preview"
-        >
-          ▶
-        </button>
-
-
-        <div class="player-main">
-
-          <div class="player-title">
-            BURAK TOKAT — FEELS LIKE
-          </div>
-
-          <div class="player-time">
-
-            <span id="currentTime">
-              00:00
-            </span>
-
-            /
-
-            06:40
-
-          </div>
-
-
-          <div
-            class="progress"
-            id="progress"
-          >
-
-            <div
-              class="progress-fill"
-              id="progressFill"
-            ></div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!--
-        OPTIONAL AUDIO
-
-        When you have your legal preview file,
-        upload it as for example:
-
-        audio/feels-like-preview.mp3
-
-        and change the JavaScript below.
-
-      -->
-
-      <audio id="audio"></audio>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       THE SOUND
-  ========================= -->
-
-  <section id="sound">
-
-    <div class="container">
-
-      <div class="section-label">
-        02 / The Sound
-      </div>
-
-      <div class="section-title reveal">
-        THE SOUND
-      </div>
-
-      <p class="section-intro reveal">
-        A cinematic electronic identity built around
-        melody, atmosphere, hypnotic grooves and club energy.
-      </p>
-
-
-      <div class="sound-grid">
-
-
-        <div class="sound-card reveal">
-
-          <div class="sound-number">
-            01
-          </div>
-
-          <h3>
-            MELODIC HOUSE
-          </h3>
-
-        </div>
-
-
-        <div class="sound-card reveal">
-
-          <div class="sound-number">
-            02
-          </div>
-
-          <h3>
-            MELODIC TECHNO
-          </h3>
-
-        </div>
-
-
-        <div class="sound-card reveal">
-
-          <div class="sound-number">
-            03
-          </div>
-
-          <h3>
-            TECHNO
-          </h3>
-
-        </div>
-
-
-        <div class="sound-card reveal">
-
-          <div class="sound-number">
-            04
-          </div>
-
-          <h3>
-            ELECTRONIC
-          </h3>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       ARTIST DNA
-  ========================= -->
-
-  <section class="dna">
-
-    <div class="container">
-
-      <div class="section-label">
-        03 / Artist DNA
-      </div>
-
-      <div class="section-title reveal">
-        ARTIST DNA
-      </div>
-
-
-      <div class="dna-cloud reveal">
-
-
-        <div class="dna-word dna-one">
-          DJ
-        </div>
-
-
-        <div class="dna-word dna-two">
-          DARK
-        </div>
-
-
-        <div class="dna-word dna-three">
-          HYPNOTIC
-        </div>
-
-
-        <div class="dna-word dna-four">
-          CLUB
-        </div>
-
-
-        <div class="dna-word dna-five">
-          ATMOSPHERE
-        </div>
-
-
-        <div class="dna-word dna-six">
-          ENERGY
-        </div>
-
-
-        <div class="dna-word dna-center">
-          BURAK TOKAT
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       SELECTED MUSIC
-  ========================= -->
-
-  <section id="music">
-
-    <div class="container">
-
-      <div class="section-label">
-        04 / Selected Music
-      </div>
-
-      <div class="section-title reveal">
-        SELECTED<br>
-        MUSIC
-      </div>
-
-
-      <div class="music-list">
-
-
-        <div class="track reveal">
-
-          <div class="track-number">
-            01
-          </div>
-
-
-          <div>
-
-            <div class="track-title">
-              Feels Like
-            </div>
-
-            <div class="track-sub">
-              Original Mix
-            </div>
-
-          </div>
-
-
-          <div class="track-genre">
-            Melodic House / Techno
-          </div>
-
-
-          <div class="track-time">
-            06:40
-          </div>
-
-        </div>
-
-
-        <!--
-          CRESCENT WILL BE ADDED HERE
-          WHEN IT IS RELEASED.
-        -->
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       OFFICIAL PLATFORMS
-  ========================= -->
-
-  <section>
-
-    <div class="container">
-
-      <div class="section-label">
-        05 / Official Platforms
-      </div>
-
-      <div class="section-title reveal">
-        FIND THE<br>
-        MUSIC
-      </div>
-
-
-      <div class="platform-grid">
-
-
-        <!-- INSTAGRAM -->
-
-        <a
-          href="https://www.instagram.com/burak_tkt/"
-          target="_blank"
-          rel="noopener"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Instagram ↗
-          </span>
-
-          <span>
-            @burak_tkt
-          </span>
-
-        </a>
-
-
-        <!-- VOLUMO -->
-
-        <a
-          href="https://volumo.com/artist/636066-burak-tokat"
-          target="_blank"
-          rel="noopener"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Volumo ↗
-          </span>
-
-          <span>
-            Artist Profile
-          </span>
-
-        </a>
-
-
-        <!-- AMAZON MUSIC -->
-
-        <a
-          href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-          target="_blank"
-          rel="noopener"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Amazon Music ↗
-          </span>
-
-          <span>
-            Artist Profile
-          </span>
-
-        </a>
-
-
-        <!-- SPOTIFY -->
-
-        <a
-          href="#"
-          onclick="return unavailableLink('Spotify')"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Spotify
-          </span>
-
-          <span>
-            Official link coming soon
-          </span>
-
-        </a>
-
-
-        <!-- APPLE MUSIC -->
-
-        <a
-          href="#"
-          onclick="return unavailableLink('Apple Music')"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Apple Music
-          </span>
-
-          <span>
-            Official link coming soon
-          </span>
-
-        </a>
-
-
-        <!-- BEATPORT -->
-
-        <a
-          href="#"
-          onclick="return unavailableLink('Beatport')"
-          class="big-platform reveal"
-        >
-
-          <span>
-            Beatport
-          </span>
-
-          <span>
-            Official link coming soon
-          </span>
-
-        </a>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PRESS KIT
-  ========================= -->
-
-  <section
-    class="press"
-    id="press"
-  >
-
-    <div class="container">
-
-      <div class="section-label">
-        06 / Press
-      </div>
-
-      <div class="section-title reveal">
-        PRESS<br>
-        KIT
-      </div>
-
-
-      <div class="press-box reveal">
+        <div class="label">BURAK TOKAT</div>
 
         <h3>
-          BURAK TOKAT
+          FEELS<br>
+          <span>LIKE</span>
         </h3>
 
+        <div class="meta">
 
-        <p>
-          Artist biography, selected releases, visuals,
-          platform information and professional booking material
-          collected in one electronic press kit.
-        </p>
+          <div class="meta-item">
+            <div class="meta-label">Label</div>
+            <div class="meta-value">Surrealismo Records</div>
+          </div>
 
+          <div class="meta-item">
+            <div class="meta-label">Genre</div>
+            <div class="meta-value">Melodic House / Techno</div>
+          </div>
 
-        <!--
-          Replace this with your EPK URL
-          when the final EPK is uploaded.
-        -->
+          <div class="meta-item">
+            <div class="meta-label">BPM</div>
+            <div class="meta-value">123</div>
+          </div>
 
-        <a
-          href="#"
-          onclick="return unavailableLink('Press Kit')"
-          class="btn btn-primary"
-        >
-          Open Press Kit ↗
-        </a>
+          <div class="meta-item">
+            <div class="meta-label">Length</div>
+            <div class="meta-value">06:40</div>
+          </div>
 
+        </div>
+
+        <div class="platforms">
+
+          <a
+            class="platform"
+            href="https://volumo.com/artist/636066-burak-tokat"
+            target="_blank"
+            rel="noopener">
+            Volumo ↗
+          </a>
+
+          <a
+            class="platform"
+            href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+            target="_blank"
+            rel="noopener">
+            Amazon Music ↗
+          </a>
+
+        </div>
 
       </div>
 
     </div>
 
-  </section>
+    <div class="player reveal">
 
+      <button class="play" id="play">
+        ▶
+      </button>
 
-  <!-- =========================
-       BOOKING
-  ========================= -->
+      <div class="player-main">
 
-  <section
-    class="booking"
-    id="booking"
-  >
+        <div class="player-title">
+          BURAK TOKAT — FEELS LIKE
+        </div>
 
-    <div class="container">
+        <div class="player-time">
+          <span id="time">00:00</span> / 06:40
+        </div>
 
-      <div class="section-label">
-        07 / Booking
+        <div class="progress" id="progress">
+          <div class="progress-fill" id="fill"></div>
+        </div>
+
       </div>
-
-
-      <h2 class="reveal">
-        LET'S<br>
-        CONNECT.
-      </h2>
-
-
-      <p class="reveal">
-        For bookings, collaborations, label inquiries,
-        press and professional requests.
-      </p>
-
-
-      <!--
-        EMAIL PROVIDED BY BURAK TOKAT
-      -->
-
-      <a
-        class="booking-email reveal"
-        href="mailto:buraktokatmr@gmai.com"
-      >
-        buraktokatmr@gmai.com
-      </a>
-
 
     </div>
 
-  </section>
+    <audio id="audio"></audio>
 
+  </div>
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
+</section>
 
-  <footer>
+<section id="sound">
 
-    <div class="container footer-inner">
+  <div class="container">
 
+    <div class="label">02 / The Sound</div>
 
-      <div class="footer-logo">
+    <div class="title reveal">
+      THE SOUND
+    </div>
+
+    <p class="intro reveal">
+      A cinematic electronic identity built around
+      melody, atmosphere, hypnotic grooves and club energy.
+    </p>
+
+    <div class="sound-grid">
+
+      <div class="sound-card reveal">
+        <div class="sound-number">01</div>
+        <h3>MELODIC HOUSE</h3>
+      </div>
+
+      <div class="sound-card reveal">
+        <div class="sound-number">02</div>
+        <h3>MELODIC TECHNO</h3>
+      </div>
+
+      <div class="sound-card reveal">
+        <div class="sound-number">03</div>
+        <h3>TECHNO</h3>
+      </div>
+
+      <div class="sound-card reveal">
+        <div class="sound-number">04</div>
+        <h3>ELECTRONIC</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="dna">
+
+  <div class="container">
+
+    <div class="label">03 / Artist DNA</div>
+
+    <div class="title reveal">
+      ARTIST DNA
+    </div>
+
+    <div class="dna-cloud reveal">
+
+      <div class="dna-word d1">DJ</div>
+      <div class="dna-word d2">DARK</div>
+      <div class="dna-word d3">HYPNOTIC</div>
+      <div class="dna-word d4">CLUB</div>
+      <div class="dna-word d5">ATMOSPHERE</div>
+      <div class="dna-word d6">ENERGY</div>
+
+      <div class="dna-word dna-center">
         BURAK TOKAT
       </div>
 
+    </div>
 
-      <div class="footer-copy">
-        © 2026 Burak Tokat. All rights reserved.
+  </div>
+
+</section>
+
+<section id="music">
+
+  <div class="container">
+
+    <div class="label">04 / Selected Music</div>
+
+    <div class="title reveal">
+      SELECTED<br>MUSIC
+    </div>
+
+    <div class="music-list">
+
+      <div class="track reveal">
+
+        <div class="track-num">01</div>
+
+        <div>
+          <div class="track-title">Feels Like</div>
+          <div class="track-sub">Original Mix</div>
+        </div>
+
+        <div class="track-genre">
+          Melodic House / Techno
+        </div>
+
+        <div class="track-time">
+          06:40
+        </div>
+
       </div>
-
-
-      <div class="socials">
-
-        <a
-          href="https://www.instagram.com/burak_tkt/"
-          target="_blank"
-          rel="noopener"
-        >
-          Instagram
-        </a>
-
-        <a href="#release">
-          Music
-        </a>
-
-        <a href="#booking">
-          Booking
-        </a>
-
-      </div>
-
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="label">05 / Official Platforms</div>
+
+    <div class="title reveal">
+      FIND THE<br>MUSIC
+    </div>
+
+    <div class="platform-grid">
+
+      <a
+        href="https://www.instagram.com/burak_tkt/"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Instagram ↗</strong>
+        <small>@burak_tkt</small>
+
+      </a>
+
+      <a
+        href="https://volumo.com/artist/636066-burak-tokat"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Volumo ↗</strong>
+        <small>Artist Profile</small>
+
+      </a>
+
+      <a
+        href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Amazon Music ↗</strong>
+        <small>Artist Profile</small>
+
+      </a>
+
+      <a
+        href="https://music.apple.com/"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Apple Music ↗</strong>
+        <small>Music Platform</small>
+
+      </a>
+
+      <a
+        href="https://www.beatport.com/"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Beatport ↗</strong>
+        <small>Electronic Music</small>
+
+      </a>
+
+      <a
+        href="https://www.spotify.com/"
+        target="_blank"
+        rel="noopener"
+        class="big-platform reveal">
+
+        <strong>Spotify ↗</strong>
+        <small>Music Platform</small>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="press">
+
+  <div class="container">
+
+    <div class="label">06 / Press</div>
+
+    <div class="title reveal">
+      PRESS<br>KIT
+    </div>
+
+    <div class="press-box reveal">
+
+      <h3>BURAK TOKAT</h3>
+
+      <p>
+        Professional artist biography, selected releases,
+        visuals, platform information and booking material
+        collected in one electronic press kit.
+      </p>
+
+      <!--
+      EP K URL'Nİ BURAYA EKLEYEBİLİRSİN.
+      Şimdilik site çalışmaya devam eder.
+      -->
+
+      <a
+        href="#booking"
+        class="btn primary">
+        Press / Booking ↗
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="booking" id="booking">
+
+  <div class="container">
+
+    <div class="label">07 / Booking</div>
+
+    <h2 class="reveal">
+      LET'S<br>CONNECT.
+    </h2>
+
+    <p class="reveal">
+      For bookings, collaborations, label inquiries,
+      press and professional requests.
+    </p>
+
+    <a
+      class="email reveal"
+      href="mailto:buraktokatmr@gmai.com">
+      buraktokatmr@gmai.com
+    </a>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="container footer">
+
+    <div class="footer-logo">
+      BURAK TOKAT
+    </div>
+
+    <div class="footer-copy">
+      © 2026 Burak Tokat
+    </div>
+
+    <div class="socials">
+
+      <a
+        href="https://www.instagram.com/burak_tkt/"
+        target="_blank"
+        rel="noopener">
+        Instagram
+      </a>
+
+      <a href="#music">
+        Music
+      </a>
+
+      <a href="#booking">
+        Booking
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+
+const nav=document.getElementById("nav");
+
+window.addEventListener("scroll",()=>{
+  nav.classList.toggle("scrolled",window.scrollY>40);
+});
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
+const reveals=document.querySelectorAll(".reveal");
 
-  <script>
-
-
-    /* =========================
-       NAVIGATION SCROLL
-    ========================= */
-
-    const nav =
-      document.getElementById("nav");
-
-
-    window.addEventListener(
-      "scroll",
-      () => {
-
-        if (window.scrollY > 40) {
-
-          nav.classList.add("scrolled");
-
-        } else {
-
-          nav.classList.remove("scrolled");
-
-        }
-
-      }
-    );
-
-
-    /* =========================
-       REVEAL ANIMATION
-    ========================= */
-
-    const revealElements =
-      document.querySelectorAll(".reveal");
-
-
-    const observer =
-      new IntersectionObserver(
-        entries => {
-
-          entries.forEach(
-            entry => {
-
-              if (
-                entry.isIntersecting
-              ) {
-
-                entry.target.classList.add(
-                  "visible"
-                );
-
-                observer.unobserve(
-                  entry.target
-                );
-
-              }
-
-            }
-          );
-
-        },
-        {
-          threshold: .12
-        }
-      );
-
-
-    revealElements.forEach(
-      element => {
-
-        observer.observe(element);
-
-      }
-    );
-
-
-    /* =========================
-       AUDIO PLAYER
-    ========================= */
-
-    const audio =
-      document.getElementById("audio");
-
-    const playBtn =
-      document.getElementById("playBtn");
-
-    const progress =
-      document.getElementById("progress");
-
-    const progressFill =
-      document.getElementById("progressFill");
-
-    const currentTime =
-      document.getElementById("currentTime");
-
-
-    /*
-      IMPORTANT:
-
-      When you have a legal audio preview,
-      upload it to:
-
-      audio/feels-like-preview.mp3
-
-      Then uncomment these lines:
-
-      audio.src =
-        "audio/feels-like-preview.mp3";
-
-      hasAudio = true;
-    */
-
-
-    let hasAudio = false;
-
-
-    function formatTime(seconds) {
-
-      const mins =
-        Math.floor(
-          seconds / 60
-        );
-
-      const secs =
-        Math.floor(
-          seconds % 60
-        );
-
-
-      return (
-        String(mins).padStart(2,"0")
-        +
-        ":"
-        +
-        String(secs).padStart(2,"0")
-      );
-
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      observer.unobserve(entry.target);
     }
+  });
+},{threshold:.12});
+
+reveals.forEach(el=>observer.observe(el));
 
 
-    playBtn.addEventListener(
-      "click",
-      () => {
-
-        if (
-          !hasAudio ||
-          !audio.src
-        ) {
-
-          alert(
-            "Audio preview has not been connected yet."
-          );
-
-          return;
-
-        }
+const audio=document.getElementById("audio");
+const play=document.getElementById("play");
+const progress=document.getElementById("progress");
+const fill=document.getElementById("fill");
+const time=document.getElementById("time");
 
 
-        if (audio.paused) {
+/*
+  AUDIO PLAYER READY
 
-          audio.play();
+  When you have a legal preview file,
+  put it in:
 
-          playBtn.textContent = "Ⅱ";
+  audio/feels-like-preview.mp3
 
-        } else {
+  and uncomment:
 
-          audio.pause();
+  audio.src="audio/feels-like-preview.mp3";
+*/
 
-          playBtn.textContent = "▶";
 
-        }
+let audioReady=false;
 
-      }
+
+play.addEventListener("click",()=>{
+
+  if(!audioReady){
+
+    alert(
+      "The audio player is ready. Add your legal Feels Like preview file to activate playback."
     );
 
+    return;
+  }
 
-    audio.addEventListener(
-      "timeupdate",
-      () => {
+  if(audio.paused){
 
-        if (!audio.duration) {
-          return;
-        }
+    audio.play();
+    play.textContent="Ⅱ";
 
+  }else{
 
-        const percent =
-          (
-            audio.currentTime /
-            audio.duration
-          ) * 100;
+    audio.pause();
+    play.textContent="▶";
 
+  }
 
-        progressFill.style.width =
-          percent + "%";
+});
 
 
-        currentTime.textContent =
-          formatTime(
-            audio.currentTime
-          );
+audio.addEventListener("timeupdate",()=>{
 
-      }
-    );
+  if(!audio.duration)return;
 
+  const percent=
+    audio.currentTime/audio.duration*100;
 
-    audio.addEventListener(
-      "ended",
-      () => {
+  fill.style.width=percent+"%";
 
-        playBtn.textContent = "▶";
+  const minutes=
+    Math.floor(audio.currentTime/60);
 
-        progressFill.style.width =
-          "0%";
+  const seconds=
+    Math.floor(audio.currentTime%60);
 
-        currentTime.textContent =
-          "00:00";
+  time.textContent=
+    String(minutes).padStart(2,"0")
+    +":"
+    +String(seconds).padStart(2,"0");
 
-      }
-    );
+});
 
 
-    progress.addEventListener(
-      "click",
-      event => {
+progress.addEventListener("click",e=>{
 
-        if (
-          !hasAudio ||
-          !audio.duration
-        ) {
+  if(!audioReady || !audio.duration)return;
 
-          return;
+  const rect=progress.getBoundingClientRect();
 
-        }
+  const percent=
+    (e.clientX-rect.left)/rect.width;
 
+  audio.currentTime=
+    percent*audio.duration;
 
-        const rect =
-          progress.getBoundingClientRect();
+});
 
 
-        const percent =
-          (
-            event.clientX -
-            rect.left
-          ) / rect.width;
+audio.addEventListener("ended",()=>{
 
+  play.textContent="▶";
+  fill.style.width="0%";
+  time.textContent="00:00";
 
-        audio.currentTime =
-          percent *
-          audio.duration;
+});
 
-      }
-    );
-
-
-    /* =========================
-       UNAVAILABLE PLATFORM LINKS
-    ========================= */
-
-    function unavailableLink(name) {
-
-      alert(
-        name +
-        " official artist URL will be connected once the exact profile is confirmed."
-      );
-
-      return false;
-
-    }
-
-  </script>
-
+</script>
 
 </body>
 </html>
