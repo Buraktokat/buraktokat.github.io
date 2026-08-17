@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Burak Tokat — DJ & Electronic Music Producer</title>
 
 <meta name="description" content="Burak Tokat — DJ and electronic music producer creating melodic, hypnotic and atmospheric electronic music. Official website, music, press and booking.">
+
 <meta name="author" content="Burak Tokat">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#08000f">
 
 <!-- FAVICON -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 
 <link rel="canonical" href="https://buraktokat.github.io/">
+
+<!-- OPEN GRAPH -->
 
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Burak Tokat — DJ & Electronic Music Producer">
@@ -26,7 +31,8 @@
 <meta name="twitter:title" content="Burak Tokat — DJ & Electronic Music Producer">
 <meta name="twitter:description" content="Official website of Burak Tokat.">
 
-<!-- PERSON STRUCTURED DATA -->
+
+<!-- STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
@@ -46,7 +52,6 @@
 }
 </script>
 
-<!-- MUSIC STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
@@ -70,20 +75,38 @@
 }
 </script>
 
+
 <style>
 
+/* =========================
+   ROOT
+========================= */
+
 :root{
+
   --bg:#07000d;
   --bg2:#100017;
+
   --pink:#ff35c8;
   --purple:#8b3dff;
   --violet:#c84dff;
+
   --white:#fff;
+
   --muted:rgba(255,255,255,.62);
+
   --line:rgba(255,255,255,.11);
+
   --glass:rgba(255,255,255,.045);
+
   --max:1180px;
+
 }
+
+
+/* =========================
+   RESET
+========================= */
 
 *{
   margin:0;
@@ -96,36 +119,53 @@ html{
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
   color:#fff;
 
   background:
+
     radial-gradient(
       circle at 15% 10%,
       rgba(255,53,200,.17),
       transparent 28%
     ),
+
     radial-gradient(
       circle at 90% 25%,
       rgba(139,61,255,.18),
       transparent 30%
     ),
+
     radial-gradient(
       circle at 50% 90%,
       rgba(200,77,255,.12),
       transparent 35%
     ),
+
     var(--bg);
 
   overflow-x:hidden;
+
 }
 
+
 body:before{
+
   content:"";
+
   position:fixed;
+
   inset:0;
+
   pointer-events:none;
+
   z-index:100;
+
   opacity:.035;
 
   background:
@@ -136,16 +176,26 @@ body:before{
       transparent 1px,
       transparent 4px
     );
+
 }
+
 
 a{
   color:inherit;
   text-decoration:none;
 }
 
+
 .container{
-  width:min(var(--max),calc(100% - 48px));
+
+  width:
+    min(
+      var(--max),
+      calc(100% - 48px)
+    );
+
   margin:auto;
+
 }
 
 
@@ -154,53 +204,82 @@ a{
 ========================= */
 
 nav{
+
   position:fixed;
+
   top:0;
   left:0;
   right:0;
 
   z-index:50;
 
-  background:rgba(7,0,13,.68);
+  background:
+    rgba(7,0,13,.68);
 
-  backdrop-filter:blur(20px);
+  backdrop-filter:
+    blur(20px);
 
-  border-bottom:1px solid var(--line);
+  border-bottom:
+    1px solid var(--line);
+
 }
 
+
 .nav-inner{
+
   min-height:76px;
 
   display:flex;
+
   align-items:center;
+
   justify-content:space-between;
+
 }
 
+
 .logo{
+
   font-size:21px;
+
   font-weight:900;
+
   letter-spacing:-.07em;
+
 }
+
 
 .logo span{
   color:var(--pink);
 }
 
+
 .nav-links{
+
   display:flex;
+
   gap:28px;
+
   align-items:center;
+
 }
+
 
 .nav-links a{
+
   font-size:10px;
+
   text-transform:uppercase;
+
   letter-spacing:.16em;
 
-  color:rgba(255,255,255,.7);
+  color:
+    rgba(255,255,255,.7);
 
   transition:.25s;
+
 }
+
 
 .nav-links a:hover{
   color:var(--pink);
@@ -212,48 +291,62 @@ nav{
 ========================= */
 
 .hero{
+
   min-height:100vh;
 
   position:relative;
 
   display:flex;
+
   align-items:flex-end;
 
   overflow:hidden;
 
   isolation:isolate;
+
 }
 
+
 .hero-photo{
+
   position:absolute;
+
   inset:0;
 
   z-index:-3;
 
   background:
+
     radial-gradient(
       circle at 30% 35%,
       rgba(255,53,200,.5),
       transparent 30%
     ),
+
     radial-gradient(
       circle at 75% 70%,
       rgba(139,61,255,.5),
       transparent 35%
     ),
+
     linear-gradient(
       135deg,
       #190021,
       #050008
     );
+
 }
 
+
 .hero-photo img{
+
   width:100%;
+
   height:100%;
 
   object-fit:cover;
-  object-position:center center;
+
+  object-position:center;
 
   display:block;
 
@@ -261,39 +354,36 @@ nav{
     saturate(.85)
     contrast(1.08);
 
-  animation:
-    heroZoom 18s ease-in-out infinite alternate;
 }
 
+
 .hero-photo:after{
+
   content:"";
 
   position:absolute;
+
   inset:0;
 
   background:
+
     linear-gradient(
       to top,
+
       rgba(7,0,13,1) 0%,
+
       rgba(7,0,13,.72) 30%,
+
       rgba(7,0,13,.12) 75%,
+
       rgba(7,0,13,.25) 100%
     );
-}
-
-@keyframes heroZoom{
-
-  from{
-    transform:scale(1);
-  }
-
-  to{
-    transform:scale(1.06);
-  }
 
 }
+
 
 .hero-content{
+
   width:100%;
 
   padding:
@@ -304,9 +394,12 @@ nav{
   position:relative;
 
   z-index:2;
+
 }
 
+
 .eyebrow{
+
   color:var(--pink);
 
   font-size:10px;
@@ -318,9 +411,12 @@ nav{
   text-transform:uppercase;
 
   margin-bottom:22px;
+
 }
 
+
 h1{
+
   font-size:
     clamp(
       72px,
@@ -333,21 +429,28 @@ h1{
   letter-spacing:-.08em;
 
   font-weight:900;
+
 }
 
+
 .hero-copy{
+
   max-width:620px;
 
   margin-top:38px;
 
-  color:rgba(255,255,255,.7);
+  color:
+    rgba(255,255,255,.7);
 
   font-size:18px;
 
   line-height:1.65;
+
 }
 
+
 .buttons{
+
   display:flex;
 
   flex-wrap:wrap;
@@ -355,9 +458,12 @@ h1{
   gap:12px;
 
   margin-top:32px;
+
 }
 
+
 .btn{
+
   display:inline-flex;
 
   align-items:center;
@@ -366,14 +472,10 @@ h1{
 
   min-height:48px;
 
-  padding:
-    0
-    22px;
+  padding:0 22px;
 
   border:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   border-radius:999px;
 
@@ -389,22 +491,27 @@ h1{
   text-transform:uppercase;
 
   transition:.25s;
+
 }
 
+
 .btn:hover{
-  transform:translateY(-2px);
+
+  transform:
+    translateY(-2px);
 
   border-color:
     rgba(255,53,200,.7);
 
   box-shadow:
-    0
-    0
-    30px
+    0 0 30px
     rgba(255,53,200,.16);
+
 }
 
+
 .primary{
+
   border:0;
 
   background:
@@ -413,6 +520,7 @@ h1{
       var(--pink),
       var(--purple)
     );
+
 }
 
 
@@ -424,7 +532,9 @@ section{
   padding:125px 0;
 }
 
+
 .number{
+
   color:var(--pink);
 
   font-size:10px;
@@ -434,9 +544,12 @@ section{
   text-transform:uppercase;
 
   margin-bottom:20px;
+
 }
 
+
 .title{
+
   font-size:
     clamp(
       48px,
@@ -449,6 +562,7 @@ section{
   letter-spacing:-.07em;
 
   margin-bottom:42px;
+
 }
 
 
@@ -457,18 +571,21 @@ section{
 ========================= */
 
 .release{
+
   display:grid;
 
   grid-template-columns:
-    1fr
-    1fr;
+    1fr 1fr;
 
   gap:70px;
 
   align-items:center;
+
 }
 
+
 .cover{
+
   aspect-ratio:1;
 
   position:relative;
@@ -478,16 +595,19 @@ section{
   border-radius:20px;
 
   background:
+
     radial-gradient(
       circle at 30% 25%,
       rgba(255,53,200,.9),
       transparent 23%
     ),
+
     radial-gradient(
       circle at 75% 75%,
       rgba(139,61,255,.9),
       transparent 30%
     ),
+
     linear-gradient(
       135deg,
       #1b0025,
@@ -495,13 +615,19 @@ section{
     );
 
   box-shadow:
-    0 40px 100px rgba(0,0,0,.45),
-    0 0 80px rgba(255,53,200,.12);
+
+    0 40px 100px
+    rgba(0,0,0,.45),
+
+    0 0 80px
+    rgba(255,53,200,.12);
+
 }
 
+
 .cover:before{
-  content:
-    "FEELS\A LIKE";
+
+  content:"FEELS\A LIKE";
 
   white-space:pre;
 
@@ -523,9 +649,12 @@ section{
   letter-spacing:-.08em;
 
   font-weight:900;
+
 }
 
+
 .cover:after{
+
   content:"BURAK TOKAT";
 
   position:absolute;
@@ -537,41 +666,48 @@ section{
   font-size:9px;
 
   letter-spacing:.22em;
+
 }
 
+
 .release-text{
+
   color:var(--muted);
 
   font-size:17px;
 
   line-height:1.7;
+
 }
 
+
 .meta{
+
   display:grid;
 
   grid-template-columns:
-    1fr
-    1fr;
+    1fr 1fr;
 
   margin-top:30px;
 
   border-top:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .meta div{
+
   padding:18px 0;
 
   border-bottom:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .meta small{
+
   display:block;
 
   color:var(--muted);
@@ -583,7 +719,9 @@ section{
   letter-spacing:.15em;
 
   margin-bottom:7px;
+
 }
+
 
 .meta strong{
   font-size:13px;
@@ -595,6 +733,7 @@ section{
 ========================= */
 
 .sound-copy{
+
   max-width:750px;
 
   color:var(--muted);
@@ -604,16 +743,20 @@ section{
   line-height:1.7;
 
   margin-bottom:55px;
+
 }
+
 
 .sound-list{
+
   border-top:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .sound-item{
+
   min-height:105px;
 
   display:flex;
@@ -623,18 +766,22 @@ section{
   justify-content:space-between;
 
   border-bottom:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .sound-item span{
+
   color:var(--pink);
 
   font-size:10px;
+
 }
 
+
 .sound-item h3{
+
   font-size:
     clamp(
       25px,
@@ -643,6 +790,7 @@ section{
     );
 
   letter-spacing:-.05em;
+
 }
 
 
@@ -651,18 +799,21 @@ section{
 ========================= */
 
 .artist-grid{
+
   display:grid;
 
   grid-template-columns:
-    1fr
-    1fr;
+    1fr 1fr;
 
   gap:70px;
 
   align-items:center;
+
 }
 
+
 .artist-photo{
+
   aspect-ratio:4/5;
 
   border-radius:20px;
@@ -672,25 +823,32 @@ section{
   position:relative;
 
   background:
+
     radial-gradient(
       circle at 30% 20%,
       rgba(255,53,200,.45),
       transparent 30%
     ),
+
     radial-gradient(
       circle at 80% 80%,
       rgba(139,61,255,.5),
       transparent 35%
     ),
+
     linear-gradient(
       135deg,
       #190021,
       #050008
     );
+
 }
 
+
 .artist-photo img{
+
   width:100%;
+
   height:100%;
 
   object-fit:cover;
@@ -700,9 +858,12 @@ section{
   filter:
     saturate(.8)
     contrast(1.05);
+
 }
 
+
 .artist-photo:after{
+
   content:"BURAK TOKAT";
 
   position:absolute;
@@ -716,46 +877,54 @@ section{
   letter-spacing:.25em;
 
   color:#fff;
+
 }
 
+
 .artist-copy{
+
   color:var(--muted);
 
   font-size:18px;
 
   line-height:1.8;
+
 }
 
 
 /* =========================
-   DNA
+   ARTIST DNA
 ========================= */
 
 .dna{
+
   display:flex;
 
   flex-wrap:wrap;
 
   gap:10px;
+
 }
 
+
 .tag{
+
   padding:14px 18px;
 
   border:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   border-radius:999px;
 
-  color:rgba(255,255,255,.82);
+  color:
+    rgba(255,255,255,.82);
 
   font-size:10px;
 
   text-transform:uppercase;
 
   letter-spacing:.14em;
+
 }
 
 
@@ -764,17 +933,14 @@ section{
 ========================= */
 
 .music-card{
+
   padding:35px 0;
 
   border-top:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   border-bottom:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   display:flex;
 
@@ -783,9 +949,12 @@ section{
   align-items:center;
 
   gap:30px;
+
 }
 
+
 .music-card h3{
+
   font-size:
     clamp(
       34px,
@@ -794,12 +963,16 @@ section{
     );
 
   letter-spacing:-.06em;
+
 }
 
+
 .music-card p{
+
   color:var(--muted);
 
   margin-top:10px;
+
 }
 
 
@@ -808,19 +981,20 @@ section{
 ========================= */
 
 .platforms{
+
   display:grid;
 
   grid-template-columns:
-    1fr
-    1fr;
+    1fr 1fr;
 
   border-top:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .platform{
+
   min-height:105px;
 
   padding:0 18px;
@@ -832,27 +1006,32 @@ section{
   justify-content:space-between;
 
   border-bottom:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   transition:.25s;
+
 }
+
 
 .platform:nth-child(odd){
+
   border-right:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
+
 }
 
+
 .platform:hover{
+
   background:var(--glass);
 
   color:var(--pink);
+
 }
 
+
 .platform-name{
+
   font-size:12px;
 
   font-weight:800;
@@ -860,12 +1039,16 @@ section{
   text-transform:uppercase;
 
   letter-spacing:.1em;
+
 }
 
+
 .platform-type{
+
   color:var(--muted);
 
   font-size:10px;
+
 }
 
 
@@ -874,25 +1057,29 @@ section{
 ========================= */
 
 .press{
+
   padding:55px;
 
   border:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   border-radius:20px;
 
   background:
+
     radial-gradient(
       circle at 90% 10%,
       rgba(255,53,200,.15),
       transparent 30%
     ),
+
     rgba(255,255,255,.025);
+
 }
 
+
 .press p{
+
   max-width:720px;
 
   color:var(--muted);
@@ -900,6 +1087,7 @@ section{
   line-height:1.7;
 
   margin-bottom:30px;
+
 }
 
 
@@ -908,10 +1096,14 @@ section{
 ========================= */
 
 .booking{
+
   text-align:center;
+
 }
 
+
 .booking h2{
+
   font-size:
     clamp(
       55px,
@@ -924,15 +1116,21 @@ section{
   letter-spacing:-.08em;
 
   margin-bottom:35px;
+
 }
 
+
 .booking p{
+
   color:var(--muted);
 
   margin-bottom:22px;
+
 }
 
+
 .email{
+
   display:inline-block;
 
   color:var(--pink);
@@ -945,6 +1143,7 @@ section{
     );
 
   margin-bottom:30px;
+
 }
 
 
@@ -953,21 +1152,23 @@ section{
 ========================= */
 
 footer{
+
   padding:30px 0;
 
   border-top:
-    1px
-    solid
-    var(--line);
+    1px solid var(--line);
 
   color:var(--muted);
 
   font-size:10px;
 
   letter-spacing:.1em;
+
 }
 
+
 .footer{
+
   display:flex;
 
   justify-content:space-between;
@@ -975,6 +1176,7 @@ footer{
   flex-wrap:wrap;
 
   gap:20px;
+
 }
 
 
@@ -985,62 +1187,76 @@ footer{
 @media(max-width:800px){
 
   .container{
+
     width:
       min(
         100% - 32px,
         var(--max)
       );
+
   }
+
 
   .nav-links{
     display:none;
   }
 
+
   .hero{
     min-height:92vh;
   }
 
-  .hero-photo img{
-    object-position:center top;
-  }
 
   h1{
+
     font-size:
       clamp(
         62px,
         18vw,
         110px
       );
+
   }
+
 
   section{
     padding:90px 0;
   }
 
+
   .release,
   .artist-grid{
+
     grid-template-columns:1fr;
 
     gap:45px;
+
   }
+
 
   .platforms{
     grid-template-columns:1fr;
   }
 
+
   .platform:nth-child(odd){
     border-right:0;
   }
 
+
   .music-card{
+
     flex-direction:column;
 
     align-items:flex-start;
+
   }
+
 
   .press{
     padding:30px;
   }
+
 
   .footer{
     flex-direction:column;
@@ -1049,24 +1265,32 @@ footer{
 }
 
 </style>
+
 </head>
+
 
 <body>
 
 
 <!-- =========================
-     NAVIGATION
+     NAV
 ========================= -->
 
 <nav>
 
   <div class="container nav-inner">
 
+
+    <!-- BT LOGO -->
+
     <a
       href="#top"
       class="logo">
+
       B<span>T</span>
+
     </a>
+
 
     <div class="nav-links">
 
@@ -1110,6 +1334,7 @@ footer{
 
 <section class="hero">
 
+
   <div class="hero-photo">
 
     <img
@@ -1121,6 +1346,7 @@ footer{
 
 
   <div class="container hero-content">
+
 
     <div class="eyebrow">
       DJ / Electronic Music Producer
@@ -1144,24 +1370,24 @@ footer{
 
     <div class="buttons">
 
+
       <a
         class="btn primary"
         href="#release">
+
         Latest Release
+
       </a>
 
 
-      <!-- PRESS KIT PDF -->
-
       <a
         class="btn"
-        href="Burak_Tokat_EPK_2026.pdf"
-        target="_blank"
-        rel="noopener noreferrer">
+        href="#press">
 
         Press Kit ↗
 
       </a>
+
 
     </div>
 
@@ -1171,12 +1397,13 @@ footer{
 
 
 <!-- =========================
-     RELEASE
+     LATEST RELEASE
 ========================= -->
 
 <section id="release">
 
   <div class="container">
+
 
     <div class="number">
       01 / Latest Release
@@ -1190,6 +1417,7 @@ footer{
 
 
       <div>
+
 
         <h2 class="title">
           FEELS<br>LIKE
@@ -1335,6 +1563,7 @@ footer{
 
 
         </div>
+
 
       </div>
 
@@ -1486,6 +1715,7 @@ footer{
 
       </div>
 
+
     </div>
 
   </div>
@@ -1494,7 +1724,7 @@ footer{
 
 
 <!-- =========================
-     DNA
+     ARTIST DNA
 ========================= -->
 
 <section>
@@ -1514,46 +1744,37 @@ footer{
 
     <div class="dna">
 
-
       <span class="tag">
         DJ
       </span>
-
 
       <span class="tag">
         Producer
       </span>
 
-
       <span class="tag">
         Melodic
       </span>
-
 
       <span class="tag">
         Dark
       </span>
 
-
       <span class="tag">
         Hypnotic
       </span>
-
 
       <span class="tag">
         Club
       </span>
 
-
       <span class="tag">
         Atmosphere
       </span>
 
-
       <span class="tag">
         Energy
       </span>
-
 
     </div>
 
@@ -1616,7 +1837,7 @@ footer{
 
 
 <!-- =========================
-     PLATFORMS
+     OFFICIAL PLATFORMS
 ========================= -->
 
 <section>
@@ -1730,7 +1951,7 @@ footer{
 
 
 <!-- =========================
-     PRESS
+     PRESS KIT
 ========================= -->
 
 <section id="press">
@@ -1763,15 +1984,19 @@ footer{
       <div class="buttons">
 
 
-        <!-- PDF EPK -->
+        <!--
+          EPK / PRESS KIT
+          GitHub file:
+          Burak_tokat presskit.pptx
+        -->
 
         <a
           class="btn primary"
-          href="Burak_Tokat_EPK_2026.pdf"
+          href="Burak_tokat%20presskit.pptx"
           target="_blank"
           rel="noopener noreferrer">
 
-          Open Press Kit ↗
+          Open EPK ↗
 
         </a>
 
