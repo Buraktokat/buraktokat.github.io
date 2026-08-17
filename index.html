@@ -1,1002 +1,1187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Burak Tokat — DJ / Electronic Music Producer</title>
+<title>Burak Tokat — DJ & Electronic Music Producer</title>
 
-  <meta name="description" content="Burak Tokat — DJ and electronic music producer. Melodic House, Melodic Techno and electronic music. Official website, music, press and booking.">
-  <meta name="author" content="Burak Tokat">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#08000e">
+<meta name="description"
+content="Burak Tokat — DJ and electronic music producer creating melodic, hypnotic and atmospheric electronic music. Official website, music, press and booking.">
 
-  <link rel="canonical" href="https://buraktokat.github.io/">
+<meta name="author" content="Burak Tokat">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#08000f">
 
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Burak Tokat — DJ / Electronic Music Producer">
-  <meta property="og:description" content="Melodic tension. Hypnotic rhythm. Late-night electronic energy.">
-  <meta property="og:url" content="https://buraktokat.github.io/">
-  <meta property="og:site_name" content="Burak Tokat">
+<link rel="canonical" href="https://buraktokat.github.io/">
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Burak Tokat — DJ / Electronic Music Producer">
-  <meta name="twitter:description" content="Official website of Burak Tokat. DJ and electronic music producer.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Burak Tokat — DJ & Electronic Music Producer">
+<meta property="og:description" content="Melodic tension. Hypnotic rhythm. Late-night electronic energy.">
+<meta property="og:url" content="https://buraktokat.github.io/">
+<meta property="og:site_name" content="Burak Tokat">
 
-  <!-- PERSON SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://buraktokat.github.io/#burak-tokat",
-    "name": "Burak Tokat",
-    "url": "https://buraktokat.github.io/",
-    "jobTitle": "DJ / Electronic Music Producer",
-    "description": "Burak Tokat is a DJ and electronic music producer focused on melodic, hypnotic and atmospheric electronic music.",
-    "sameAs": [
-      "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-      "https://www.instagram.com/burak_tkt/",
-      "https://volumo.com/artist/636066-burak-tokat",
-      "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-    ]
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Burak Tokat — DJ & Electronic Music Producer">
+<meta name="twitter:description" content="Official website of Burak Tokat.">
+
+<!-- =========================
+     STRUCTURED DATA
+========================= -->
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "@id":"https://buraktokat.github.io/#burak-tokat",
+  "name":"Burak Tokat",
+  "url":"https://buraktokat.github.io/",
+  "jobTitle":"DJ / Electronic Music Producer",
+  "description":"DJ and electronic music producer focused on melodic, hypnotic and atmospheric electronic music.",
+  "sameAs":[
+    "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
+    "https://www.instagram.com/burak_tkt/",
+    "https://volumo.com/artist/636066-burak-tokat",
+    "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MusicGroup",
+  "@id":"https://buraktokat.github.io/#artist",
+  "name":"Burak Tokat",
+  "url":"https://buraktokat.github.io/",
+  "genre":[
+    "Melodic House",
+    "Melodic Techno",
+    "Techno",
+    "Electronic"
+  ],
+  "sameAs":[
+    "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
+    "https://www.instagram.com/burak_tkt/",
+    "https://volumo.com/artist/636066-burak-tokat",
+    "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MusicRecording",
+  "name":"Feels Like",
+  "byArtist":{
+    "@type":"MusicGroup",
+    "name":"Burak Tokat"
+  },
+  "genre":"Melodic House / Techno",
+  "duration":"PT6M40S",
+  "url":"https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+}
+</script>
+
+<style>
+
+:root{
+  --bg:#07000d;
+  --bg2:#100017;
+  --pink:#ff35c8;
+  --purple:#8b3dff;
+  --violet:#c84dff;
+  --white:#fff;
+  --muted:rgba(255,255,255,.62);
+  --line:rgba(255,255,255,.11);
+  --glass:rgba(255,255,255,.045);
+  --max:1180px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--white);
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(255,53,200,.17),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(139,61,255,.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(200,77,255,.12),
+      transparent 35%
+    ),
+    var(--bg);
+  overflow-x:hidden;
+}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:100;
+  opacity:.035;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.8) 0,
+      rgba(255,255,255,.8) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:min(var(--max),calc(100% - 48px));
+  margin:auto;
+}
+
+/* NAV */
+
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:50;
+  background:rgba(7,0,13,.7);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav-inner{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:21px;
+  font-weight:900;
+  letter-spacing:-.07em;
+}
+
+.logo span{
+  color:var(--pink);
+}
+
+.nav-links{
+  display:flex;
+  gap:28px;
+  align-items:center;
+}
+
+.nav-links a{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:rgba(255,255,255,.7);
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  color:var(--pink);
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  width:650px;
+  height:650px;
+  right:-220px;
+  top:5%;
+  border-radius:50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,53,200,.38),
+      rgba(139,61,255,.17) 42%,
+      transparent 70%
+    );
+  filter:blur(18px);
+  animation:float 10s ease-in-out infinite alternate;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding-top:80px;
+}
+
+.eyebrow{
+  color:var(--pink);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  margin-bottom:22px;
+}
+
+h1{
+  font-size:clamp(72px,14vw,175px);
+  line-height:.8;
+  letter-spacing:-.08em;
+  font-weight:900;
+}
+
+.hero-copy{
+  max-width:620px;
+  margin-top:38px;
+  color:var(--muted);
+  font-size:18px;
+  line-height:1.65;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:32px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:0 22px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:rgba(255,255,255,.035);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  border-color:rgba(255,53,200,.7);
+  box-shadow:0 0 30px rgba(255,53,200,.16);
+}
+
+.primary{
+  border:0;
+  background:linear-gradient(
+    100deg,
+    var(--pink),
+    var(--purple)
+  );
+}
+
+/* SECTIONS */
+
+section{
+  padding:125px 0;
+}
+
+.number{
+  color:var(--pink);
+  font-size:10px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.title{
+  font-size:clamp(48px,8vw,95px);
+  line-height:.87;
+  letter-spacing:-.07em;
+  margin-bottom:42px;
+}
+
+/* RELEASE */
+
+.release{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:70px;
+  align-items:center;
+}
+
+.cover{
+  aspect-ratio:1;
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(255,53,200,.9),
+      transparent 23%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      rgba(139,61,255,.9),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #1b0025,
+      #050008
+    );
+
+  box-shadow:
+    0 40px 100px rgba(0,0,0,.45),
+    0 0 80px rgba(255,53,200,.12);
+}
+
+.cover:before{
+  content:"FEELS\A LIKE";
+  white-space:pre;
+  position:absolute;
+  left:8%;
+  bottom:7%;
+  font-size:clamp(50px,7vw,100px);
+  line-height:.77;
+  letter-spacing:-.08em;
+  font-weight:900;
+}
+
+.cover:after{
+  content:"BURAK TOKAT";
+  position:absolute;
+  right:8%;
+  top:8%;
+  font-size:9px;
+  letter-spacing:.22em;
+}
+
+.release-text{
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.7;
+}
+
+.meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin-top:30px;
+  border-top:1px solid var(--line);
+}
+
+.meta div{
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.meta small{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:.15em;
+  margin-bottom:7px;
+}
+
+.meta strong{
+  font-size:13px;
+  color:#fff;
+}
+
+/* SOUND */
+
+.sound-copy{
+  max-width:750px;
+  color:var(--muted);
+  font-size:20px;
+  line-height:1.7;
+  margin-bottom:55px;
+}
+
+.sound-list{
+  border-top:1px solid var(--line);
+}
+
+.sound-item{
+  min-height:105px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+}
+
+.sound-item span{
+  color:var(--pink);
+  font-size:10px;
+}
+
+.sound-item h3{
+  font-size:clamp(25px,4vw,56px);
+  letter-spacing:-.05em;
+}
+
+/* DNA */
+
+.dna{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tag{
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:rgba(255,255,255,.82);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+
+/* MUSIC */
+
+.music-card{
+  padding:35px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:30px;
+}
+
+.music-card h3{
+  font-size:clamp(34px,5vw,65px);
+  letter-spacing:-.06em;
+}
+
+.music-card p{
+  color:var(--muted);
+  margin-top:10px;
+}
+
+/* PLATFORMS */
+
+.platforms{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  border-top:1px solid var(--line);
+}
+
+.platform{
+  min-height:105px;
+  padding:0 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  transition:.25s;
+}
+
+.platform:nth-child(odd){
+  border-right:1px solid var(--line);
+}
+
+.platform:hover{
+  background:var(--glass);
+  color:var(--pink);
+}
+
+.platform-name{
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+
+.platform-type{
+  color:var(--muted);
+  font-size:10px;
+}
+
+/* PRESS */
+
+.press{
+  padding:55px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(255,53,200,.15),
+      transparent 30%
+    ),
+    rgba(255,255,255,.025);
+}
+
+.press p{
+  max-width:720px;
+  color:var(--muted);
+  line-height:1.7;
+  margin-bottom:30px;
+}
+
+/* BOOKING */
+
+.booking{
+  text-align:center;
+}
+
+.booking h2{
+  font-size:clamp(55px,10vw,125px);
+  line-height:.84;
+  letter-spacing:-.08em;
+  margin-bottom:35px;
+}
+
+.booking p{
+  color:var(--muted);
+  margin-bottom:22px;
+}
+
+.email{
+  display:inline-block;
+  color:var(--pink);
+  font-size:clamp(18px,3vw,28px);
+  margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+  padding:30px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.1em;
+}
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+@keyframes float{
+  from{
+    transform:translate(0,0) scale(1);
   }
-  </script>
-
-  <!-- MUSIC GROUP SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicGroup",
-    "@id": "https://buraktokat.github.io/#music-group",
-    "name": "Burak Tokat",
-    "url": "https://buraktokat.github.io/",
-    "genre": [
-      "Melodic House",
-      "Melodic Techno",
-      "Techno",
-      "Electronic"
-    ],
-    "sameAs": [
-      "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-      "https://www.instagram.com/burak_tkt/",
-      "https://volumo.com/artist/636066-burak-tokat",
-      "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-    ]
+  to{
+    transform:translate(-70px,60px) scale(1.14);
   }
-  </script>
+}
 
-  <!-- FEELS LIKE SCHEMA -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MusicRecording",
-    "@id": "https://buraktokat.github.io/#feels-like",
-    "name": "Feels Like",
-    "byArtist": {
-      "@type": "MusicGroup",
-      "name": "Burak Tokat",
-      "@id": "https://buraktokat.github.io/#music-group"
-    },
-    "recordingOf": {
-      "@type": "MusicComposition",
-      "name": "Feels Like"
-    },
-    "genre": "Melodic House / Techno",
-    "duration": "PT6M40S",
-    "url": "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .container{
+    width:min(100% - 32px,var(--max));
   }
-  </script>
 
-  <style>
-    :root {
-      --bg: #08000e;
-      --bg2: #110019;
-      --pink: #ff36c8;
-      --purple: #8d3cff;
-      --violet: #c34cff;
-      --white: #ffffff;
-      --muted: rgba(255,255,255,.64);
-      --line: rgba(255,255,255,.12);
-      --glass: rgba(255,255,255,.045);
-      --max: 1180px;
-    }
+  .nav-links{
+    display:none;
+  }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  .hero{
+    min-height:92vh;
+  }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  h1{
+    font-size:clamp(62px,18vw,110px);
+  }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at 15% 15%, rgba(255,54,200,.15), transparent 28%),
-        radial-gradient(circle at 85% 30%, rgba(141,60,255,.18), transparent 30%),
-        radial-gradient(circle at 50% 90%, rgba(195,76,255,.12), transparent 30%),
-        var(--bg);
-      color: var(--white);
-      overflow-x: hidden;
-    }
+  section{
+    padding:90px 0;
+  }
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: .045;
-      background-image: repeating-linear-gradient(
-        0deg,
-        rgba(255,255,255,.8) 0,
-        rgba(255,255,255,.8) 1px,
-        transparent 1px,
-        transparent 3px
-      );
-      z-index: 20;
-    }
+  .release{
+    grid-template-columns:1fr;
+    gap:45px;
+  }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+  .platforms{
+    grid-template-columns:1fr;
+  }
 
-    .container {
-      width: min(var(--max), calc(100% - 48px));
-      margin: auto;
-    }
+  .platform:nth-child(odd){
+    border-right:0;
+  }
 
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 30;
-      backdrop-filter: blur(18px);
-      background: rgba(8,0,14,.68);
-      border-bottom: 1px solid var(--line);
-    }
+  .music-card{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 
-    .nav-inner {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  .press{
+    padding:30px;
+  }
 
-    .logo {
-      font-size: 20px;
-      font-weight: 900;
-      letter-spacing: -.04em;
-    }
+  .footer{
+    flex-direction:column;
+  }
 
-    .logo span {
-      color: var(--pink);
-    }
+}
 
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-      font-size: 12px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    .nav-links a {
-      opacity: .72;
-      transition: .25s ease;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-      color: var(--pink);
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 620px;
-      height: 620px;
-      right: -180px;
-      top: 10%;
-      border-radius: 50%;
-      background: radial-gradient(
-        circle,
-        rgba(255,54,200,.35),
-        rgba(141,60,255,.18) 40%,
-        transparent 70%
-      );
-      filter: blur(20px);
-      animation: float 10s ease-in-out infinite alternate;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding-top: 80px;
-    }
-
-    .eyebrow {
-      color: var(--pink);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .28em;
-      text-transform: uppercase;
-      margin-bottom: 22px;
-    }
-
-    h1 {
-      font-size: clamp(70px, 13vw, 170px);
-      line-height: .82;
-      letter-spacing: -.075em;
-      font-weight: 900;
-      max-width: 950px;
-    }
-
-    .hero-copy {
-      max-width: 620px;
-      margin-top: 38px;
-      color: var(--muted);
-      font-size: 18px;
-      line-height: 1.65;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 34px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0 22px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      transition: .25s ease;
-      background: rgba(255,255,255,.03);
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255,54,200,.65);
-      box-shadow: 0 0 30px rgba(255,54,200,.15);
-    }
-
-    .btn-primary {
-      background: linear-gradient(100deg, var(--pink), var(--purple));
-      border: none;
-    }
-
-    section {
-      padding: 120px 0;
-      position: relative;
-    }
-
-    .section-number {
-      color: var(--pink);
-      font-size: 11px;
-      letter-spacing: .22em;
-      margin-bottom: 18px;
-      text-transform: uppercase;
-    }
-
-    .section-title {
-      font-size: clamp(42px, 7vw, 90px);
-      line-height: .9;
-      letter-spacing: -.06em;
-      margin-bottom: 40px;
-    }
-
-    .release-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .cover {
-      aspect-ratio: 1;
-      border-radius: 18px;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 30% 30%, rgba(255,54,200,.85), transparent 24%),
-        radial-gradient(circle at 70% 70%, rgba(141,60,255,.8), transparent 28%),
-        linear-gradient(135deg, #120018, #050008);
-      box-shadow:
-        0 30px 100px rgba(0,0,0,.45),
-        0 0 80px rgba(255,54,200,.12);
-    }
-
-    .cover::before {
-      content: "FEELS\A LIKE";
-      white-space: pre;
-      position: absolute;
-      left: 8%;
-      bottom: 7%;
-      font-size: clamp(50px, 7vw, 100px);
-      font-weight: 900;
-      line-height: .78;
-      letter-spacing: -.08em;
-    }
-
-    .cover::after {
-      content: "BURAK TOKAT";
-      position: absolute;
-      right: 8%;
-      top: 8%;
-      font-size: 10px;
-      letter-spacing: .2em;
-    }
-
-    .release-info p {
-      color: var(--muted);
-      line-height: 1.7;
-      font-size: 17px;
-      margin-bottom: 30px;
-    }
-
-    .meta {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      border-top: 1px solid var(--line);
-      margin-top: 25px;
-    }
-
-    .meta div {
-      padding: 18px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .meta small {
-      display: block;
-      color: var(--muted);
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: .14em;
-      margin-bottom: 7px;
-    }
-
-    .meta strong {
-      font-size: 14px;
-    }
-
-    .platforms {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      border-top: 1px solid var(--line);
-    }
-
-    .platform {
-      min-height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--line);
-      padding: 0 18px;
-      transition: .25s ease;
-    }
-
-    .platform:nth-child(odd) {
-      border-right: 1px solid var(--line);
-    }
-
-    .platform:hover {
-      background: var(--glass);
-      color: var(--pink);
-    }
-
-    .platform span:first-child {
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-
-    .platform span:last-child {
-      color: var(--muted);
-      font-size: 11px;
-    }
-
-    .sound-copy {
-      max-width: 760px;
-      color: var(--muted);
-      font-size: 20px;
-      line-height: 1.7;
-      margin-bottom: 60px;
-    }
-
-    .sound-list {
-      border-top: 1px solid var(--line);
-    }
-
-    .sound-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 100px;
-      border-bottom: 1px solid var(--line);
-      padding: 0 10px;
-    }
-
-    .sound-item span {
-      color: var(--pink);
-      font-size: 11px;
-    }
-
-    .sound-item h3 {
-      font-size: clamp(25px, 4vw, 55px);
-      letter-spacing: -.04em;
-    }
-
-    .dna {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      padding: 14px 18px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: rgba(255,255,255,.82);
-      font-size: 11px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-
-    .music-card {
-      border-top: 1px solid var(--line);
-      border-bottom: 1px solid var(--line);
-      padding: 35px 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .music-card h3 {
-      font-size: clamp(32px, 5vw, 65px);
-      letter-spacing: -.05em;
-    }
-
-    .music-card p {
-      color: var(--muted);
-      margin-top: 10px;
-    }
-
-    .press {
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 55px;
-      background:
-        radial-gradient(circle at 90% 10%, rgba(255,54,200,.14), transparent 30%),
-        rgba(255,255,255,.025);
-    }
-
-    .press p {
-      color: var(--muted);
-      max-width: 720px;
-      line-height: 1.7;
-      margin-bottom: 30px;
-    }
-
-    .booking {
-      text-align: center;
-    }
-
-    .booking h2 {
-      font-size: clamp(50px, 10vw, 125px);
-      letter-spacing: -.075em;
-      line-height: .85;
-      margin-bottom: 35px;
-    }
-
-    .booking p {
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-
-    .email {
-      display: inline-block;
-      font-size: clamp(18px, 3vw, 28px);
-      color: var(--pink);
-      margin-bottom: 35px;
-      word-break: break-word;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 30px 0;
-      color: var(--muted);
-      font-size: 11px;
-      letter-spacing: .08em;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    @keyframes float {
-      from {
-        transform: translate(0,0) scale(1);
-      }
-      to {
-        transform: translate(-70px,60px) scale(1.15);
-      }
-    }
-
-    @media (max-width: 800px) {
-      .container {
-        width: min(100% - 32px, var(--max));
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        min-height: 90vh;
-      }
-
-      h1 {
-        font-size: clamp(58px, 18vw, 105px);
-      }
-
-      .release-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-      }
-
-      .platforms {
-        grid-template-columns: 1fr;
-      }
-
-      .platform:nth-child(odd) {
-        border-right: 0;
-      }
-
-      .music-card {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .press {
-        padding: 30px;
-      }
-
-      section {
-        padding: 90px 0;
-      }
-    }
-  </style>
+</style>
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="container nav-inner">
+<!-- =========================
+     NAV
+========================= -->
 
-      <a href="#top" class="logo" aria-label="Burak Tokat Home">
-        B<span>T</span>
+<nav>
+  <div class="container nav-inner">
+
+    <a href="#top" class="logo">
+      B<span>T</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#release">Release</a>
+      <a href="#sound">Sound</a>
+      <a href="#music">Music</a>
+      <a href="#press">Press</a>
+      <a href="#booking">Booking</a>
+    </div>
+
+  </div>
+</nav>
+
+
+<main id="top">
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="container hero-content">
+
+    <div class="eyebrow">
+      DJ / Electronic Music Producer
+    </div>
+
+    <h1>
+      BURAK<br>TOKAT
+    </h1>
+
+    <p class="hero-copy">
+      Melodic tension. Hypnotic rhythm.
+      Late-night electronic energy built for
+      dance floors, clubs and unforgettable moments.
+    </p>
+
+    <div class="buttons">
+
+      <a
+        class="btn primary"
+        href="#release">
+        Listen to Music
       </a>
 
-      <div class="nav-links">
-        <a href="#release">Release</a>
-        <a href="#sound">Sound</a>
-        <a href="#music">Music</a>
-        <a href="#press">Press</a>
-        <a href="#booking">Booking ↗</a>
-      </div>
+      <a
+        class="btn"
+        href="#press">
+        Press Kit ↗
+      </a>
 
     </div>
-  </nav>
 
-  <main id="top">
+  </div>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-content">
+</section>
 
-        <div class="eyebrow">
-          DJ / Electronic Music Producer
-        </div>
 
-        <h1>
-          BURAK<br>TOKAT
-        </h1>
+<!-- =========================
+     LATEST RELEASE
+========================= -->
 
-        <p class="hero-copy">
-          Melodic tension. Hypnotic rhythm. Late-night electronic energy
-          built for dance floors, clubs and unforgettable moments.
+<section id="release">
+
+  <div class="container">
+
+    <div class="number">
+      01 / Latest Release
+    </div>
+
+    <div class="release">
+
+      <div
+        class="cover"
+        aria-label="Burak Tokat — Feels Like"
+        role="img">
+      </div>
+
+      <div>
+
+        <h2 class="title">
+          FEELS<br>LIKE
+        </h2>
+
+        <p class="release-text">
+          A melodic electronic release by Burak Tokat,
+          combining atmospheric tension, hypnotic rhythm
+          and late-night club energy.
         </p>
 
-        <div class="hero-buttons">
-
-          <a class="btn btn-primary" href="#release">
-            Listen to Music
-          </a>
-
-          <a class="btn" href="#press">
-            Press Kit ↗
-          </a>
-
+        <div class="eyebrow" style="margin-top:30px;">
+          SURREALISMO RECORDS
         </div>
 
-      </div>
-    </section>
-
-    <!-- LATEST RELEASE -->
-    <section id="release">
-      <div class="container">
-
-        <div class="section-number">
-          01 / Latest Release
-        </div>
-
-        <div class="release-grid">
-
-          <div class="cover"
-               role="img"
-               aria-label="Burak Tokat — Feels Like">
-          </div>
-
-          <div class="release-info">
-
-            <h2 class="section-title">
-              FEELS<br>LIKE
-            </h2>
-
-            <p>
-              A melodic electronic release by Burak Tokat,
-              combining atmospheric tension, hypnotic rhythm
-              and late-night club energy.
-            </p>
-
-            <div class="eyebrow">
-              SURREALISMO RECORDS
-            </div>
-
-            <div class="meta">
-
-              <div>
-                <small>Artist</small>
-                <strong>Burak Tokat</strong>
-              </div>
-
-              <div>
-                <small>Release</small>
-                <strong>Feels Like</strong>
-              </div>
-
-              <div>
-                <small>Label</small>
-                <strong>Surrealismo Records</strong>
-              </div>
-
-              <div>
-                <small>Genre</small>
-                <strong>Melodic House / Techno</strong>
-              </div>
-
-              <div>
-                <small>BPM</small>
-                <strong>123</strong>
-              </div>
-
-              <div>
-                <small>Length</small>
-                <strong>06:40</strong>
-              </div>
-
-            </div>
-
-            <div class="hero-buttons">
-
-              <a class="btn btn-primary"
-                 href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Spotify ↗
-              </a>
-
-              <a class="btn"
-                 href="https://volumo.com/artist/636066-burak-tokat"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Volumo ↗
-              </a>
-
-              <a class="btn"
-                 href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                Amazon Music ↗
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SOUND -->
-    <section id="sound">
-      <div class="container">
-
-        <div class="section-number">
-          02 / The Sound
-        </div>
-
-        <h2 class="section-title">
-          THE SOUND
-        </h2>
-
-        <p class="sound-copy">
-          A cinematic electronic identity built around melody,
-          atmosphere, hypnotic grooves and club energy.
-        </p>
-
-        <div class="sound-list">
-
-          <div class="sound-item">
-            <span>01</span>
-            <h3>MELODIC HOUSE</h3>
-          </div>
-
-          <div class="sound-item">
-            <span>02</span>
-            <h3>MELODIC TECHNO</h3>
-          </div>
-
-          <div class="sound-item">
-            <span>03</span>
-            <h3>TECHNO</h3>
-          </div>
-
-          <div class="sound-item">
-            <span>04</span>
-            <h3>ELECTRONIC</h3>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ARTIST DNA -->
-    <section>
-      <div class="container">
-
-        <div class="section-number">
-          03 / Artist DNA
-        </div>
-
-        <h2 class="section-title">
-          ARTIST<br>DNA
-        </h2>
-
-        <div class="dna">
-
-          <span class="tag">DJ</span>
-          <span class="tag">Producer</span>
-          <span class="tag">Melodic</span>
-          <span class="tag">Dark</span>
-          <span class="tag">Hypnotic</span>
-          <span class="tag">Club</span>
-          <span class="tag">Atmosphere</span>
-          <span class="tag">Energy</span>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SELECTED MUSIC -->
-    <section id="music">
-      <div class="container">
-
-        <div class="section-number">
-          04 / Selected Music
-        </div>
-
-        <h2 class="section-title">
-          SELECTED<br>MUSIC
-        </h2>
-
-        <div class="music-card">
+        <div class="meta">
 
           <div>
-            <h3>Feels Like</h3>
-
-            <p>
-              Original Mix · Melodic House / Techno · 06:40
-            </p>
+            <small>Artist</small>
+            <strong>Burak Tokat</strong>
           </div>
 
-          <a class="btn btn-primary"
-             href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-             target="_blank"
-             rel="noopener noreferrer">
-            Listen on Spotify ↗
+          <div>
+            <small>Release</small>
+            <strong>Feels Like</strong>
+          </div>
+
+          <div>
+            <small>Label</small>
+            <strong>Surrealismo Records</strong>
+          </div>
+
+          <div>
+            <small>Genre</small>
+            <strong>Melodic House / Techno</strong>
+          </div>
+
+          <div>
+            <small>BPM</small>
+            <strong>123</strong>
+          </div>
+
+          <div>
+            <small>Length</small>
+            <strong>06:40</strong>
+          </div>
+
+        </div>
+
+        <div class="buttons">
+
+          <a
+            class="btn primary"
+            href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+            target="_blank"
+            rel="noopener noreferrer">
+            Spotify ↗
+          </a>
+
+          <a
+            class="btn"
+            href="https://volumo.com/artist/636066-burak-tokat"
+            target="_blank"
+            rel="noopener noreferrer">
+            Volumo ↗
+          </a>
+
+          <a
+            class="btn"
+            href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+            target="_blank"
+            rel="noopener noreferrer">
+            Amazon Music ↗
           </a>
 
         </div>
 
       </div>
-    </section>
 
-    <!-- OFFICIAL PLATFORMS -->
-    <section>
-      <div class="container">
+    </div>
 
-        <div class="section-number">
-          05 / Official Platforms
-        </div>
+  </div>
 
-        <h2 class="section-title">
-          FIND THE<br>MUSIC
-        </h2>
+</section>
 
-        <div class="platforms">
 
-          <a class="platform"
-             href="https://www.instagram.com/burak_tkt/"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Instagram</span>
-            <span>@burak_tkt ↗</span>
-          </a>
+<!-- =========================
+     SOUND
+========================= -->
 
-          <a class="platform"
-             href="https://volumo.com/artist/636066-burak-tokat"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Volumo</span>
-            <span>Artist Profile ↗</span>
-          </a>
+<section id="sound">
 
-          <a class="platform"
-             href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Amazon Music</span>
-            <span>Artist Profile ↗</span>
-          </a>
+  <div class="container">
 
-          <a class="platform"
-             href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Spotify</span>
-            <span>Official Artist ↗</span>
-          </a>
+    <div class="number">
+      02 / The Sound
+    </div>
 
-          <!--
-            Apple Music temporarily removed.
-            We will add it once the correct Burak Tokat Artist ID
-            is verified. No incorrect artist profile will be linked.
-          -->
+    <h2 class="title">
+      THE<br>SOUND
+    </h2>
 
-          <a class="platform"
-             href="https://www.beatport.com/search?q=Burak%20Tokat%20Feels%20Like"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Beatport</span>
-            <span>Search Release ↗</span>
-          </a>
+    <p class="sound-copy">
+      A cinematic electronic identity built around
+      melody, atmosphere, hypnotic grooves and club energy.
+    </p>
 
-        </div>
+    <div class="sound-list">
 
+      <div class="sound-item">
+        <span>01</span>
+        <h3>MELODIC HOUSE</h3>
       </div>
-    </section>
 
-    <!-- PRESS -->
-    <section id="press">
-      <div class="container">
-
-        <div class="section-number">
-          06 / Press
-        </div>
-
-        <div class="press">
-
-          <h2 class="section-title">
-            PRESS<br>KIT
-          </h2>
-
-          <p>
-            Professional artist biography, selected releases,
-            visuals, platform information and booking material
-            collected in one electronic press kit.
-          </p>
-
-          <a class="btn btn-primary"
-             href="#booking">
-            Press / Booking ↗
-          </a>
-
-        </div>
-
+      <div class="sound-item">
+        <span>02</span>
+        <h3>MELODIC TECHNO</h3>
       </div>
-    </section>
 
-    <!-- BOOKING -->
-    <section id="booking">
-      <div class="container booking">
+      <div class="sound-item">
+        <span>03</span>
+        <h3>TECHNO</h3>
+      </div>
 
-        <div class="section-number">
-          07 / Booking
-        </div>
+      <div class="sound-item">
+        <span>04</span>
+        <h3>ELECTRONIC</h3>
+      </div>
 
-        <h2>
-          LET'S<br>CONNECT.
-        </h2>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ARTIST DNA
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="number">
+      03 / Artist DNA
+    </div>
+
+    <h2 class="title">
+      ARTIST<br>DNA
+    </h2>
+
+    <div class="dna">
+
+      <span class="tag">DJ</span>
+      <span class="tag">Producer</span>
+      <span class="tag">Melodic</span>
+      <span class="tag">Dark</span>
+      <span class="tag">Hypnotic</span>
+      <span class="tag">Club</span>
+      <span class="tag">Atmosphere</span>
+      <span class="tag">Energy</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<section id="music">
+
+  <div class="container">
+
+    <div class="number">
+      04 / Selected Music
+    </div>
+
+    <h2 class="title">
+      SELECTED<br>MUSIC
+    </h2>
+
+    <div class="music-card">
+
+      <div>
+
+        <h3>Feels Like</h3>
 
         <p>
-          For bookings, collaborations, label inquiries,
-          press and professional requests.
+          Original Mix · Melodic House / Techno · 06:40
         </p>
 
-        <!-- E-mail kept exactly as supplied -->
-        <a class="email"
-           href="mailto:buraktokatmr@gmai.com">
-          buraktokatmr@gmai.com
-        </a>
-
-        <br>
-
-        <a class="btn btn-primary"
-           href="mailto:buraktokatmr@gmai.com">
-          Contact Burak Tokat
-        </a>
-
       </div>
-    </section>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-
-      <span>BURAK TOKAT</span>
-
-      <span>© 2026 Burak Tokat</span>
-
-      <a href="https://www.instagram.com/burak_tkt/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Instagram ↗
+      <a
+        class="btn primary"
+        href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+        target="_blank"
+        rel="noopener noreferrer">
+        Listen on Spotify ↗
       </a>
 
     </div>
-  </footer>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PLATFORMS
+========================= -->
+
+<section>
+
+  <div class="container">
+
+    <div class="number">
+      05 / Official Platforms
+    </div>
+
+    <h2 class="title">
+      FIND THE<br>MUSIC
+    </h2>
+
+    <div class="platforms">
+
+      <a
+        class="platform"
+        href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="platform-name">
+          Spotify
+        </span>
+
+        <span class="platform-type">
+          Official Artist ↗
+        </span>
+
+      </a>
+
+
+      <a
+        class="platform"
+        href="https://www.instagram.com/burak_tkt/"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="platform-name">
+          Instagram
+        </span>
+
+        <span class="platform-type">
+          @burak_tkt ↗
+        </span>
+
+      </a>
+
+
+      <a
+        class="platform"
+        href="https://volumo.com/artist/636066-burak-tokat"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="platform-name">
+          Volumo
+        </span>
+
+        <span class="platform-type">
+          Artist Profile ↗
+        </span>
+
+      </a>
+
+
+      <a
+        class="platform"
+        href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="platform-name">
+          Amazon Music
+        </span>
+
+        <span class="platform-type">
+          Artist Profile ↗
+        </span>
+
+      </a>
+
+
+      <a
+        class="platform"
+        href="https://www.beatport.com/search?q=Burak%20Tokat%20Feels%20Like"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <span class="platform-name">
+          Beatport
+        </span>
+
+        <span class="platform-type">
+          Search Release ↗
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PRESS KIT
+========================= -->
+
+<section id="press">
+
+  <div class="container">
+
+    <div class="number">
+      06 / Press
+    </div>
+
+    <div class="press">
+
+      <h2 class="title">
+        PRESS<br>KIT
+      </h2>
+
+      <p>
+        Professional artist biography, selected releases,
+        visuals, platform information and booking material
+        collected in one electronic press kit.
+      </p>
+
+      <div class="buttons">
+
+        <a
+          class="btn primary"
+          href="mailto:buraktokatmr@gmail.com?subject=Burak%20Tokat%20Press%20Kit">
+          Request Press Kit
+        </a>
+
+        <a
+          class="btn"
+          href="#booking">
+          Booking ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     BOOKING
+========================= -->
+
+<section id="booking">
+
+  <div class="container booking">
+
+    <div class="number">
+      07 / Booking
+    </div>
+
+    <h2>
+      LET'S<br>CONNECT.
+    </h2>
+
+    <p>
+      For bookings, collaborations, label inquiries,
+      press and professional requests.
+    </p>
+
+    <a
+      class="email"
+      href="mailto:buraktokatmr@gmail.com">
+      buraktokatmr@gmail.com
+    </a>
+
+    <br>
+
+    <a
+      class="btn primary"
+      href="mailto:buraktokatmr@gmail.com?subject=Booking%20Inquiry%20—%20Burak%20Tokat">
+      Contact Burak Tokat
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer">
+
+    <span>
+      BURAK TOKAT
+    </span>
+
+    <span>
+      © 2026 Burak Tokat
+    </span>
+
+    <a
+      href="https://www.instagram.com/burak_tkt/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Instagram ↗
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
