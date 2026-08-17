@@ -6,56 +6,48 @@
 
   <title>Burak Tokat — DJ / Electronic Music Producer</title>
 
-  <meta name="description" content="Burak Tokat is a Turkish DJ and electronic music producer creating melodic, hypnotic and atmospheric electronic music. Listen to Feels Like and discover official music, press kit and booking information.">
-  <meta name="keywords" content="Burak Tokat, DJ Burak Tokat, electronic music producer, melodic house, melodic techno, techno, Feels Like, Surrealismo Records">
+  <meta name="description" content="Burak Tokat — DJ and electronic music producer. Melodic House, Melodic Techno and electronic music. Official website, music, press and booking.">
   <meta name="author" content="Burak Tokat">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#09000f">
+  <meta name="theme-color" content="#08000e">
 
   <link rel="canonical" href="https://buraktokat.github.io/">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Burak Tokat — DJ / Electronic Music Producer">
   <meta property="og:description" content="Melodic tension. Hypnotic rhythm. Late-night electronic energy.">
   <meta property="og:url" content="https://buraktokat.github.io/">
   <meta property="og:site_name" content="Burak Tokat">
-  <meta property="profile:first_name" content="Burak">
-  <meta property="profile:last_name" content="Tokat">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Burak Tokat — DJ / Electronic Music Producer">
-  <meta name="twitter:description" content="Official website of Burak Tokat. DJ, electronic music producer and artist.">
+  <meta name="twitter:description" content="Official website of Burak Tokat. DJ and electronic music producer.">
 
-  <!-- Google / Schema.org -->
+  <!-- PERSON SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://buraktokat.github.io/#artist",
+    "@id": "https://buraktokat.github.io/#burak-tokat",
     "name": "Burak Tokat",
     "url": "https://buraktokat.github.io/",
     "jobTitle": "DJ / Electronic Music Producer",
-    "description": "Burak Tokat is a Turkish DJ and electronic music producer focused on melodic, hypnotic and atmospheric electronic music.",
+    "description": "Burak Tokat is a DJ and electronic music producer focused on melodic, hypnotic and atmospheric electronic music.",
     "sameAs": [
       "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
       "https://www.instagram.com/burak_tkt/",
       "https://volumo.com/artist/636066-burak-tokat",
       "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
-    ],
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://buraktokat.github.io/"
-    }
+    ]
   }
   </script>
 
+  <!-- MUSIC GROUP SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
-    "@id": "https://buraktokat.github.io/#music-artist",
+    "@id": "https://buraktokat.github.io/#music-group",
     "name": "Burak Tokat",
     "url": "https://buraktokat.github.io/",
     "genre": [
@@ -70,6 +62,28 @@
       "https://volumo.com/artist/636066-burak-tokat",
       "https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
     ]
+  }
+  </script>
+
+  <!-- FEELS LIKE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicRecording",
+    "@id": "https://buraktokat.github.io/#feels-like",
+    "name": "Feels Like",
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "Burak Tokat",
+      "@id": "https://buraktokat.github.io/#music-group"
+    },
+    "recordingOf": {
+      "@type": "MusicComposition",
+      "name": "Feels Like"
+    },
+    "genre": "Melodic House / Techno",
+    "duration": "PT6M40S",
+    "url": "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
   }
   </script>
 
@@ -113,15 +127,14 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      opacity: .06;
-      background-image:
-        repeating-linear-gradient(
-          0deg,
-          rgba(255,255,255,.8) 0,
-          rgba(255,255,255,.8) 1px,
-          transparent 1px,
-          transparent 3px
-        );
+      opacity: .045;
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,.8) 0,
+        rgba(255,255,255,.8) 1px,
+        transparent 1px,
+        transparent 3px
+      );
       z-index: 20;
     }
 
@@ -142,7 +155,7 @@
       right: 0;
       z-index: 30;
       backdrop-filter: blur(18px);
-      background: rgba(8,0,14,.62);
+      background: rgba(8,0,14,.68);
       border-bottom: 1px solid var(--line);
     }
 
@@ -315,7 +328,7 @@
     }
 
     .cover::before {
-      content: "FEELS\nLIKE";
+      content: "FEELS\A LIKE";
       white-space: pre;
       position: absolute;
       left: 8%;
@@ -471,61 +484,6 @@
       margin-top: 10px;
     }
 
-    .player {
-      margin-top: 28px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 20px;
-      background: var(--glass);
-    }
-
-    .player-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .play-btn {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 0;
-      background: linear-gradient(135deg, var(--pink), var(--purple));
-      color: white;
-      font-weight: 900;
-      cursor: pointer;
-    }
-
-    .player-title {
-      flex: 1;
-    }
-
-    .player-title strong {
-      display: block;
-      font-size: 13px;
-    }
-
-    .player-title span {
-      color: var(--muted);
-      font-size: 11px;
-    }
-
-    .progress {
-      width: 100%;
-      margin-top: 18px;
-      accent-color: var(--pink);
-      cursor: pointer;
-    }
-
-    .time {
-      display: flex;
-      justify-content: space-between;
-      color: var(--muted);
-      font-size: 10px;
-      margin-top: 7px;
-    }
-
     .press {
       border: 1px solid var(--line);
       border-radius: 18px;
@@ -641,6 +599,7 @@
   <!-- NAVIGATION -->
   <nav>
     <div class="container nav-inner">
+
       <a href="#top" class="logo" aria-label="Burak Tokat Home">
         B<span>T</span>
       </a>
@@ -652,12 +611,13 @@
         <a href="#press">Press</a>
         <a href="#booking">Booking ↗</a>
       </div>
+
     </div>
   </nav>
 
-  <!-- HERO -->
   <main id="top">
 
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-content">
 
@@ -675,21 +635,21 @@
         </p>
 
         <div class="hero-buttons">
-          <a class="btn btn-primary"
-             href="#release">
-            Latest Release
+
+          <a class="btn btn-primary" href="#release">
+            Listen to Music
           </a>
 
-          <a class="btn"
-             href="#booking">
-            Booking ↗
+          <a class="btn" href="#press">
+            Press Kit ↗
           </a>
+
         </div>
 
       </div>
     </section>
 
-    <!-- RELEASE -->
+    <!-- LATEST RELEASE -->
     <section id="release">
       <div class="container">
 
@@ -700,7 +660,8 @@
         <div class="release-grid">
 
           <div class="cover"
-               aria-label="Burak Tokat — Feels Like artwork">
+               role="img"
+               aria-label="Burak Tokat — Feels Like">
           </div>
 
           <div class="release-info">
@@ -732,6 +693,11 @@
               </div>
 
               <div>
+                <small>Label</small>
+                <strong>Surrealismo Records</strong>
+              </div>
+
+              <div>
                 <small>Genre</small>
                 <strong>Melodic House / Techno</strong>
               </div>
@@ -744,11 +710,6 @@
               <div>
                 <small>Length</small>
                 <strong>06:40</strong>
-              </div>
-
-              <div>
-                <small>Label</small>
-                <strong>Surrealismo Records</strong>
               </div>
 
             </div>
@@ -856,7 +817,7 @@
       </div>
     </section>
 
-    <!-- MUSIC -->
+    <!-- SELECTED MUSIC -->
     <section id="music">
       <div class="container">
 
@@ -872,64 +833,25 @@
 
           <div>
             <h3>Feels Like</h3>
+
             <p>
               Original Mix · Melodic House / Techno · 06:40
             </p>
           </div>
 
-          <a class="btn"
+          <a class="btn btn-primary"
              href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
              target="_blank"
              rel="noopener noreferrer">
-            Listen ↗
+            Listen on Spotify ↗
           </a>
-
-        </div>
-
-        <!-- PLAYER -->
-        <div class="player">
-
-          <div class="player-top">
-
-            <button
-              class="play-btn"
-              id="playButton"
-              type="button"
-              aria-label="Play preview">
-              ▶
-            </button>
-
-            <div class="player-title">
-              <strong>BURAK TOKAT — FEELS LIKE</strong>
-              <span>Official preview</span>
-            </div>
-
-          </div>
-
-          <input
-            id="progress"
-            class="progress"
-            type="range"
-            min="0"
-            max="100"
-            value="0"
-            aria-label="Track progress">
-
-          <div class="time">
-            <span id="currentTime">00:00</span>
-            <span>06:40</span>
-          </div>
-
-          <p style="color:rgba(255,255,255,.42);font-size:10px;margin-top:14px;">
-            Preview audio will appear here when the official audio file is connected.
-          </p>
 
         </div>
 
       </div>
     </section>
 
-    <!-- PLATFORMS -->
+    <!-- OFFICIAL PLATFORMS -->
     <section>
       <div class="container">
 
@@ -967,23 +889,26 @@
             <span>Artist Profile ↗</span>
           </a>
 
-          <!-- Apple Music intentionally omitted until the correct Artist ID is verified -->
-
-          <!-- Beatport intentionally points to the verified release search instead of inventing an Artist ID -->
-          <a class="platform"
-             href="https://www.beatport.com/search?q=Burak%20Tokat%20Feels%20Like"
-             target="_blank"
-             rel="noopener noreferrer">
-            <span>Beatport</span>
-            <span>Feels Like ↗</span>
-          </a>
-
           <a class="platform"
              href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
              target="_blank"
              rel="noopener noreferrer">
             <span>Spotify</span>
             <span>Official Artist ↗</span>
+          </a>
+
+          <!--
+            Apple Music temporarily removed.
+            We will add it once the correct Burak Tokat Artist ID
+            is verified. No incorrect artist profile will be linked.
+          -->
+
+          <a class="platform"
+             href="https://www.beatport.com/search?q=Burak%20Tokat%20Feels%20Like"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span>Beatport</span>
+            <span>Search Release ↗</span>
           </a>
 
         </div>
@@ -1038,7 +963,7 @@
           press and professional requests.
         </p>
 
-        <!-- Kept exactly as provided by the artist -->
+        <!-- E-mail kept exactly as supplied -->
         <a class="email"
            href="mailto:buraktokatmr@gmai.com">
           buraktokatmr@gmai.com
@@ -1060,13 +985,9 @@
   <footer>
     <div class="container footer-inner">
 
-      <span>
-        BURAK TOKAT
-      </span>
+      <span>BURAK TOKAT</span>
 
-      <span>
-        © 2026 Burak Tokat
-      </span>
+      <span>© 2026 Burak Tokat</span>
 
       <a href="https://www.instagram.com/burak_tkt/"
          target="_blank"
@@ -1076,28 +997,6 @@
 
     </div>
   </footer>
-
-  <script>
-    /*
-      The player intentionally does not fake audio playback.
-      When the official preview file is ready, add:
-      
-      <audio id="audio" src="audio/feels-like-preview.mp3"></audio>
-
-      Then the controls below can be connected to the real file.
-    */
-
-    const playButton = document.getElementById("playButton");
-    const progress = document.getElementById("progress");
-
-    playButton.addEventListener("click", function () {
-      alert("Official preview audio will be connected here.");
-    });
-
-    progress.addEventListener("input", function () {
-      document.getElementById("currentTime").textContent = "00:00";
-    });
-  </script>
 
 </body>
 </html>
