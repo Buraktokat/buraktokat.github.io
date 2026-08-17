@@ -1,770 +1,2542 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>BURAK TOKAT — DJ & Producer</title>
-
-<meta name="description" content="Burak Tokat is a Turkish DJ and electronic music producer creating melodic, atmospheric and club-focused electronic music.">
-<meta name="author" content="Burak Tokat">
-<meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://buraktokat.github.io/">
-
-<meta property="og:title" content="BURAK TOKAT — DJ & Producer">
-<meta property="og:description" content="Official website of Burak Tokat. DJ, musician and electronic music producer.">
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://buraktokat.github.io/">
-<meta property="og:site_name" content="BURAK TOKAT">
-<meta property="og:image" content="https://buraktokat.github.io/BurakTokatMusic.jpg">
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Person",
-  "@id":"https://buraktokat.github.io/#person",
-  "name":"Burak Tokat",
-  "url":"https://buraktokat.github.io/",
-  "image":"https://buraktokat.github.io/BurakTokatMusic.jpg",
-  "jobTitle":"DJ and Electronic Music Producer",
-  "description":"Burak Tokat is a Turkish DJ and electronic music producer.",
-  "sameAs":[
-    "https://www.wikidata.org/wiki/Q141105872",
-    "https://www.instagram.com/burak_tkt/",
-    "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-    "https://music.apple.com/tr/artist/burak-tokat/1721994034",
-    "https://www.beatport.com/artist/_/1174596",
-    "https://tidal.com/artist/44539316",
-    "https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
-  ]
-}
-</script>
-
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  background:#050005;
-  color:#fff;
-  font-family:Inter,Arial,sans-serif;
-  overflow-x:hidden;
-}
-
-/* BACKGROUND */
-
-body::before{
-  content:"";
-  position:fixed;
-  width:600px;
-  height:600px;
-  left:-250px;
-  top:100px;
-  background:rgba(255,0,153,.20);
-  filter:blur(120px);
-  border-radius:50%;
-  z-index:-2;
-}
-
-body::after{
-  content:"";
-  position:fixed;
-  width:600px;
-  height:600px;
-  right:-250px;
-  top:400px;
-  background:rgba(116,0,255,.22);
-  filter:blur(130px);
-  border-radius:50%;
-  z-index:-2;
-}
-
-/* NAVIGATION */
-
-nav{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:80px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 6%;
-  z-index:100;
-  background:rgba(5,0,5,.55);
-  backdrop-filter:blur(20px);
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.logo{
-  font-size:18px;
-  font-weight:900;
-  letter-spacing:3px;
-}
-
-.logo span{
-  color:#ff1493;
-}
-
-.nav-links{
-  display:flex;
-  gap:30px;
-  list-style:none;
-}
-
-.nav-links a{
-  color:#aaa;
-  text-decoration:none;
-  font-size:12px;
-  font-weight:600;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  transition:.3s;
-}
-
-.nav-links a:hover{
-  color:#ff39aa;
-}
-
-/* HERO */
-
-.hero{
-  min-height:100vh;
-  position:relative;
-  display:flex;
-  align-items:center;
-  padding:120px 7% 80px;
-  overflow:hidden;
-  background:
-    linear-gradient(90deg,rgba(5,0,5,.96),rgba(5,0,5,.55),rgba(5,0,5,.78)),
-    url("BurakTokatMusic.jpg") center/cover no-repeat;
-}
-
-.hero::before{
-  content:"";
-  position:absolute;
-  width:750px;
-  height:750px;
-  right:-200px;
-  top:-100px;
-  border-radius:50%;
-  background:
-    radial-gradient(circle,
-    rgba(255,0,153,.55) 0%,
-    rgba(130,0,255,.30) 35%,
-    transparent 70%);
-  filter:blur(30px);
-}
-
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:1000px;
-}
-
-.eyebrow{
-  color:#ff35aa;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:6px;
-  text-transform:uppercase;
-  margin-bottom:25px;
-}
-
-.hero h1{
-  font-size:clamp(70px,12vw,180px);
-  line-height:.82;
-  letter-spacing:-9px;
-  font-weight:900;
-  text-transform:uppercase;
-}
-
-.hero h1 span{
-  display:block;
-  color:transparent;
-  -webkit-text-stroke:1px #ff28a4;
-  text-shadow:0 0 35px rgba(255,0,153,.25);
-}
-
-.hero-sub{
-  margin-top:35px;
-  max-width:600px;
-  color:#bdb4bd;
-  font-size:17px;
-  line-height:1.8;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
-  margin-top:40px;
-}
-
-.btn{
-  display:inline-flex;
-  padding:15px 28px;
-  border-radius:40px;
-  text-decoration:none;
-  color:#fff;
-  font-size:12px;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  border:1px solid rgba(255,255,255,.18);
-  background:rgba(255,255,255,.04);
-  transition:.3s;
-}
-
-.btn.primary{
-  background:linear-gradient(90deg,#ff008c,#8c00ff);
-  border:none;
-  box-shadow:0 0 35px rgba(255,0,153,.25);
-}
-
-.btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 40px rgba(255,0,153,.25);
-}
-
-/* SECTIONS */
-
-section{
-  max-width:1200px;
-  margin:auto;
-  padding:130px 7%;
-}
-
-.section-label{
-  color:#ff32a7;
-  font-size:11px;
-  letter-spacing:5px;
-  font-weight:700;
-  text-transform:uppercase;
-  margin-bottom:18px;
-}
-
-h2{
-  font-size:clamp(45px,7vw,90px);
-  line-height:.95;
-  letter-spacing:-4px;
-  margin-bottom:45px;
-}
-
-/* ABOUT */
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-}
-
-.about-text{
-  color:#bcb4bc;
-  font-size:19px;
-  line-height:1.9;
-}
-
-.stats{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-}
-
-.stat{
-  padding:30px;
-  border:1px solid rgba(255,255,255,.08);
-  background:linear-gradient(145deg,rgba(255,0,153,.08),rgba(100,0,255,.04));
-  border-radius:20px;
-}
-
-.stat strong{
-  display:block;
-  font-size:40px;
-  margin-bottom:5px;
-}
-
-.stat span{
-  color:#8e858e;
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-/* MUSIC */
-
-.music-card{
-  position:relative;
-  padding:45px;
-  border-radius:28px;
-  overflow:hidden;
-  border:1px solid rgba(255,255,255,.1);
-  background:
-    linear-gradient(135deg,
-    rgba(255,0,153,.14),
-    rgba(92,0,255,.12),
-    rgba(255,255,255,.025));
-  margin-bottom:25px;
-}
-
-.music-card::before{
-  content:"";
-  position:absolute;
-  width:250px;
-  height:250px;
-  right:-80px;
-  top:-80px;
-  border-radius:50%;
-  background:#ff0099;
-  opacity:.12;
-  filter:blur(60px);
-}
-
-.music-top{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:30px;
-}
-
-.music-card h3{
-  font-size:38px;
-  letter-spacing:-2px;
-  margin-bottom:10px;
-}
-
-.music-card p{
-  color:#aaa;
-  line-height:1.8;
-}
-
-.tag{
-  padding:8px 14px;
-  border:1px solid rgba(255,0,153,.4);
-  color:#ff46b2;
-  border-radius:30px;
-  font-size:10px;
-  letter-spacing:2px;
-  white-space:nowrap;
-}
-
-.music-link{
-  display:inline-block;
-  margin-top:25px;
-  color:#fff;
-  text-decoration:none;
-  font-size:12px;
-  letter-spacing:2px;
-  font-weight:700;
-  text-transform:uppercase;
-  border-bottom:1px solid #ff1493;
-  padding-bottom:5px;
-}
-
-/* PROFILES */
-
-.profile-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:14px;
-}
-
-.profile{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:110px;
-  border:1px solid rgba(255,255,255,.08);
-  border-radius:18px;
-  color:#fff;
-  text-decoration:none;
-  background:rgba(255,255,255,.025);
-  font-size:11px;
-  font-weight:700;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  transition:.3s;
-}
-
-.profile:hover{
-  background:linear-gradient(135deg,rgba(255,0,153,.22),rgba(100,0,255,.18));
-  border-color:rgba(255,0,153,.4);
-  transform:translateY(-4px);
-}
-
-/* CTA */
-
-.cta{
-  text-align:center;
-  padding-top:100px;
-  padding-bottom:160px;
-}
-
-.cta h2{
-  margin-bottom:25px;
-}
-
-.cta p{
-  color:#999;
-  margin-bottom:35px;
-}
-
-/* FOOTER */
-
-footer{
-  padding:35px 7%;
-  border-top:1px solid rgba(255,255,255,.08);
-  display:flex;
-  justify-content:space-between;
-  color:#666;
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-}
-
-/* MOBILE */
-
-@media(max-width:800px){
-
-  nav{
-    padding:0 5%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Burak Tokat — DJ / Electronic Music Producer</title>
+
+  <meta name="description" content="Burak Tokat — DJ and electronic music producer. Melodic House, Melodic Techno and electronic music.">
+  <meta name="author" content="Burak Tokat">
+  <meta name="theme-color" content="#09000f">
+
+  <meta property="og:title" content="Burak Tokat — Electronic Music">
+  <meta property="og:description" content="DJ / Electronic Music Producer">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--
+    GOOGLE STRUCTURED DATA
+
+    Replace the placeholder URLs once the exact official profiles
+    are confirmed.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Burak Tokat",
+    "jobTitle": "DJ / Electronic Music Producer",
+    "description": "DJ and electronic music producer focused on Melodic House, Melodic Techno and electronic music.",
+    "url": "YOUR-DOMAIN-HERE",
+    "sameAs": [
+      "https://www.instagram.com/burak_tkt/"
+    ]
   }
+  </script>
 
-  .nav-links{
-    display:none;
-  }
+  <style>
 
-  .hero{
-    min-height:95vh;
-    padding:130px 7% 70px;
-    background-position:center;
-  }
+    :root {
+      --bg: #08000f;
+      --bg2: #12001d;
+      --text: #ffffff;
+      --muted: #a99ab2;
+      --pink: #ff3bd4;
+      --pink2: #ff72e2;
+      --purple: #8f4dff;
+      --violet: #5b20c9;
+      --line: rgba(255,255,255,.10);
+      --glass: rgba(255,255,255,.045);
+      --max: 1240px;
+    }
 
-  .hero h1{
-    font-size:clamp(62px,18vw,120px);
-    letter-spacing:-6px;
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  .hero-sub{
-    font-size:15px;
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  section{
-    padding:90px 7%;
-  }
+    body {
+      background:
+        radial-gradient(
+          circle at 80% 5%,
+          rgba(255,0,204,.14),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 20% 20%,
+          rgba(119,0,255,.12),
+          transparent 28%
+        ),
+        var(--bg);
 
-  .about-grid{
-    grid-template-columns:1fr;
-    gap:40px;
-  }
+      color: var(--text);
+      font-family: Inter, sans-serif;
+      overflow-x: hidden;
+    }
 
-  .stats{
-    grid-template-columns:1fr 1fr;
-  }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+      opacity: .045;
 
-  .music-top{
-    flex-direction:column;
-  }
+      background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+    }
 
-  .profile-grid{
-    grid-template-columns:1fr 1fr;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  footer{
-    flex-direction:column;
-    gap:12px;
-  }
-}
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin: auto;
+    }
 
-@media(max-width:480px){
+    /* =========================
+       NAVIGATION
+    ========================= */
 
-  .stats{
-    grid-template-columns:1fr;
-  }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
 
-  .profile-grid{
-    grid-template-columns:1fr;
-  }
+      padding: 22px 0;
 
-  .music-card{
-    padding:30px;
-  }
+      transition: .35s ease;
+    }
 
-  .music-card h3{
-    font-size:30px;
-  }
+    nav.scrolled {
+      background: rgba(8,0,15,.75);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--line);
+      padding: 15px 0;
+    }
 
-}
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-</style>
+    .logo {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: .18em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .nav-links a {
+      opacity: .72;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--pink);
+    }
+
+    .nav-press {
+      padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 100px;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+    }
+
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(70px);
+      pointer-events: none;
+
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .orb.one {
+      width: 420px;
+      height: 420px;
+
+      right: -120px;
+      top: 8%;
+
+      background: rgba(255,0,200,.27);
+    }
+
+    .orb.two {
+      width: 360px;
+      height: 360px;
+
+      left: -160px;
+      bottom: 5%;
+
+      background: rgba(100,30,255,.23);
+
+      animation-delay: -3s;
+    }
+
+    .orb.three {
+      width: 180px;
+      height: 180px;
+
+      left: 48%;
+      top: 28%;
+
+      background: rgba(255,60,190,.13);
+
+      animation-delay: -6s;
+    }
+
+    @keyframes float {
+
+      0%,100% {
+        transform: translate3d(0,0,0) scale(1);
+      }
+
+      50% {
+        transform: translate3d(20px,-30px,0) scale(1.08);
+      }
+
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      padding-top: 80px;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      color: #d6c6dc;
+
+      font-size: 11px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+
+      margin-bottom: 24px;
+    }
+
+    .eyebrow::before {
+      content: "";
+
+      width: 34px;
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--pink),
+          var(--purple)
+        );
+    }
+
+    .hero h1 {
+      font-family: "Space Grotesk", sans-serif;
+
+      font-size: clamp(
+        65px,
+        13vw,
+        190px
+      );
+
+      line-height: .82;
+      letter-spacing: -.075em;
+      font-weight: 700;
+
+      max-width: 1100px;
+    }
+
+    .hero h1 span {
+      display: block;
+
+      background:
+        linear-gradient(
+          100deg,
+          #fff 10%,
+          #ff7ce5 45%,
+          #9e6aff 85%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .hero-sub {
+      margin-top: 36px;
+
+      max-width: 530px;
+
+      color: var(--muted);
+
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+
+      margin-top: 34px;
+
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 22px;
+
+      border-radius: 100px;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      letter-spacing: .13em;
+      text-transform: uppercase;
+
+      transition: .3s;
+
+      border: 1px solid rgba(255,255,255,.16);
+    }
+
+    .btn-primary {
+      background:
+        linear-gradient(
+          100deg,
+          var(--pink),
+          var(--purple)
+        );
+
+      border: none;
+
+      box-shadow:
+        0 0 35px
+        rgba(255,40,200,.18);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 0 50px
+        rgba(255,40,200,.35);
+    }
+
+    .btn-secondary:hover {
+      border-color:
+        rgba(255,255,255,.45);
+
+      background:
+        rgba(255,255,255,.06);
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 35px;
+      left: 0;
+
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+
+      font-size: 9px;
+      letter-spacing: .2em;
+
+      color: #827486;
+
+      text-transform: uppercase;
+    }
+
+    .scroll-line {
+      width: 45px;
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--pink),
+          transparent
+        );
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 130px 0;
+      position: relative;
+    }
+
+    .section-label {
+      color: var(--pink);
+
+      font-size: 10px;
+      letter-spacing: .28em;
+
+      text-transform: uppercase;
+
+      margin-bottom: 18px;
+    }
+
+    .section-title {
+      font-family: "Space Grotesk", sans-serif;
+
+      font-size:
+        clamp(
+          42px,
+          7vw,
+          82px
+        );
+
+      letter-spacing: -.06em;
+      line-height: .95;
+    }
+
+    .section-intro {
+      max-width: 530px;
+
+      color: var(--muted);
+
+      line-height: 1.8;
+
+      margin-top: 24px;
+    }
+
+    /* =========================
+       RELEASE
+    ========================= */
+
+    .release {
+      background:
+        radial-gradient(
+          circle at 85% 50%,
+          rgba(255,0,200,.12),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 20% 30%,
+          rgba(91,32,201,.10),
+          transparent 35%
+        );
+    }
+
+    .release-grid {
+      margin-top: 65px;
+
+      display: grid;
+
+      grid-template-columns:
+        1.1fr .9fr;
+
+      gap: 55px;
+
+      align-items: center;
+    }
+
+    .cover {
+      aspect-ratio: 1 / 1;
+
+      max-width: 570px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 60% 40%,
+          #ff36ce 0%,
+          transparent 22%
+        ),
+        radial-gradient(
+          circle at 35% 65%,
+          #702cff 0%,
+          transparent 34%
+        ),
+        linear-gradient(
+          145deg,
+          #10001b,
+          #29003d 55%,
+          #08000e
+        );
+
+      box-shadow:
+        0 30px 100px
+        rgba(125,0,150,.25),
+
+        inset 0 0 100px
+        rgba(255,0,200,.08);
+    }
+
+    .cover::before {
+      content: "";
+
+      position: absolute;
+
+      width: 62%;
+      height: 62%;
+
+      left: 19%;
+      top: 19%;
+
+      border:
+        1px solid
+        rgba(255,255,255,.18);
+
+      border-radius: 50%;
+
+      box-shadow:
+        0 0 70px
+        rgba(255,40,210,.32),
+
+        inset 0 0 60px
+        rgba(120,30,255,.22);
+
+      animation:
+        spin 18s linear infinite;
+    }
+
+    .cover::after {
+      content: "";
+
+      position: absolute;
+
+      width: 22%;
+      height: 22%;
+
+      left: 39%;
+      top: 39%;
+
+      border-radius: 50%;
+
+      background: #0b0011;
+
+      border:
+        1px solid
+        rgba(255,255,255,.22);
+
+      box-shadow:
+        0 0 35px
+        rgba(255,50,220,.3);
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .cover-text {
+      position: absolute;
+
+      left: 34px;
+      bottom: 32px;
+
+      z-index: 2;
+    }
+
+    .cover-small {
+      font-size: 9px;
+
+      letter-spacing: .3em;
+
+      text-transform: uppercase;
+
+      color:
+        rgba(255,255,255,.65);
+    }
+
+    .cover-name {
+      font-family: "Space Grotesk";
+
+      font-size:
+        clamp(
+          32px,
+          5vw,
+          64px
+        );
+
+      font-weight: 700;
+
+      letter-spacing: -.06em;
+
+      margin-top: 6px;
+    }
+
+    .release-info h3 {
+      font-family: "Space Grotesk";
+
+      font-size:
+        clamp(
+          50px,
+          7vw,
+          88px
+        );
+
+      letter-spacing: -.07em;
+
+      line-height: .85;
+    }
+
+    .release-info h3 span {
+      color: var(--pink);
+    }
+
+    .release-meta {
+      margin-top: 30px;
+
+      display: flex;
+
+      gap: 28px;
+
+      flex-wrap: wrap;
+    }
+
+    .meta-item {
+      border-left:
+        1px solid
+        rgba(255,255,255,.16);
+
+      padding-left: 14px;
+    }
+
+    .meta-label {
+      font-size: 8px;
+
+      color: #75677d;
+
+      text-transform: uppercase;
+
+      letter-spacing: .2em;
+    }
+
+    .meta-value {
+      font-size: 12px;
+
+      margin-top: 5px;
+    }
+
+    .release-buttons {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 9px;
+
+      margin-top: 38px;
+    }
+
+    .platform {
+      font-size: 9px;
+
+      letter-spacing: .15em;
+
+      text-transform: uppercase;
+
+      padding: 11px 15px;
+
+      border:
+        1px solid
+        var(--line);
+
+      border-radius: 100px;
+
+      transition: .25s;
+    }
+
+    .platform:hover {
+      border-color: var(--pink);
+      color: var(--pink);
+    }
+
+    /* =========================
+       PLAYER
+    ========================= */
+
+    .player {
+      margin-top: 55px;
+
+      border:
+        1px solid
+        var(--line);
+
+      background:
+        rgba(255,255,255,.025);
+
+      backdrop-filter:
+        blur(15px);
+
+      padding: 22px;
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .play-btn {
+      width: 48px;
+      height: 48px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(255,255,255,.25);
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--pink),
+          var(--purple)
+        );
+
+      color: white;
+
+      cursor: pointer;
+
+      font-size: 15px;
+
+      flex-shrink: 0;
+    }
+
+    .player-main {
+      flex: 1;
+    }
+
+    .player-title {
+      font-size: 11px;
+
+      font-weight: 700;
+
+      letter-spacing: .08em;
+    }
+
+    .player-time {
+      font-size: 9px;
+
+      color: #74667d;
+
+      margin-top: 5px;
+    }
+
+    .progress {
+      height: 2px;
+
+      background:
+        rgba(255,255,255,.12);
+
+      margin-top: 13px;
+
+      position: relative;
+
+      cursor: pointer;
+    }
+
+    .progress-fill {
+      position: absolute;
+
+      height: 100%;
+
+      width: 0%;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--pink),
+          var(--purple)
+        );
+    }
+
+    /* =========================
+       SOUND
+    ========================= */
+
+    .sound-grid {
+      margin-top: 70px;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      border-top:
+        1px solid
+        var(--line);
+    }
+
+    .sound-card {
+      min-height: 180px;
+
+      padding: 28px 20px;
+
+      border-right:
+        1px solid
+        var(--line);
+
+      border-bottom:
+        1px solid
+        var(--line);
+
+      transition: .35s;
+    }
+
+    .sound-card:hover {
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,40,210,.08),
+          rgba(120,50,255,.08)
+        );
+    }
+
+    .sound-number {
+      font-size: 9px;
+
+      color: var(--pink);
+
+      letter-spacing: .15em;
+    }
+
+    .sound-card h3 {
+      font-family: "Space Grotesk";
+
+      font-size: 25px;
+
+      margin-top: 50px;
+
+      letter-spacing: -.04em;
+    }
+
+    /* =========================
+       ARTIST DNA
+    ========================= */
+
+    .dna {
+      background:
+        linear-gradient(
+          180deg,
+          transparent,
+          rgba(98,24,150,.08),
+          transparent
+        );
+    }
+
+    .dna-cloud {
+      margin-top: 70px;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      min-height: 420px;
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+    .dna-word {
+      position: absolute;
+
+      font-family: "Space Grotesk";
+
+      font-weight: 700;
+
+      letter-spacing: -.06em;
+
+      transition: .5s;
+
+      cursor: default;
+    }
+
+    .dna-word:hover {
+      color: var(--pink);
+
+      transform:
+        scale(1.08);
+    }
+
+    .dna-center {
+      font-size:
+        clamp(
+          48px,
+          7vw,
+          90px
+        );
+
+      background:
+        linear-gradient(
+          90deg,
+          #fff,
+          var(--pink),
+          var(--purple)
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+
+      z-index: 3;
+    }
+
+    .dna-one {
+      top: 5%;
+      left: 18%;
+      font-size: 24px;
+    }
+
+    .dna-two {
+      top: 25%;
+      right: 13%;
+      font-size: 18px;
+    }
+
+    .dna-three {
+      bottom: 15%;
+      left: 12%;
+      font-size: 17px;
+    }
+
+    .dna-four {
+      bottom: 5%;
+      right: 18%;
+      font-size: 25px;
+    }
+
+    .dna-five {
+      top: 48%;
+      left: 5%;
+      font-size: 12px;
+      color: #695c71;
+    }
+
+    .dna-six {
+      top: 58%;
+      right: 4%;
+      font-size: 11px;
+      color: #695c71;
+    }
+
+    /* =========================
+       SELECTED MUSIC
+    ========================= */
+
+    .music-list {
+      margin-top: 60px;
+
+      border-top:
+        1px solid
+        var(--line);
+    }
+
+    .track {
+      display: grid;
+
+      grid-template-columns:
+        70px
+        1fr
+        180px
+        100px;
+
+      gap: 20px;
+
+      align-items: center;
+
+      padding: 24px 0;
+
+      border-bottom:
+        1px solid
+        var(--line);
+    }
+
+    .track-number {
+      color: var(--pink);
+
+      font-size: 10px;
+    }
+
+    .track-title {
+      font-family: "Space Grotesk";
+
+      font-size: 22px;
+    }
+
+    .track-sub {
+      font-size: 9px;
+
+      color: #74667d;
+
+      letter-spacing: .13em;
+
+      text-transform: uppercase;
+
+      margin-top: 5px;
+    }
+
+    .track-genre {
+      font-size: 9px;
+
+      color: #918394;
+
+      text-transform: uppercase;
+
+      letter-spacing: .1em;
+    }
+
+    .track-time {
+      text-align: right;
+
+      color: #918394;
+
+      font-size: 10px;
+    }
+
+    /* =========================
+       OFFICIAL PLATFORMS
+    ========================= */
+
+    .platform-grid {
+      margin-top: 60px;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 1px;
+
+      background: var(--line);
+    }
+
+    .big-platform {
+      min-height: 160px;
+
+      background: var(--bg);
+
+      padding: 30px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: space-between;
+
+      transition: .35s;
+    }
+
+    .big-platform:hover {
+      background: #13001e;
+    }
+
+    .big-platform span:first-child {
+      font-family: "Space Grotesk";
+
+      font-size: 26px;
+    }
+
+    .big-platform span:last-child {
+      color: #6d6073;
+
+      font-size: 9px;
+
+      letter-spacing: .2em;
+
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       PRESS KIT
+    ========================= */
+
+    .press {
+      padding-bottom: 150px;
+    }
+
+    .press-box {
+      margin-top: 60px;
+
+      padding: 60px;
+
+      border:
+        1px solid
+        var(--line);
+
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 80% 50%,
+          rgba(255,0,190,.15),
+          transparent 35%
+        ),
+        rgba(255,255,255,.025);
+    }
+
+    .press-box h3 {
+      font-family: "Space Grotesk";
+
+      font-size:
+        clamp(
+          40px,
+          6vw,
+          75px
+        );
+
+      letter-spacing: -.06em;
+    }
+
+    .press-box p {
+      color: var(--muted);
+
+      margin-top: 18px;
+
+      max-width: 520px;
+
+      line-height: 1.7;
+
+      font-size: 14px;
+    }
+
+    .press-box .btn {
+      display: inline-block;
+
+      margin-top: 30px;
+    }
+
+    /* =========================
+       BOOKING
+    ========================= */
+
+    .booking {
+      border-top:
+        1px solid
+        var(--line);
+
+      text-align: center;
+
+      padding: 150px 0;
+    }
+
+    .booking h2 {
+      font-family: "Space Grotesk";
+
+      font-size:
+        clamp(
+          60px,
+          12vw,
+          150px
+        );
+
+      line-height: .82;
+
+      letter-spacing: -.08em;
+
+      background:
+        linear-gradient(
+          90deg,
+          #fff,
+          var(--pink),
+          var(--purple)
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+    .booking p {
+      margin: 35px auto 0;
+
+      max-width: 500px;
+
+      color: var(--muted);
+
+      line-height: 1.8;
+    }
+
+    .booking-email {
+      display: inline-block;
+
+      margin-top: 30px;
+
+      font-family: "Space Grotesk";
+
+      font-size: 18px;
+
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.3);
+
+      padding-bottom: 8px;
+
+      transition: .25s;
+    }
+
+    .booking-email:hover {
+      color: var(--pink);
+
+      border-color:
+        var(--pink);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      border-top:
+        1px solid
+        var(--line);
+
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .footer-logo {
+      font-family: "Space Grotesk";
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+      letter-spacing: .2em;
+    }
+
+    .footer-copy {
+      color: #5f5364;
+
+      font-size: 9px;
+
+      letter-spacing: .12em;
+
+      text-transform: uppercase;
+    }
+
+    .socials {
+      display: flex;
+
+      gap: 18px;
+
+      font-size: 9px;
+
+      letter-spacing: .12em;
+
+      text-transform: uppercase;
+    }
+
+    .socials a:hover {
+      color: var(--pink);
+    }
+
+    /* =========================
+       REVEAL ANIMATION
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform:
+        translateY(25px);
+
+      transition:
+        opacity .8s ease,
+        transform .8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width: 850px) {
+
+      .container {
+        width:
+          min(
+            100% - 32px,
+            var(--max)
+          );
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size:
+          clamp(
+            58px,
+            18vw,
+            105px
+          );
+      }
+
+      section {
+        padding: 90px 0;
+      }
+
+      .release-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+      }
+
+      .cover {
+        max-width: none;
+      }
+
+      .sound-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+
+      .platform-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .track {
+        grid-template-columns:
+          40px
+          1fr
+          60px;
+      }
+
+      .track-genre {
+        display: none;
+      }
+
+      .press-box {
+        padding: 35px 25px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+      .scroll-indicator {
+        display: none;
+      }
+    }
+
+    @media(max-width: 500px) {
+
+      .hero-sub {
+        font-size: 13px;
+      }
+
+      .sound-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sound-card {
+        min-height: 130px;
+      }
+
+      .sound-card h3 {
+        margin-top: 25px;
+      }
+
+      .dna-cloud {
+        min-height: 350px;
+      }
+
+      .dna-one {
+        left: 5%;
+      }
+
+      .dna-two {
+        right: 5%;
+      }
+
+      .dna-three {
+        left: 3%;
+      }
+
+      .dna-four {
+        right: 4%;
+      }
+
+      .booking {
+        padding: 100px 0;
+      }
+
+    }
+
+  </style>
 </head>
+
 
 <body>
 
-<nav>
-  <div class="logo">BURAK <span>TOKAT</span></div>
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#music">Music</a></li>
-    <li><a href="#profiles">Profiles</a></li>
-  </ul>
-</nav>
+  <nav id="nav">
 
-<header class="hero">
+    <div class="container nav-inner">
 
-  <div class="hero-content">
-
-    <div class="eyebrow">
-      DJ • Electronic Music Producer
-    </div>
-
-    <h1>
-      BURAK
-      <span>TOKAT</span>
-    </h1>
-
-    <p class="hero-sub">
-      Turkish DJ and electronic music producer creating
-      atmospheric, melodic and club-focused electronic music.
-    </p>
-
-    <div class="hero-buttons">
-
-      <a class="btn primary"
-         href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-         target="_blank"
-         rel="noopener">
-        Listen on Spotify
+      <a href="#top" class="logo">
+        BT
       </a>
 
-      <a class="btn"
-         href="https://www.instagram.com/burak_tkt/"
-         target="_blank"
-         rel="noopener">
-        Instagram
+      <div class="nav-links">
+
+        <a href="#release">
+          Release
+        </a>
+
+        <a href="#sound">
+          Sound
+        </a>
+
+        <a href="#music">
+          Music
+        </a>
+
+        <a href="#press">
+          Press
+        </a>
+
+        <a href="#booking" class="nav-press">
+          Booking ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <header class="hero" id="top">
+
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="orb three"></div>
+
+    <div class="container hero-content">
+
+      <div class="eyebrow">
+        DJ / ELECTRONIC MUSIC PRODUCER
+      </div>
+
+      <h1>
+        BURAK
+        <span>TOKAT</span>
+      </h1>
+
+      <p class="hero-sub">
+        Melodic tension. Hypnotic rhythm.
+        Dark electronic energy designed for late nights,
+        dance floors and moments that stay with you.
+      </p>
+
+      <div class="hero-actions">
+
+        <a href="#release"
+           class="btn btn-primary">
+          Listen to Music
+        </a>
+
+        <a href="#press"
+           class="btn btn-secondary">
+          Press Kit ↗
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <div class="scroll-indicator">
+
+        <span class="scroll-line"></span>
+
+        Scroll to explore
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       LATEST RELEASE
+  ========================= -->
+
+  <section class="release" id="release">
+
+    <div class="container">
+
+      <div class="section-label">
+        01 / Latest Release
+      </div>
+
+      <div class="section-title reveal">
+        FEELS LIKE
+      </div>
+
+      <p class="section-intro reveal">
+        The first release presented through the Burak Tokat
+        sound identity — melodic, atmospheric and built for
+        the electronic dance floor.
+      </p>
+
+
+      <div class="release-grid">
+
+
+        <!-- COVER -->
+
+        <div class="cover reveal">
+
+          <div class="cover-text">
+
+            <div class="cover-small">
+              SURREALISMO RECORDS
+            </div>
+
+            <div class="cover-name">
+              FEELS LIKE
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RELEASE INFO -->
+
+        <div class="release-info reveal">
+
+          <div class="section-label">
+            BURAK TOKAT
+          </div>
+
+          <h3>
+            FEELS<br>
+            <span>LIKE</span>
+          </h3>
+
+
+          <div class="release-meta">
+
+            <div class="meta-item">
+
+              <div class="meta-label">
+                Label
+              </div>
+
+              <div class="meta-value">
+                Surrealismo Records
+              </div>
+
+            </div>
+
+
+            <div class="meta-item">
+
+              <div class="meta-label">
+                Genre
+              </div>
+
+              <div class="meta-value">
+                Melodic House / Techno
+              </div>
+
+            </div>
+
+
+            <div class="meta-item">
+
+              <div class="meta-label">
+                BPM
+              </div>
+
+              <div class="meta-value">
+                123
+              </div>
+
+            </div>
+
+
+            <div class="meta-item">
+
+              <div class="meta-label">
+                Key
+              </div>
+
+              <div class="meta-value">
+                G Minor
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="release-buttons">
+
+            <!--
+              VERIFIED DISCOVERY LINKS
+            -->
+
+            <a
+              href="https://volumo.com/artist/636066-burak-tokat"
+              target="_blank"
+              rel="noopener"
+              class="platform"
+            >
+              Volumo ↗
+            </a>
+
+            <a
+              href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+              target="_blank"
+              rel="noopener"
+              class="platform"
+            >
+              Amazon Music ↗
+            </a>
+
+            <!--
+              Add official Spotify / Apple / Beatport
+              links here once confirmed.
+            -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================
+           PLAYER
+      ========================= -->
+
+      <div class="player reveal">
+
+        <button
+          class="play-btn"
+          id="playBtn"
+          aria-label="Play preview"
+        >
+          ▶
+        </button>
+
+
+        <div class="player-main">
+
+          <div class="player-title">
+            BURAK TOKAT — FEELS LIKE
+          </div>
+
+          <div class="player-time">
+
+            <span id="currentTime">
+              00:00
+            </span>
+
+            /
+
+            06:40
+
+          </div>
+
+
+          <div
+            class="progress"
+            id="progress"
+          >
+
+            <div
+              class="progress-fill"
+              id="progressFill"
+            ></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!--
+        OPTIONAL AUDIO
+
+        When you have your legal preview file,
+        upload it as for example:
+
+        audio/feels-like-preview.mp3
+
+        and change the JavaScript below.
+
+      -->
+
+      <audio id="audio"></audio>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       THE SOUND
+  ========================= -->
+
+  <section id="sound">
+
+    <div class="container">
+
+      <div class="section-label">
+        02 / The Sound
+      </div>
+
+      <div class="section-title reveal">
+        THE SOUND
+      </div>
+
+      <p class="section-intro reveal">
+        A cinematic electronic identity built around
+        melody, atmosphere, hypnotic grooves and club energy.
+      </p>
+
+
+      <div class="sound-grid">
+
+
+        <div class="sound-card reveal">
+
+          <div class="sound-number">
+            01
+          </div>
+
+          <h3>
+            MELODIC HOUSE
+          </h3>
+
+        </div>
+
+
+        <div class="sound-card reveal">
+
+          <div class="sound-number">
+            02
+          </div>
+
+          <h3>
+            MELODIC TECHNO
+          </h3>
+
+        </div>
+
+
+        <div class="sound-card reveal">
+
+          <div class="sound-number">
+            03
+          </div>
+
+          <h3>
+            TECHNO
+          </h3>
+
+        </div>
+
+
+        <div class="sound-card reveal">
+
+          <div class="sound-number">
+            04
+          </div>
+
+          <h3>
+            ELECTRONIC
+          </h3>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ARTIST DNA
+  ========================= -->
+
+  <section class="dna">
+
+    <div class="container">
+
+      <div class="section-label">
+        03 / Artist DNA
+      </div>
+
+      <div class="section-title reveal">
+        ARTIST DNA
+      </div>
+
+
+      <div class="dna-cloud reveal">
+
+
+        <div class="dna-word dna-one">
+          DJ
+        </div>
+
+
+        <div class="dna-word dna-two">
+          DARK
+        </div>
+
+
+        <div class="dna-word dna-three">
+          HYPNOTIC
+        </div>
+
+
+        <div class="dna-word dna-four">
+          CLUB
+        </div>
+
+
+        <div class="dna-word dna-five">
+          ATMOSPHERE
+        </div>
+
+
+        <div class="dna-word dna-six">
+          ENERGY
+        </div>
+
+
+        <div class="dna-word dna-center">
+          BURAK TOKAT
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SELECTED MUSIC
+  ========================= -->
+
+  <section id="music">
+
+    <div class="container">
+
+      <div class="section-label">
+        04 / Selected Music
+      </div>
+
+      <div class="section-title reveal">
+        SELECTED<br>
+        MUSIC
+      </div>
+
+
+      <div class="music-list">
+
+
+        <div class="track reveal">
+
+          <div class="track-number">
+            01
+          </div>
+
+
+          <div>
+
+            <div class="track-title">
+              Feels Like
+            </div>
+
+            <div class="track-sub">
+              Original Mix
+            </div>
+
+          </div>
+
+
+          <div class="track-genre">
+            Melodic House / Techno
+          </div>
+
+
+          <div class="track-time">
+            06:40
+          </div>
+
+        </div>
+
+
+        <!--
+          CRESCENT WILL BE ADDED HERE
+          WHEN IT IS RELEASED.
+        -->
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       OFFICIAL PLATFORMS
+  ========================= -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-label">
+        05 / Official Platforms
+      </div>
+
+      <div class="section-title reveal">
+        FIND THE<br>
+        MUSIC
+      </div>
+
+
+      <div class="platform-grid">
+
+
+        <!-- INSTAGRAM -->
+
+        <a
+          href="https://www.instagram.com/burak_tkt/"
+          target="_blank"
+          rel="noopener"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Instagram ↗
+          </span>
+
+          <span>
+            @burak_tkt
+          </span>
+
+        </a>
+
+
+        <!-- VOLUMO -->
+
+        <a
+          href="https://volumo.com/artist/636066-burak-tokat"
+          target="_blank"
+          rel="noopener"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Volumo ↗
+          </span>
+
+          <span>
+            Artist Profile
+          </span>
+
+        </a>
+
+
+        <!-- AMAZON MUSIC -->
+
+        <a
+          href="https://music.amazon.co.uk/artists/B0CQKQ6TYZ/burak-tokat"
+          target="_blank"
+          rel="noopener"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Amazon Music ↗
+          </span>
+
+          <span>
+            Artist Profile
+          </span>
+
+        </a>
+
+
+        <!-- SPOTIFY -->
+
+        <a
+          href="#"
+          onclick="return unavailableLink('Spotify')"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Spotify
+          </span>
+
+          <span>
+            Official link coming soon
+          </span>
+
+        </a>
+
+
+        <!-- APPLE MUSIC -->
+
+        <a
+          href="#"
+          onclick="return unavailableLink('Apple Music')"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Apple Music
+          </span>
+
+          <span>
+            Official link coming soon
+          </span>
+
+        </a>
+
+
+        <!-- BEATPORT -->
+
+        <a
+          href="#"
+          onclick="return unavailableLink('Beatport')"
+          class="big-platform reveal"
+        >
+
+          <span>
+            Beatport
+          </span>
+
+          <span>
+            Official link coming soon
+          </span>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PRESS KIT
+  ========================= -->
+
+  <section
+    class="press"
+    id="press"
+  >
+
+    <div class="container">
+
+      <div class="section-label">
+        06 / Press
+      </div>
+
+      <div class="section-title reveal">
+        PRESS<br>
+        KIT
+      </div>
+
+
+      <div class="press-box reveal">
+
+        <h3>
+          BURAK TOKAT
+        </h3>
+
+
+        <p>
+          Artist biography, selected releases, visuals,
+          platform information and professional booking material
+          collected in one electronic press kit.
+        </p>
+
+
+        <!--
+          Replace this with your EPK URL
+          when the final EPK is uploaded.
+        -->
+
+        <a
+          href="#"
+          onclick="return unavailableLink('Press Kit')"
+          class="btn btn-primary"
+        >
+          Open Press Kit ↗
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BOOKING
+  ========================= -->
+
+  <section
+    class="booking"
+    id="booking"
+  >
+
+    <div class="container">
+
+      <div class="section-label">
+        07 / Booking
+      </div>
+
+
+      <h2 class="reveal">
+        LET'S<br>
+        CONNECT.
+      </h2>
+
+
+      <p class="reveal">
+        For bookings, collaborations, label inquiries,
+        press and professional requests.
+      </p>
+
+
+      <!--
+        EMAIL PROVIDED BY BURAK TOKAT
+      -->
+
+      <a
+        class="booking-email reveal"
+        href="mailto:buraktokatmr@gmai.com"
+      >
+        buraktokatmr@gmai.com
       </a>
 
-    </div>
-
-  </div>
-
-</header>
-
-<main>
-
-<section id="about">
-
-  <div class="section-label">01 — About</div>
-
-  <h2>THE<br>ARTIST.</h2>
-
-  <div class="about-grid">
-
-    <p class="about-text">
-      Burak Tokat is a Turkish DJ and electronic music producer
-      active since 2020. His sound focuses on melodic atmosphere,
-      hypnotic grooves and modern club energy.
-      <br><br>
-      His musical direction moves between Melodic House,
-      Melodic Techno, Techno and contemporary electronic music.
-    </p>
-
-    <div class="stats">
-
-      <div class="stat">
-        <strong>2020</strong>
-        <span>Active Since</span>
-      </div>
-
-      <div class="stat">
-        <strong>DJ</strong>
-        <span>Main Focus</span>
-      </div>
-
-      <div class="stat">
-        <strong>TR</strong>
-        <span>Based In Türkiye</span>
-      </div>
-
-      <div class="stat">
-        <strong>Electronic</strong>
-        <span>Sound</span>
-      </div>
 
     </div>
 
-  </div>
+  </section>
 
-</section>
 
-<section id="music">
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
-  <div class="section-label">02 — Selected Music</div>
+  <footer>
 
-  <h2>RELEASES.</h2>
+    <div class="container footer-inner">
 
-  <div class="music-card">
 
-    <div class="music-top">
-
-      <div>
-        <h3>Feels Like</h3>
-
-        <p>
-          Burak Tokat — Feels Like<br>
-          Original Mix • Surrealismo Records • 2024<br>
-          123 BPM • G minor • 6:40
-        </p>
+      <div class="footer-logo">
+        BURAK TOKAT
       </div>
 
-      <div class="tag">
-        ORIGINAL MIX
+
+      <div class="footer-copy">
+        © 2026 Burak Tokat. All rights reserved.
       </div>
+
+
+      <div class="socials">
+
+        <a
+          href="https://www.instagram.com/burak_tkt/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a href="#release">
+          Music
+        </a>
+
+        <a href="#booking">
+          Booking
+        </a>
+
+      </div>
+
 
     </div>
 
-    <a class="music-link"
-       href="https://musicbrainz.org/release-group/d7dd8a6b-85a1-4d50-9ce7-9c009e9ce608"
-       target="_blank"
-       rel="noopener">
-      Release Information →
-    </a>
+  </footer>
 
-  </div>
 
-  <div class="music-card">
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
 
-    <div class="music-top">
+  <script>
 
-      <div>
-        <h3>Crescent</h3>
 
-        <p>
-          Burak Tokat — Crescent<br>
-          Melodic Techno
-        </p>
-      </div>
+    /* =========================
+       NAVIGATION SCROLL
+    ========================= */
 
-      <div class="tag">
-        MELODIC TECHNO
-      </div>
+    const nav =
+      document.getElementById("nav");
 
-    </div>
 
-  </div>
+    window.addEventListener(
+      "scroll",
+      () => {
 
-</section>
+        if (window.scrollY > 40) {
 
-<section id="profiles">
+          nav.classList.add("scrolled");
 
-  <div class="section-label">03 — Official</div>
+        } else {
 
-  <h2>FOLLOW<br>THE MUSIC.</h2>
+          nav.classList.remove("scrolled");
 
-  <div class="profile-grid">
+        }
 
-    <a class="profile"
-       href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-       target="_blank"
-       rel="noopener">
-      Spotify
-    </a>
+      }
+    );
 
-    <a class="profile"
-       href="https://music.apple.com/tr/artist/burak-tokat/1721994034"
-       target="_blank"
-       rel="noopener">
-      Apple Music
-    </a>
 
-    <a class="profile"
-       href="https://www.beatport.com/artist/_/1174596"
-       target="_blank"
-       rel="noopener">
-      Beatport
-    </a>
+    /* =========================
+       REVEAL ANIMATION
+    ========================= */
 
-    <a class="profile"
-       href="https://tidal.com/artist/44539316"
-       target="_blank"
-       rel="noopener">
-      Tidal
-    </a>
+    const revealElements =
+      document.querySelectorAll(".reveal");
 
-    <a class="profile"
-       href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
-       target="_blank"
-       rel="noopener">
-      MusicBrainz
-    </a>
 
-    <a class="profile"
-       href="https://www.wikidata.org/wiki/Q141105872"
-       target="_blank"
-       rel="noopener">
-      Wikidata
-    </a>
+    const observer =
+      new IntersectionObserver(
+        entries => {
 
-    <a class="profile"
-       href="https://commons.wikimedia.org/wiki/Category:Burak_Tokat"
-       target="_blank"
-       rel="noopener">
-      Wikimedia
-    </a>
+          entries.forEach(
+            entry => {
 
-    <a class="profile"
-       href="https://www.instagram.com/burak_tkt/"
-       target="_blank"
-       rel="noopener">
-      Instagram
-    </a>
+              if (
+                entry.isIntersecting
+              ) {
 
-  </div>
+                entry.target.classList.add(
+                  "visible"
+                );
 
-</section>
+                observer.unobserve(
+                  entry.target
+                );
 
-<section class="cta">
+              }
 
-  <div class="section-label">04 — Connect</div>
+            }
+          );
 
-  <h2>LET THE<br>MUSIC SPEAK.</h2>
+        },
+        {
+          threshold: .12
+        }
+      );
 
-  <p>
-    Follow Burak Tokat and discover new music.
-  </p>
 
-  <a class="btn primary"
-     href="https://www.instagram.com/burak_tkt/"
-     target="_blank"
-     rel="noopener">
-    Instagram
-  </a>
+    revealElements.forEach(
+      element => {
 
-</section>
+        observer.observe(element);
 
-</main>
+      }
+    );
 
-<footer>
 
-  <span>© 2026 Burak Tokat</span>
-  <span>DJ • Electronic Music Producer</span>
+    /* =========================
+       AUDIO PLAYER
+    ========================= */
 
-</footer>
+    const audio =
+      document.getElementById("audio");
+
+    const playBtn =
+      document.getElementById("playBtn");
+
+    const progress =
+      document.getElementById("progress");
+
+    const progressFill =
+      document.getElementById("progressFill");
+
+    const currentTime =
+      document.getElementById("currentTime");
+
+
+    /*
+      IMPORTANT:
+
+      When you have a legal audio preview,
+      upload it to:
+
+      audio/feels-like-preview.mp3
+
+      Then uncomment these lines:
+
+      audio.src =
+        "audio/feels-like-preview.mp3";
+
+      hasAudio = true;
+    */
+
+
+    let hasAudio = false;
+
+
+    function formatTime(seconds) {
+
+      const mins =
+        Math.floor(
+          seconds / 60
+        );
+
+      const secs =
+        Math.floor(
+          seconds % 60
+        );
+
+
+      return (
+        String(mins).padStart(2,"0")
+        +
+        ":"
+        +
+        String(secs).padStart(2,"0")
+      );
+
+    }
+
+
+    playBtn.addEventListener(
+      "click",
+      () => {
+
+        if (
+          !hasAudio ||
+          !audio.src
+        ) {
+
+          alert(
+            "Audio preview has not been connected yet."
+          );
+
+          return;
+
+        }
+
+
+        if (audio.paused) {
+
+          audio.play();
+
+          playBtn.textContent = "Ⅱ";
+
+        } else {
+
+          audio.pause();
+
+          playBtn.textContent = "▶";
+
+        }
+
+      }
+    );
+
+
+    audio.addEventListener(
+      "timeupdate",
+      () => {
+
+        if (!audio.duration) {
+          return;
+        }
+
+
+        const percent =
+          (
+            audio.currentTime /
+            audio.duration
+          ) * 100;
+
+
+        progressFill.style.width =
+          percent + "%";
+
+
+        currentTime.textContent =
+          formatTime(
+            audio.currentTime
+          );
+
+      }
+    );
+
+
+    audio.addEventListener(
+      "ended",
+      () => {
+
+        playBtn.textContent = "▶";
+
+        progressFill.style.width =
+          "0%";
+
+        currentTime.textContent =
+          "00:00";
+
+      }
+    );
+
+
+    progress.addEventListener(
+      "click",
+      event => {
+
+        if (
+          !hasAudio ||
+          !audio.duration
+        ) {
+
+          return;
+
+        }
+
+
+        const rect =
+          progress.getBoundingClientRect();
+
+
+        const percent =
+          (
+            event.clientX -
+            rect.left
+          ) / rect.width;
+
+
+        audio.currentTime =
+          percent *
+          audio.duration;
+
+      }
+    );
+
+
+    /* =========================
+       UNAVAILABLE PLATFORM LINKS
+    ========================= */
+
+    function unavailableLink(name) {
+
+      alert(
+        name +
+        " official artist URL will be connected once the exact profile is confirmed."
+      );
+
+      return false;
+
+    }
+
+  </script>
+
 
 </body>
 </html>
-```
