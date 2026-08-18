@@ -14,4 +14,15 @@
       <image:caption>Official artist photo of Turkish DJ and electronic music producer Burak Tokat.</image:caption>
     </image:image>
   </url>
+  <url>
+    <loc>https://buraktokat.github.io/hakkinda.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://buraktokat.github.io/burak-tokat-hero.JPG</image:loc>
+      <image:title>Burak Tokat — Türk DJ ve elektronik müzik prodüktörü</image:title>
+      <image:caption>Burak Tokat'ın resmî sanatçı fotoğrafı.</image:caption>
+    </image:image>
+  </url>
 </urlset>
