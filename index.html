@@ -4,45 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BURAK TOKAT — DJ & Producer</title>
+<title>Burak Tokat — DJ & Electronic Music Producer</title>
 
-<meta name="description" content="Burak Tokat is a Turkish DJ and electronic music producer creating melodic, atmospheric and club-focused electronic music.">
-<meta name="author" content="Burak Tokat">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Burak Tokat — DJ & Electronic Music Producer from Türkiye. Melodic Techno, Melodic House and Afro House.">
 
 <link rel="canonical" href="https://buraktokat.github.io/">
 
-<!-- Open Graph -->
-<meta property="og:title" content="BURAK TOKAT — DJ & Producer">
+<meta property="og:title" content="Burak Tokat — DJ & Producer">
 <meta property="og:description" content="Official website of Burak Tokat — DJ & Electronic Music Producer from Türkiye.">
 <meta property="og:type" content="profile">
 <meta property="og:url" content="https://buraktokat.github.io/">
-<meta property="og:site_name" content="BURAK TOKAT">
 <meta property="og:image" content="https://buraktokat.github.io/burak-tokat-hero.JPG">
 
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="BURAK TOKAT — DJ & Producer">
-<meta name="twitter:description" content="Official website of Burak Tokat — DJ & Electronic Music Producer from Türkiye.">
-<meta name="twitter:image" content="https://buraktokat.github.io/burak-tokat-hero.JPG">
-
-<!-- Google / Schema.org -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://buraktokat.github.io/#person",
-  "name": "Burak Tokat",
-  "url": "https://buraktokat.github.io/",
-  "image": "https://buraktokat.github.io/burak-tokat-hero.JPG",
-  "jobTitle": "DJ and Electronic Music Producer",
-  "description": "Burak Tokat is a Turkish DJ and electronic music producer.",
-  "sameAs": [
-    "https://www.wikidata.org/wiki/Q141105872",
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "@id":"https://buraktokat.github.io/#person",
+  "name":"Burak Tokat",
+  "url":"https://buraktokat.github.io/",
+  "image":"https://buraktokat.github.io/burak-tokat-hero.JPG",
+  "jobTitle":"DJ and Electronic Music Producer",
+  "description":"Burak Tokat is a Turkish DJ and electronic music producer from Türkiye.",
+  "sameAs":[
+    "https://www.youtube.com/@BurakTokatMusic",
+    "https://soundcloud.com/burak-tokat-6125178",
     "https://www.instagram.com/burak_tkt/",
     "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-    "https://www.youtube.com/@BurakTokatMusic",
-    "https://soundcloud.com/burak-tokat-6125178"
+    "https://www.wikidata.org/wiki/Q141105872"
   ]
 }
 </script>
@@ -51,258 +40,226 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-/* =========================
-   RESET
-========================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+html{
+  scroll-behavior:smooth;
 }
 
-body {
-  background: #050005;
-  color: #ffffff;
-  font-family: 'Inter', Arial, sans-serif;
-  overflow-x: hidden;
+body{
+  background:#050005;
+  color:#fff;
+  font-family:Inter,Arial,sans-serif;
+  overflow-x:hidden;
 }
 
-/* =========================
-   AMBIENT BACKGROUND
-========================= */
-
-body::before {
-  content: "";
-  position: fixed;
-  width: 600px;
-  height: 600px;
-  left: -250px;
-  top: 100px;
-  background: rgba(255, 0, 153, 0.20);
-  filter: blur(120px);
-  border-radius: 50%;
-  z-index: -2;
+body:before{
+  content:"";
+  position:fixed;
+  width:450px;
+  height:450px;
+  left:-220px;
+  top:120px;
+  background:rgba(255,0,153,.18);
+  filter:blur(120px);
+  border-radius:50%;
+  z-index:-2;
 }
 
-body::after {
-  content: "";
-  position: fixed;
-  width: 600px;
-  height: 600px;
-  right: -250px;
-  top: 400px;
-  background: rgba(116, 0, 255, 0.22);
-  filter: blur(130px);
-  border-radius: 50%;
-  z-index: -2;
+body:after{
+  content:"";
+  position:fixed;
+  width:450px;
+  height:450px;
+  right:-220px;
+  top:500px;
+  background:rgba(100,0,255,.18);
+  filter:blur(120px);
+  border-radius:50%;
+  z-index:-2;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
+/* NAVIGATION */
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:65px;
 
-  padding: 0 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 
-  z-index: 100;
+  padding:0 5%;
 
-  background: rgba(5, 0, 5, 0.55);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  z-index:100;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background:rgba(5,0,5,.72);
+  backdrop-filter:blur(18px);
+
+  border-bottom:1px solid rgba(255,255,255,.07);
 }
 
-.logo {
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: 3px;
+.logo{
+  font-size:15px;
+  font-weight:900;
+  letter-spacing:2.5px;
 }
 
-.logo span {
-  color: #ff1493;
+.logo span{
+  color:#ff1493;
 }
 
-.nav-links {
-  display: flex;
-  gap: 30px;
-  list-style: none;
+.nav-links{
+  display:flex;
+  gap:24px;
+  list-style:none;
 }
 
-.nav-links a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: 0.3s;
+.nav-links a{
+  color:#aaa;
+  text-decoration:none;
+
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:1.7px;
+  text-transform:uppercase;
+
+  transition:.3s;
 }
 
-.nav-links a:hover {
-  color: #ff39aa;
+.nav-links a:hover{
+  color:#ff32aa;
 }
 
-/* =========================
-   HERO
-========================= */
 
-.hero {
-  min-height: 100vh;
+/* HERO */
 
-  position: relative;
+.hero{
+  min-height:720px;
 
-  display: flex;
-  align-items: center;
+  position:relative;
 
-  padding: 120px 7% 80px;
+  display:flex;
+  align-items:center;
 
-  overflow: hidden;
+  padding:90px 7% 60px;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(5, 0, 5, 0.96),
-      rgba(5, 0, 5, 0.60),
-      rgba(5, 0, 5, 0.78)
-    ),
-    url("burak-tokat-hero.JPG") center center / cover no-repeat;
-}
-
-.hero::before {
-  content: "";
-
-  position: absolute;
-
-  width: 750px;
-  height: 750px;
-
-  right: -200px;
-  top: -100px;
-
-  border-radius: 50%;
+  overflow:hidden;
 
   background:
     radial-gradient(
-      circle,
-      rgba(255, 0, 153, 0.55) 0%,
-      rgba(130, 0, 255, 0.30) 35%,
-      transparent 70%
+      circle at 80% 50%,
+      rgba(255,0,153,.15),
+      transparent 40%
+    ),
+    linear-gradient(
+      135deg,
+      #050005,
+      #10000f 55%,
+      #08000c
     );
-
-  filter: blur(30px);
-
-  pointer-events: none;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 1000px;
+.hero-content{
+  position:relative;
+  z-index:3;
+
+  width:58%;
 }
 
-.eyebrow {
-  color: #ff35aa;
+.eyebrow{
+  color:#ff35aa;
 
-  font-size: 12px;
-  font-weight: 700;
+  font-size:10px;
+  font-weight:700;
 
-  letter-spacing: 6px;
-  text-transform: uppercase;
+  letter-spacing:4px;
 
-  margin-bottom: 25px;
+  text-transform:uppercase;
+
+  margin-bottom:20px;
 }
 
-.hero h1 {
-  font-size: clamp(70px, 12vw, 180px);
+.hero h1{
+  font-size:clamp(58px,9vw,115px);
 
-  line-height: 0.82;
+  line-height:.84;
 
-  letter-spacing: -9px;
+  letter-spacing:-6px;
 
-  font-weight: 900;
+  font-weight:900;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
-.hero h1 span {
-  display: block;
+.hero h1 span{
+  display:block;
 
-  color: transparent;
+  color:transparent;
 
-  -webkit-text-stroke: 1px #ff28a4;
+  -webkit-text-stroke:1px #ff28a4;
 
   text-shadow:
-    0 0 35px rgba(255, 0, 153, 0.25);
+    0 0 30px rgba(255,0,153,.22);
 }
 
-.hero-sub {
-  margin-top: 35px;
+.hero-sub{
+  margin-top:25px;
 
-  max-width: 600px;
+  max-width:500px;
 
-  color: #bdb4bd;
+  color:#aaa;
 
-  font-size: 17px;
+  font-size:14px;
 
-  line-height: 1.8;
+  line-height:1.75;
 }
 
-.hero-buttons {
-  display: flex;
+.hero-buttons{
+  display:flex;
 
-  gap: 15px;
+  gap:10px;
 
-  flex-wrap: wrap;
+  flex-wrap:wrap;
 
-  margin-top: 40px;
+  margin-top:30px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+.btn{
+  display:inline-flex;
 
-.btn {
-  display: inline-flex;
+  padding:11px 20px;
 
-  padding: 15px 28px;
+  border-radius:30px;
 
-  border-radius: 40px;
+  text-decoration:none;
 
-  text-decoration: none;
+  color:#fff;
 
-  color: #ffffff;
+  font-size:9px;
 
-  font-size: 12px;
-  font-weight: 700;
+  font-weight:700;
 
-  letter-spacing: 2px;
+  letter-spacing:1.5px;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border:1px solid rgba(255,255,255,.15);
 
-  background: rgba(255, 255, 255, 0.04);
+  background:rgba(255,255,255,.035);
 
-  transition: 0.3s;
+  transition:.3s;
 }
 
-.btn.primary {
+.btn.primary{
   background:
     linear-gradient(
       90deg,
@@ -310,403 +267,567 @@ nav {
       #8c00ff
     );
 
-  border: none;
-
-  box-shadow:
-    0 0 35px rgba(255, 0, 153, 0.25);
+  border:none;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-
-  box-shadow:
-    0 10px 40px rgba(255, 0, 153, 0.25);
+.btn:hover{
+  transform:translateY(-2px);
 }
 
-/* =========================
-   SECTIONS
-========================= */
 
-section {
-  max-width: 1200px;
+/* HERO PHOTO */
 
-  margin: auto;
+.hero-photo{
+  position:absolute;
 
-  padding: 130px 7%;
+  right:6%;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:37%;
+  height:78%;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  z-index:2;
 }
 
-.section-label {
-  color: #ff32a7;
+.hero-photo:before{
+  content:"";
 
-  font-size: 11px;
+  position:absolute;
 
-  letter-spacing: 5px;
+  width:90%;
+  height:90%;
 
-  font-weight: 700;
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,0,153,.32),
+      rgba(100,0,255,.15),
+      transparent 70%
+    );
 
-  text-transform: uppercase;
-
-  margin-bottom: 18px;
+  filter:blur(40px);
 }
 
-h2 {
-  font-size: clamp(45px, 7vw, 90px);
+.hero-photo img{
+  position:relative;
 
-  line-height: 0.95;
+  max-width:100%;
+  max-height:100%;
 
-  letter-spacing: -4px;
+  width:auto;
+  height:auto;
 
-  margin-bottom: 45px;
+  object-fit:contain;
+
+  border-radius:16px;
+
+  filter:
+    drop-shadow(
+      0 20px 45px rgba(0,0,0,.65)
+    );
 }
 
-/* =========================
-   ABOUT
-========================= */
 
-.about-grid {
-  display: grid;
+/* SECTIONS */
 
-  grid-template-columns: 1fr 1fr;
+section{
+  max-width:1100px;
 
-  gap: 70px;
+  margin:auto;
+
+  padding:95px 7%;
 }
 
-.about-text {
-  color: #bcb4bc;
+.section-label{
+  color:#ff32a7;
 
-  font-size: 19px;
+  font-size:9px;
 
-  line-height: 1.9;
+  letter-spacing:4px;
+
+  font-weight:700;
+
+  text-transform:uppercase;
+
+  margin-bottom:14px;
 }
 
-.stats {
-  display: grid;
+h2{
+  font-size:clamp(42px,6vw,72px);
 
-  grid-template-columns: 1fr 1fr;
+  line-height:.95;
 
-  gap: 20px;
+  letter-spacing:-3px;
+
+  margin-bottom:35px;
 }
 
-.stat {
-  padding: 30px;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:55px;
+}
+
+.about-text{
+  color:#aaa;
+
+  font-size:15px;
+
+  line-height:1.85;
+}
+
+.stats{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:12px;
+}
+
+.stat{
+  padding:22px;
+
+  border:1px solid rgba(255,255,255,.07);
 
   background:
     linear-gradient(
       145deg,
-      rgba(255, 0, 153, 0.08),
-      rgba(100, 0, 255, 0.04)
+      rgba(255,0,153,.07),
+      rgba(100,0,255,.04)
     );
 
-  border-radius: 20px;
+  border-radius:15px;
 }
 
-.stat strong {
-  display: block;
+.stat strong{
+  display:block;
 
-  font-size: 40px;
+  font-size:28px;
 
-  margin-bottom: 5px;
+  margin-bottom:4px;
 }
 
-.stat span {
-  color: #8e858e;
+.stat span{
+  color:#777;
 
-  font-size: 11px;
+  font-size:9px;
 
-  letter-spacing: 2px;
+  letter-spacing:1.5px;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
-/* =========================
-   MUSIC
-========================= */
 
-.music-card {
-  position: relative;
+/* MUSIC */
 
-  padding: 45px;
+.music-card{
+  padding:30px;
 
-  border-radius: 28px;
+  border-radius:20px;
 
-  overflow: hidden;
-
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border:1px solid rgba(255,255,255,.08);
 
   background:
     linear-gradient(
       135deg,
-      rgba(255, 0, 153, 0.14),
-      rgba(92, 0, 255, 0.12),
-      rgba(255, 255, 255, 0.025)
+      rgba(255,0,153,.10),
+      rgba(90,0,255,.08),
+      rgba(255,255,255,.02)
     );
 
-  margin-bottom: 25px;
+  margin-bottom:15px;
 }
 
-.music-card::before {
-  content: "";
+.music-top{
+  display:flex;
 
-  position: absolute;
+  justify-content:space-between;
 
-  width: 250px;
-  height: 250px;
+  align-items:flex-start;
 
-  right: -80px;
-  top: -80px;
-
-  border-radius: 50%;
-
-  background: #ff0099;
-
-  opacity: 0.12;
-
-  filter: blur(60px);
+  gap:20px;
 }
 
-.music-top {
-  display: flex;
+.music-card h3{
+  font-size:26px;
 
-  align-items: flex-start;
+  letter-spacing:-1px;
 
-  justify-content: space-between;
-
-  gap: 30px;
+  margin-bottom:7px;
 }
 
-.music-card h3 {
-  font-size: 38px;
+.music-card p{
+  color:#888;
 
-  letter-spacing: -2px;
+  font-size:12px;
 
-  margin-bottom: 10px;
+  line-height:1.7;
 }
 
-.music-card p {
-  color: #aaa;
+.tag{
+  padding:6px 10px;
 
-  line-height: 1.8;
+  border:1px solid rgba(255,0,153,.35);
+
+  color:#ff46b2;
+
+  border-radius:20px;
+
+  font-size:8px;
+
+  letter-spacing:1.5px;
+
+  white-space:nowrap;
 }
 
-.tag {
-  padding: 8px 14px;
 
-  border: 1px solid rgba(255, 0, 153, 0.4);
+/* DJ SETS */
 
-  color: #ff46b2;
+.sets-grid{
+  display:grid;
 
-  border-radius: 30px;
+  grid-template-columns:1fr 1fr;
 
-  font-size: 10px;
-
-  letter-spacing: 2px;
-
-  white-space: nowrap;
+  gap:18px;
 }
 
-.music-link {
-  display: inline-block;
+.set-card{
+  display:block;
 
-  margin-top: 25px;
+  color:#fff;
 
-  color: #ffffff;
+  text-decoration:none;
 
-  text-decoration: none;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,0,153,.08),
+      rgba(100,0,255,.06)
+    );
 
-  font-size: 12px;
+  border:1px solid rgba(255,255,255,.08);
 
-  letter-spacing: 2px;
+  border-radius:18px;
 
-  font-weight: 700;
+  overflow:hidden;
 
-  text-transform: uppercase;
-
-  border-bottom: 1px solid #ff1493;
-
-  padding-bottom: 5px;
+  transition:.35s;
 }
 
-/* =========================
-   OFFICIAL PROFILES
-========================= */
+.set-card:hover{
+  transform:translateY(-4px);
 
-.profile-grid {
-  display: grid;
+  border-color:
+    rgba(255,0,153,.35);
+
+  box-shadow:
+    0 15px 40px rgba(255,0,153,.10);
+}
+
+.set-cover{
+  position:relative;
+
+  width:100%;
+
+  aspect-ratio:16/9;
+
+  overflow:hidden;
+
+  background:#080008;
+}
+
+.set-cover img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  display:block;
+
+  transition:.5s;
+}
+
+.set-card:hover .set-cover img{
+  transform:scale(1.04);
+}
+
+.play-button{
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  transform:translate(-50%,-50%);
+
+  width:52px;
+  height:52px;
+
+  display:flex;
+
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff008c,
+      #8c00ff
+    );
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.55);
+
+  font-size:16px;
+
+  padding-left:3px;
+}
+
+.set-info{
+  padding:20px;
+}
+
+.set-info h3{
+  font-size:17px;
+
+  margin-bottom:7px;
+}
+
+.set-info p{
+  color:#777;
+
+  font-size:10px;
+
+  line-height:1.6;
+}
+
+.youtube-link{
+  display:inline-block;
+
+  margin-top:13px;
+
+  color:#ff3cab;
+
+  font-size:8px;
+
+  font-weight:700;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+}
+
+
+/* PROFILES */
+
+.profile-grid{
+  display:grid;
 
   grid-template-columns:
-    repeat(4, 1fr);
+    repeat(4,1fr);
 
-  gap: 14px;
+  gap:10px;
 }
 
-.profile {
-  display: flex;
+.profile{
+  display:flex;
 
-  align-items: center;
+  align-items:center;
 
-  justify-content: center;
+  justify-content:center;
 
-  min-height: 110px;
+  min-height:75px;
 
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border:1px solid rgba(255,255,255,.07);
 
-  border-radius: 18px;
+  border-radius:13px;
 
-  color: #ffffff;
+  color:#fff;
 
-  text-decoration: none;
+  text-decoration:none;
 
-  background: rgba(255, 255, 255, 0.025);
+  background:rgba(255,255,255,.02);
 
-  font-size: 11px;
+  font-size:9px;
 
-  font-weight: 700;
+  font-weight:700;
 
-  letter-spacing: 2px;
+  letter-spacing:1.5px;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 
-  transition: 0.3s;
+  transition:.3s;
 }
 
-.profile:hover {
+.profile:hover{
   background:
     linear-gradient(
       135deg,
-      rgba(255, 0, 153, 0.22),
-      rgba(100, 0, 255, 0.18)
+      rgba(255,0,153,.18),
+      rgba(100,0,255,.15)
     );
 
   border-color:
-    rgba(255, 0, 153, 0.4);
+    rgba(255,0,153,.35);
 
-  transform: translateY(-4px);
+  transform:translateY(-3px);
 }
 
-/* =========================
-   CTA
-========================= */
 
-.cta {
-  text-align: center;
+/* CTA */
 
-  padding-top: 100px;
+.cta{
+  text-align:center;
 
-  padding-bottom: 160px;
+  padding-top:70px;
+
+  padding-bottom:110px;
 }
 
-.cta h2 {
-  margin-bottom: 25px;
+.cta h2{
+  margin-bottom:18px;
 }
 
-.cta p {
-  color: #999;
+.cta p{
+  color:#888;
 
-  margin-bottom: 35px;
+  font-size:13px;
+
+  margin-bottom:25px;
 }
 
-/* =========================
-   FOOTER
-========================= */
 
-footer {
-  padding: 35px 7%;
+/* FOOTER */
+
+footer{
+  padding:25px 7%;
 
   border-top:
-    1px solid rgba(255, 255, 255, 0.08);
+    1px solid rgba(255,255,255,.07);
 
-  display: flex;
+  display:flex;
 
-  justify-content: space-between;
+  justify-content:space-between;
 
-  color: #666;
+  color:#555;
 
-  font-size: 10px;
+  font-size:8px;
 
-  letter-spacing: 2px;
+  letter-spacing:1.5px;
 
-  text-transform: uppercase;
+  text-transform:uppercase;
 }
 
-/* =========================
-   MOBILE
-========================= */
 
-@media (max-width: 800px) {
+/* MOBILE */
 
-  nav {
-    padding: 0 5%;
+@media(max-width:800px){
+
+  nav{
+    height:60px;
+
+    padding:0 5%;
   }
 
-  .nav-links {
-    display: none;
+  .nav-links{
+    display:none;
   }
 
-  .hero {
-    min-height: 95vh;
+  .hero{
+    min-height:auto;
 
-    padding: 130px 7% 70px;
+    padding:
+      105px 7% 50px;
 
-    background-position: center;
+    flex-direction:column;
+
+    align-items:flex-start;
   }
 
-  .hero h1 {
-    font-size: clamp(62px, 18vw, 120px);
-
-    letter-spacing: -6px;
+  .hero-content{
+    width:100%;
   }
 
-  .hero-sub {
-    font-size: 15px;
+  .hero h1{
+    font-size:
+      clamp(55px,17vw,100px);
+
+    letter-spacing:-5px;
   }
 
-  section {
-    padding: 90px 7%;
+  .hero-sub{
+    font-size:13px;
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
+  .hero-photo{
+    position:relative;
 
-    gap: 40px;
+    right:auto;
+    top:auto;
+
+    transform:none;
+
+    width:100%;
+
+    height:420px;
+
+    margin-top:30px;
   }
 
-  .stats {
-    grid-template-columns: 1fr 1fr;
+  .hero-photo img{
+    max-height:420px;
   }
 
-  .music-top {
-    flex-direction: column;
+  section{
+    padding:75px 7%;
   }
 
-  .profile-grid {
-    grid-template-columns: 1fr 1fr;
+  .about-grid{
+    grid-template-columns:1fr;
+
+    gap:35px;
   }
 
-  footer {
-    flex-direction: column;
+  .sets-grid{
+    grid-template-columns:1fr;
+  }
 
-    gap: 12px;
+  .profile-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  footer{
+    flex-direction:column;
+
+    gap:8px;
   }
 }
 
-@media (max-width: 480px) {
+@media(max-width:480px){
 
-  .stats {
-    grid-template-columns: 1fr;
+  .stats{
+    grid-template-columns:1fr;
   }
 
-  .profile-grid {
-    grid-template-columns: 1fr;
+  .profile-grid{
+    grid-template-columns:1fr;
   }
 
-  .music-card {
-    padding: 30px;
-  }
-
-  .music-card h3 {
-    font-size: 30px;
+  .hero-photo{
+    height:380px;
   }
 
 }
@@ -714,11 +835,11 @@ footer {
 </style>
 </head>
 
+
 <body>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -737,6 +858,10 @@ footer {
     </li>
 
     <li>
+      <a href="#sets">DJ Sets</a>
+    </li>
+
+    <li>
       <a href="#profiles">Profiles</a>
     </li>
 
@@ -745,9 +870,7 @@ footer {
 </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <header class="hero">
 
@@ -764,7 +887,7 @@ footer {
 
     <p class="hero-sub">
       Turkish DJ and electronic music producer creating
-      atmospheric, melodic and club-focused electronic music.
+      melodic, atmospheric and club-focused electronic music.
     </p>
 
     <div class="hero-buttons">
@@ -773,17 +896,15 @@ footer {
         class="btn primary"
         href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
         target="_blank"
-        rel="noopener"
-      >
-        Listen on Spotify
+        rel="noopener">
+        Spotify
       </a>
 
       <a
         class="btn"
         href="https://www.youtube.com/@BurakTokatMusic"
         target="_blank"
-        rel="noopener"
-      >
+        rel="noopener">
         YouTube
       </a>
 
@@ -791,8 +912,7 @@ footer {
         class="btn"
         href="https://soundcloud.com/burak-tokat-6125178"
         target="_blank"
-        rel="noopener"
-      >
+        rel="noopener">
         SoundCloud
       </a>
 
@@ -800,12 +920,20 @@ footer {
         class="btn"
         href="https://www.instagram.com/burak_tkt/"
         target="_blank"
-        rel="noopener"
-      >
+        rel="noopener">
         Instagram
       </a>
 
     </div>
+
+  </div>
+
+
+  <div class="hero-photo">
+
+    <img
+      src="burak-tokat-hero.JPG"
+      alt="Burak Tokat — DJ and Electronic Music Producer">
 
   </div>
 
@@ -814,9 +942,8 @@ footer {
 
 <main>
 
-<!-- =========================
-     ABOUT
-========================= -->
+
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -833,14 +960,17 @@ footer {
 
     <p class="about-text">
 
-      Burak Tokat is a Turkish DJ and electronic music producer
-      active since 2020. His sound focuses on melodic atmosphere,
+      Burak Tokat is a Turkish DJ and electronic music
+      producer active since 2020.
+
+      His sound combines melodic atmosphere,
       hypnotic grooves and modern club energy.
 
       <br><br>
 
-      His musical direction moves between Melodic House,
-      Melodic Techno, Afro House and contemporary electronic music.
+      His musical direction moves between
+      Melodic Techno, Melodic House,
+      Afro House and contemporary electronic music.
 
     </p>
 
@@ -848,46 +978,23 @@ footer {
     <div class="stats">
 
       <div class="stat">
-
         <strong>2020</strong>
-
-        <span>
-          Active Since
-        </span>
-
+        <span>Active Since</span>
       </div>
 
-
       <div class="stat">
-
         <strong>DJ</strong>
-
-        <span>
-          Main Focus
-        </span>
-
+        <span>Main Focus</span>
       </div>
 
-
       <div class="stat">
-
         <strong>TR</strong>
-
-        <span>
-          Based In Türkiye
-        </span>
-
+        <span>Based In Türkiye</span>
       </div>
 
-
       <div class="stat">
-
         <strong>Electronic</strong>
-
-        <span>
-          Sound
-        </span>
-
+        <span>Sound</span>
       </div>
 
     </div>
@@ -897,9 +1004,7 @@ footer {
 </section>
 
 
-<!-- =========================
-     MUSIC
-========================= -->
+<!-- MUSIC -->
 
 <section id="music">
 
@@ -912,8 +1017,6 @@ footer {
   </h2>
 
 
-  <!-- FEELS LIKE -->
-
   <div class="music-card">
 
     <div class="music-top">
@@ -925,15 +1028,11 @@ footer {
         </h3>
 
         <p>
-
           Burak Tokat — Feels Like<br>
-
           Original Mix • Surrealismo Records
-
         </p>
 
       </div>
-
 
       <div class="tag">
         ORIGINAL MIX
@@ -941,20 +1040,8 @@ footer {
 
     </div>
 
-
-    <a
-      class="music-link"
-      href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
-      target="_blank"
-      rel="noopener"
-    >
-      Listen →
-    </a>
-
   </div>
 
-
-  <!-- CRESCENT -->
 
   <div class="music-card">
 
@@ -973,7 +1060,6 @@ footer {
 
       </div>
 
-
       <div class="tag">
         MELODIC TECHNO
       </div>
@@ -985,14 +1071,255 @@ footer {
 </section>
 
 
-<!-- =========================
-     OFFICIAL PROFILES
-========================= -->
+<!-- DJ SETS -->
+
+<section id="sets">
+
+  <div class="section-label">
+    03 — DJ Sets
+  </div>
+
+  <h2>
+    SELECTED<br>
+    SETS.
+  </h2>
+
+
+  <div class="sets-grid">
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=osJnoRtlqdM"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/osJnoRtlqdM/maxresdefault.jpg"
+          alt="Burak Tokat — Afro House DJ Set">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          Afro House DJ Set
+        </h3>
+
+        <p>
+          Burak Tokat — Afro House DJ Set
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=aU8vCYJIrRw"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/aU8vCYJIrRw/maxresdefault.jpg"
+          alt="Burak Tokat — New Year AfroHouse Set 2025">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          New Year AfroHouse Set 2025
+        </h3>
+
+        <p>
+          Burak Tokat — New Year AfroHouse Set 2025
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=l-SLMKAkpqU"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/l-SLMKAkpqU/maxresdefault.jpg"
+          alt="Burak Tokat — X-mas AfroHouse Set">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          X-mas AfroHouse Set
+        </h3>
+
+        <p>
+          Burak Tokat — X-mas AfroHouse Set
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=GcLFTAUtp1A"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/GcLFTAUtp1A/maxresdefault.jpg"
+          alt="Burak Tokat — Christmas Melodic Afrohouse Set">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          Christmas Melodic Afrohouse Set
+        </h3>
+
+        <p>
+          Burak Tokat — Christmas Melodic Afrohouse Set
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=yoHIHX2rsxg"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/yoHIHX2rsxg/maxresdefault.jpg"
+          alt="Burak Tokat — AfroHouse Set December 2024">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          AfroHouse Set — December 2024
+        </h3>
+
+        <p>
+          Burak Tokat — AfroHouse Set December 2024
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <a
+      class="set-card"
+      href="https://www.youtube.com/watch?v=bCWEtz5jric"
+      target="_blank"
+      rel="noopener">
+
+      <div class="set-cover">
+
+        <img
+          src="https://i.ytimg.com/vi/bCWEtz5jric/maxresdefault.jpg"
+          alt="Burak Tokat — Winter Afro House Set 2024">
+
+        <div class="play-button">
+          ▶
+        </div>
+
+      </div>
+
+      <div class="set-info">
+
+        <h3>
+          Winter Afro House Set 2024
+        </h3>
+
+        <p>
+          Burak Tokat — Winter Afro House Set 2024
+        </p>
+
+        <span class="youtube-link">
+          Watch on YouTube →
+        </span>
+
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- PROFILES -->
 
 <section id="profiles">
 
   <div class="section-label">
-    03 — Official
+    04 — Official
   </div>
 
   <h2>
@@ -1007,78 +1334,63 @@ footer {
       class="profile"
       href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       Spotify
     </a>
-
 
     <a
       class="profile"
       href="https://www.youtube.com/@BurakTokatMusic"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       YouTube
     </a>
-
 
     <a
       class="profile"
       href="https://soundcloud.com/burak-tokat-6125178"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       SoundCloud
     </a>
-
 
     <a
       class="profile"
       href="https://www.instagram.com/burak_tkt/"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       Instagram
     </a>
-
 
     <a
       class="profile"
       href="https://www.wikidata.org/wiki/Q141105872"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       Wikidata
     </a>
-
 
     <a
       class="profile"
       href="https://musicbrainz.org/"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       MusicBrainz
     </a>
-
 
     <a
       class="profile"
       href="https://www.apple.com/apple-music/"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       Apple Music
     </a>
-
 
     <a
       class="profile"
       href="https://www.beatport.com/"
       target="_blank"
-      rel="noopener"
-    >
+      rel="noopener">
       Beatport
     </a>
 
@@ -1087,14 +1399,12 @@ footer {
 </section>
 
 
-<!-- =========================
-     CTA
-========================= -->
+<!-- CTA -->
 
 <section class="cta">
 
   <div class="section-label">
-    04 — Connect
+    05 — Connect
   </div>
 
   <h2>
@@ -1106,13 +1416,11 @@ footer {
     Follow Burak Tokat and discover new music.
   </p>
 
-
   <a
     class="btn primary"
     href="https://www.instagram.com/burak_tkt/"
     target="_blank"
-    rel="noopener"
-  >
+    rel="noopener">
     Instagram
   </a>
 
@@ -1120,10 +1428,6 @@ footer {
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 
 <footer>
 
