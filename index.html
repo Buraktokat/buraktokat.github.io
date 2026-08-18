@@ -11,7 +11,7 @@
     content="Official website of Burak Tokat — Turkish DJ and electronic music producer. Melodic Techno, Melodic House and Afro House."
   >
   <meta name="author" content="Burak Tokat">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
   <link rel="canonical" href="https://buraktokat.github.io/">
 
@@ -51,23 +51,85 @@
   <meta name="twitter:description" content="Official website of Burak Tokat.">
   <meta name="twitter:image" content="https://buraktokat.github.io/burak-tokat-hero.JPG">
 
-  <!-- GOOGLE / SCHEMA -->
+  <!-- GOOGLE / KNOWLEDGE GRAPH SCHEMA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://buraktokat.github.io/#person",
-    "name": "Burak Tokat",
-    "url": "https://buraktokat.github.io/",
-    "image": "https://buraktokat.github.io/burak-tokat-hero.JPG",
-    "jobTitle": "DJ and Electronic Music Producer",
-    "description": "Burak Tokat is a Turkish DJ and electronic music producer.",
-    "sameAs": [
-      "https://www.wikidata.org/wiki/Q141105872",
-      "https://www.instagram.com/burak_tkt/",
-      "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
-      "https://www.youtube.com/@BurakTokatMusic",
-      "https://soundcloud.com/burak-tokat-6125178"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://buraktokat.github.io/#website",
+        "url": "https://buraktokat.github.io/",
+        "name": "Burak Tokat",
+        "description": "Official website of Turkish DJ and electronic music producer Burak Tokat.",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://buraktokat.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://buraktokat.github.io/#person",
+        "name": "Burak Tokat",
+        "alternateName": "BURAK TOKAT",
+        "url": "https://buraktokat.github.io/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://buraktokat.github.io/burak-tokat-hero.JPG",
+          "contentUrl": "https://buraktokat.github.io/burak-tokat-hero.JPG",
+          "caption": "Burak Tokat — Turkish DJ and electronic music producer"
+        },
+        "jobTitle": "DJ and Electronic Music Producer",
+        "description": "Burak Tokat is a Turkish DJ and electronic music producer active since 2020, based in Antalya, Türkiye. His music moves between Melodic Techno, Melodic House and Afro House.",
+        "nationality": {
+          "@type": "Country",
+          "name": "Türkiye"
+        },
+        "homeLocation": {
+          "@type": "City",
+          "name": "Antalya"
+        },
+        "knowsAbout": [
+          "Melodic Techno",
+          "Melodic House",
+          "Afro House",
+          "Electronic Music"
+        ],
+        "sameAs": [
+          "https://www.instagram.com/burak_tkt/",
+          "https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5",
+          "https://music.apple.com/us/artist/burak-tokat/1721994034",
+          "https://www.youtube.com/@BurakTokatMusic",
+          "https://soundcloud.com/burak-tokat-6125178",
+          "https://www.beatport.com/artist/burak-tokat/1174596",
+          "https://www.deezer.com/en/artist/247547852",
+          "https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
+        ]
+      },
+      {
+        "@type": "MusicRecording",
+        "@id": "https://buraktokat.github.io/#feels-like",
+        "name": "Feels Like",
+        "url": "https://open.spotify.com/track/1SCEhdeMEhMFP7jgETEWyG",
+        "datePublished": "2024-02-01",
+        "duration": "PT6M40S",
+        "genre": "Melodic House & Techno",
+        "byArtist": {
+          "@id": "https://buraktokat.github.io/#person"
+        },
+        "inAlbum": {
+          "@type": "MusicAlbum",
+          "name": "Metanoia"
+        },
+        "recordLabel": {
+          "@type": "Organization",
+          "name": "Surrealismo Records"
+        },
+        "sameAs": [
+          "https://open.spotify.com/track/1SCEhdeMEhMFP7jgETEWyG",
+          "https://www.traxsource.com/track/11777330/feels-like-original-mix"
+        ]
+      }
     ]
   }
   </script>
@@ -391,6 +453,34 @@
       color: #888;
       font-size: 12px;
       line-height: 1.7;
+    }
+
+    .music-actions {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .music-link {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 13px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 30px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .music-link:hover {
+      color: #ff46b2;
+      border-color: rgba(255,0,153,0.35);
+      transform: translateY(-2px);
     }
 
     .tag {
@@ -771,7 +861,7 @@
           </div>
 
           <div class="stat">
-            <strong>TR</strong>
+            <strong>Antalya</strong>
             <span>Based In Türkiye</span>
           </div>
 
@@ -807,8 +897,29 @@
 
             <p>
               Burak Tokat — Feels Like<br>
-              Original Mix • Surrealismo Records
+              Original Mix • Surrealismo Records<br>
+              1 February 2024 • 6:40
             </p>
+
+            <div class="music-actions">
+              <a
+                class="music-link"
+                href="https://open.spotify.com/track/1SCEhdeMEhMFP7jgETEWyG"
+                target="_blank"
+                rel="noopener"
+              >
+                Listen on Spotify →
+              </a>
+
+              <a
+                class="music-link"
+                href="https://www.beatport.com/artist/burak-tokat/1174596"
+                target="_blank"
+                rel="noopener"
+              >
+                Beatport →
+              </a>
+            </div>
           </div>
 
           <div class="tag">
@@ -829,12 +940,12 @@
 
             <p>
               Burak Tokat — Crescent<br>
-              Melodic Techno
+              Melodic Techno • Upcoming Release
             </p>
           </div>
 
           <div class="tag">
-            MELODIC TECHNO
+            UPCOMING
           </div>
 
         </div>
@@ -1076,11 +1187,38 @@
 
         <a
           class="profile"
-          href="https://www.wikidata.org/wiki/Q141105872"
+          href="https://music.apple.com/us/artist/burak-tokat/1721994034"
           target="_blank"
           rel="noopener"
         >
-          Wikidata
+          Apple Music
+        </a>
+
+        <a
+          class="profile"
+          href="https://www.beatport.com/artist/burak-tokat/1174596"
+          target="_blank"
+          rel="noopener"
+        >
+          Beatport
+        </a>
+
+        <a
+          class="profile"
+          href="https://www.deezer.com/en/artist/247547852"
+          target="_blank"
+          rel="noopener"
+        >
+          Deezer
+        </a>
+
+        <a
+          class="profile"
+          href="https://musicbrainz.org/artist/d6642fed-4b32-4e35-bbf1-1daaf0e04e70"
+          target="_blank"
+          rel="noopener"
+        >
+          MusicBrainz
         </a>
 
       </div>
