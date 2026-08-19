@@ -282,7 +282,7 @@
     }
 
     .hero {
-      min-height: 720px;
+      min-height: 780px;
       position: relative;
       display: flex;
       align-items: center;
@@ -305,7 +305,7 @@
     .hero-content {
       position: relative;
       z-index: 3;
-      width: 58%;
+      width: 54%;
     }
 
     .eyebrow {
@@ -374,41 +374,58 @@
 
     .hero-photo {
       position: absolute;
-      right: 6%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 37%;
-      height: 78%;
+      right: -1%;
+      top: 65px;
+      width: 53%;
+      height: calc(100% - 65px);
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       z-index: 2;
+      pointer-events: none;
     }
 
     .hero-photo::before {
       content: "";
       position: absolute;
-      width: 90%;
-      height: 90%;
+      width: 78%;
+      height: 82%;
+      right: 5%;
+      bottom: 3%;
       background:
         radial-gradient(
           circle,
-          rgba(255,0,153,0.32),
-          rgba(100,0,255,0.15),
+          rgba(255,0,153,0.38),
+          rgba(100,0,255,0.18),
           transparent 70%
         );
-      filter: blur(40px);
+      filter: blur(48px);
     }
 
     .hero-photo img {
       position: relative;
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
-      border-radius: 16px;
-      filter: drop-shadow(0 20px 45px rgba(0,0,0,0.65));
+      object-position: center bottom;
+      mix-blend-mode: screen;
+      opacity: 0.96;
+      -webkit-mask-image: radial-gradient(
+        ellipse 74% 88% at 53% 53%,
+        #000 52%,
+        rgba(0,0,0,0.94) 68%,
+        transparent 100%
+      );
+      mask-image: radial-gradient(
+        ellipse 74% 88% at 53% 53%,
+        #000 52%,
+        rgba(0,0,0,0.94) 68%,
+        transparent 100%
+      );
+      filter:
+        saturate(1.08)
+        contrast(1.04)
+        drop-shadow(0 28px 50px rgba(0,0,0,0.7));
     }
 
     section {
@@ -553,6 +570,73 @@
       gap: 18px;
     }
 
+    .set-card.featured {
+      grid-column: 1 / -1;
+      border-color: rgba(255,0,153,0.24);
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,0,153,0.15),
+          rgba(100,0,255,0.09)
+        );
+    }
+
+    .set-card.featured .set-cover {
+      aspect-ratio: 16 / 7;
+    }
+
+    .set-card.featured .set-info {
+      padding: 25px;
+    }
+
+    .set-card.featured .set-info h3 {
+      font-size: 24px;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .experience-card {
+      min-height: 165px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 17px;
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255,0,153,0.10),
+          rgba(100,0,255,0.05)
+        );
+    }
+
+    .experience-card span {
+      color: #ff3cab;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .experience-card h3 {
+      font-size: 19px;
+      line-height: 1.2;
+    }
+
+    .experience-note {
+      max-width: 680px;
+      margin-top: 20px;
+      color: #777;
+      font-size: 11px;
+      line-height: 1.7;
+    }
+
     .set-card {
       display: block;
       color: #fff;
@@ -687,6 +771,13 @@
       margin-bottom: 25px;
     }
 
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     footer {
       padding: 25px 7%;
       border-top: 1px solid rgba(255,255,255,0.07);
@@ -696,6 +787,15 @@
       font-size: 8px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff3cab;
     }
 
     @media(max-width:800px) {
@@ -734,13 +834,15 @@
         right: auto;
         top: auto;
         transform: none;
-        width: 100%;
-        height: 420px;
-        margin-top: 30px;
+        width: 112%;
+        height: 500px;
+        margin: 20px -6% -50px;
       }
 
       .hero-photo img {
-        max-height: 420px;
+        width: 100%;
+        height: 100%;
+        object-position: center bottom;
       }
 
       section {
@@ -753,6 +855,18 @@
       }
 
       .sets-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .set-card.featured {
+        grid-column: auto;
+      }
+
+      .set-card.featured .set-cover {
+        aspect-ratio: 16 / 9;
+      }
+
+      .experience-grid {
         grid-template-columns: 1fr;
       }
 
@@ -777,7 +891,7 @@
       }
 
       .hero-photo {
-        height: 380px;
+        height: 430px;
       }
     }
   </style>
@@ -792,11 +906,12 @@
     </div>
 
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="hakkinda.html">Biyografi TR</a></li>
       <li><a href="#music">Music</a></li>
-      <li><a href="#sets">DJ Sets</a></li>
+      <li><a href="#sets">Live Set</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#profiles">Profiles</a></li>
+      <li><a href="#booking">Booking</a></li>
     </ul>
 
   </nav>
@@ -816,46 +931,26 @@
       </h1>
 
       <p class="hero-sub">
-        Turkish DJ and electronic music producer creating
-        melodic, atmospheric and club-focused electronic music.
+        Melodic Techno • Melodic House • Afro House<br>
+        Turkish DJ and electronic music producer.
       </p>
 
       <div class="hero-buttons">
 
         <a
           class="btn primary"
-          href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5"
+          href="https://open.spotify.com/track/1SCEhdeMEhMFP7jgETEWyG"
           target="_blank"
           rel="me noopener"
         >
-          Spotify
+          Listen Now
         </a>
 
         <a
           class="btn"
-          href="https://www.youtube.com/@BurakTokatMusic"
-          target="_blank"
-          rel="me noopener"
+          href="#booking"
         >
-          YouTube
-        </a>
-
-        <a
-          class="btn"
-          href="https://soundcloud.com/burak-tokat-6125178"
-          target="_blank"
-          rel="me noopener"
-        >
-          SoundCloud
-        </a>
-
-        <a
-          class="btn"
-          href="https://www.instagram.com/burak_tkt/"
-          target="_blank"
-          rel="me noopener"
-        >
-          Instagram
+          Booking
         </a>
 
       </div>
@@ -879,70 +974,10 @@
 
   <main>
 
-    <section id="about">
-
-      <div class="section-label">
-        01 — About
-      </div>
-
-      <h2>
-        THE<br>
-        ARTIST.
-      </h2>
-
-      <div class="about-grid">
-
-        <p class="about-text">
-          Burak Tokat is a Turkish DJ and electronic music
-          producer active since 2020.
-
-          Starting his DJ career in Konya, he has performed at
-          the Konya and Bursa branches of Club Inferno Mania.
-
-          His sound combines melodic atmosphere,
-          hypnotic grooves and modern club energy.
-
-          <br><br>
-
-          His musical direction moves between
-          Melodic Techno, Melodic House,
-          Afro House and contemporary electronic music.
-        </p>
-
-
-        <div class="stats">
-
-          <div class="stat">
-            <strong>2020</strong>
-            <span>Active Since</span>
-          </div>
-
-          <div class="stat">
-            <strong>DJ</strong>
-            <span>Main Focus</span>
-          </div>
-
-          <div class="stat">
-            <strong>Antalya</strong>
-            <span>Based In Türkiye</span>
-          </div>
-
-          <div class="stat">
-            <strong>Electronic</strong>
-            <span>Sound</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
     <section id="music">
 
       <div class="section-label">
-        02 — Selected Music
+        01 — Latest & Selected Music
       </div>
 
       <h2>
@@ -985,7 +1020,7 @@
           </div>
 
           <div class="tag">
-            ORIGINAL MIX
+            LATEST RELEASE
           </div>
 
         </div>
@@ -1008,7 +1043,7 @@
           </div>
 
           <div class="tag">
-            6 NOV 2026
+            UPCOMING • 6 NOV 2026
           </div>
 
         </div>
@@ -1021,19 +1056,19 @@
     <section id="sets">
 
       <div class="section-label">
-        03 — DJ Sets
+        02 — Featured Live Set
       </div>
 
       <h2>
-        SELECTED<br>
-        SETS.
+        LIVE<br>
+        ENERGY.
       </h2>
 
 
       <div class="sets-grid">
 
         <a
-          class="set-card"
+          class="set-card featured"
           href="https://www.youtube.com/watch?v=osJnoRtlqdM"
           target="_blank"
           rel="noopener"
@@ -1056,7 +1091,7 @@
 
           <div class="set-info">
             <h3>Afro House DJ Set</h3>
-            <p>Burak Tokat — Afro House DJ Set</p>
+            <p>Featured performance • Burak Tokat — Afro House DJ Set</p>
             <span class="youtube-link">Watch on YouTube →</span>
           </div>
 
@@ -1222,10 +1257,105 @@
     </section>
 
 
+    <section id="about">
+
+      <div class="section-label">
+        03 — About
+      </div>
+
+      <h2>
+        THE<br>
+        ARTIST.
+      </h2>
+
+      <div class="about-grid">
+
+        <p class="about-text">
+          Burak Tokat is a Turkish DJ and electronic music
+          producer active since 2020.
+
+          His sound combines melodic atmosphere,
+          hypnotic grooves and modern club energy.
+
+          <br><br>
+
+          His musical direction moves between
+          Melodic Techno, Melodic House,
+          Afro House and contemporary electronic music.
+        </p>
+
+
+        <div class="stats">
+
+          <div class="stat">
+            <strong>2020</strong>
+            <span>Active Since</span>
+          </div>
+
+          <div class="stat">
+            <strong>DJ</strong>
+            <span>Main Focus</span>
+          </div>
+
+          <div class="stat">
+            <strong>Antalya</strong>
+            <span>Based In Türkiye</span>
+          </div>
+
+          <div class="stat">
+            <strong>Electronic</strong>
+            <span>Sound</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="experience">
+
+      <div class="section-label">
+        04 — Selected Experience
+      </div>
+
+      <h2>
+        BEHIND<br>
+        THE DECKS.
+      </h2>
+
+      <div class="experience-grid">
+
+        <article class="experience-card">
+          <span>Club Experience</span>
+          <h3>Club Inferno Mania<br>Konya</h3>
+        </article>
+
+        <article class="experience-card">
+          <span>Club Experience</span>
+          <h3>Club Inferno Mania<br>Bursa</h3>
+        </article>
+
+        <article class="experience-card">
+          <span>Club Experience</span>
+          <h3>Mr. Frog<br>Konya</h3>
+        </article>
+
+      </div>
+
+      <p class="experience-note">
+        Selected past club experience. This section presents professional
+        background only; it does not list upcoming shows or ticket sales.
+      </p>
+
+    </section>
+
+
     <section id="profiles">
 
       <div class="section-label">
-        04 — Official
+        05 — Official Profiles
       </div>
 
       <h2>
@@ -1313,29 +1443,48 @@
     </section>
 
 
-    <section class="cta">
+    <section id="booking" class="cta">
 
       <div class="section-label">
-        05 — Connect
+        06 — Booking & EPK
       </div>
 
       <h2>
-        LET THE<br>
-        MUSIC SPEAK.
+        LET'S<br>
+        CONNECT.
       </h2>
 
       <p>
-        Follow Burak Tokat and discover new music.
+        Available for club, festival and private event bookings.
       </p>
 
-      <a
-        class="btn primary"
-        href="https://www.instagram.com/burak_tkt/"
-        target="_blank"
-        rel="noopener"
-      >
-        Instagram
-      </a>
+      <div class="cta-actions">
+
+        <a
+          class="btn primary"
+          href="mailto:buraktokatmr@gmail.com?subject=Booking%20Request%20-%20Burak%20Tokat"
+        >
+          Booking Request
+        </a>
+
+        <a
+          class="btn"
+          href="Burak_Tokat%20presskit.pptx"
+          download
+        >
+          Download EPK
+        </a>
+
+        <a
+          class="btn"
+          href="https://www.instagram.com/burak_tkt/"
+          target="_blank"
+          rel="me noopener"
+        >
+          Instagram
+        </a>
+
+      </div>
 
     </section>
 
@@ -1344,7 +1493,7 @@
 
   <footer>
     <span>© 2026 Burak Tokat</span>
-    <span>DJ • Electronic Music Producer</span>
+    <span><a href="hakkinda.html">Türkçe Biyografi</a> • DJ • Electronic Music Producer</span>
   </footer>
 
 </body>
