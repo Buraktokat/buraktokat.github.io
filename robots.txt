@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://buraktokat.github.io/sitemap.xml
+Sitemap: https://buraktokat.com/sitemap.xml
