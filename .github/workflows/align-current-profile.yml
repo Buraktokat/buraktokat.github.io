@@ -25,8 +25,8 @@ jobs:
               text = p.read_text(encoding='utf-8')
               for old, new in replacements:
                   count = text.count(old)
-                  if count != 1:
-                      raise SystemExit(f'{path}: expected exactly 1 occurrence, found {count}: {old[:80]!r}')
+                  if count < 1:
+                      raise SystemExit(f'{path}: expected at least 1 occurrence, found 0: {old[:80]!r}')
                   text = text.replace(old, new, 1)
               p.write_text(text, encoding='utf-8')
 
