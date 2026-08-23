@@ -1,0 +1,53 @@
+name: Hold outdated EPK links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hold-outdated-epk.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  safeguard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Remove outdated EPK from public calls to action
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          def replace_once(path, old, new):
+              p = Path(path)
+              text = p.read_text(encoding='utf-8')
+              if old not in text:
+                  raise SystemExit(f'Missing expected text in {path}')
+              p.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          replace_once(
+              'index.html',
+              'href="Burak_Tokat_EPK_2026.pdf"\n          target="_blank"\n          rel="noopener"\n        >\n          Open Press Kit',
+              'href="/press/"\n        >\n          Press & Media'
+          )
+
+          replace_once(
+              'press/index.html',
+              '<a class="btn primary" href="../Burak_Tokat_EPK_2026.pdf" target="_blank" rel="noopener">Open EPK — PDF</a>',
+              '<a class="btn primary" href="mailto:booking@buraktokat.com?subject=Burak%20Tokat%20Current%20EPK%20Request">Request Current EPK</a>'
+          )
+
+          replace_once(
+              'press/index.html',
+              '<a class="asset" href="../Burak_Tokat_EPK_2026.pdf" target="_blank" rel="noopener">\n          <small>Press Kit</small>\n          <h3>Electronic Press Kit — PDF</h3>\n          <p>Open the current Burak Tokat EPK for professional press, booking and industry reference.</p>\n        </a>',
+              '<a class="asset" href="mailto:booking@buraktokat.com?subject=Burak%20Tokat%20Current%20EPK%20Request">\n          <small>Press Kit</small>\n          <h3>Request Current Electronic Press Kit</h3>\n          <p>The updated Burak Tokat EPK is available directly for professional press, booking and industry requests.</p>\n        </a>'
+          )
+          PY
+      - name: Commit safeguard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html press/index.html
+          git commit -m "Stop serving outdated EPK as current" || exit 0
+          git push
