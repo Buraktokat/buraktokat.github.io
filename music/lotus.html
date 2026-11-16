@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lotus — Burak Tokat | Freegrant / Big Toys Production</title>
-  <meta name="description" content="Lotus is a Melodic Techno single by Burak Tokat, scheduled for release on Freegrant / Big Toys Production on 5 March 2027.">
+  <meta name="description" content="Lotus is an upcoming Melodic Techno single by Burak Tokat, scheduled for release through Freegrant / Big Toys Production on 5 March 2027.">
   <meta name="author" content="Burak Tokat">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://buraktokat.com/music/lotus.html">
@@ -58,28 +58,65 @@
     ]
   }
   </script>
-  <style>
-    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#08040a;color:#fff;font-family:Arial,sans-serif;background-image:radial-gradient(circle at 75% 25%,rgba(255,0,153,.18),transparent 40%),radial-gradient(circle at 15% 80%,rgba(100,0,255,.14),transparent 35%)}nav{padding:24px 7%;border-bottom:1px solid #ffffff18;display:flex;justify-content:space-between}nav a{color:#c8bfd4;text-decoration:none;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}main{max-width:850px;margin:0 auto;padding:110px 7% 130px}.eyebrow{color:#ff56b4;letter-spacing:4px;text-transform:uppercase;font-size:11px;font-weight:bold}h1{font-size:clamp(64px,12vw,112px);letter-spacing:-5px;margin:18px 0 14px}.sub{font-size:17px;color:#c2b9cd;line-height:1.7}.status{display:inline-block;margin-top:30px;padding:10px 15px;border:1px solid #ff56b488;border-radius:30px;color:#ff9bce;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.panel{margin-top:46px;padding:28px;border:1px solid #ffffff1c;border-radius:18px;background:#ffffff08}.panel p{color:#bdb4c7;line-height:1.8}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.links a{color:white;text-decoration:none;border:1px solid #ffffff30;padding:12px 16px;border-radius:30px;font-size:11px;text-transform:uppercase;letter-spacing:1px}.links a:hover{border-color:#ff56b4}footer{padding:25px 7%;border-top:1px solid #ffffff18;color:#8e8798;font-size:11px}
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+:root{color-scheme:dark}
+body{min-height:100vh;background:#050005;color:#fff;font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:480px;height:480px;border-radius:50%;filter:blur(130px);z-index:-1;pointer-events:none}
+body:before{left:-250px;top:80px;background:rgba(255,0,153,.18)}
+body:after{right:-250px;bottom:-80px;background:rgba(100,0,255,.17)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(5,0,5,.78);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.logo{color:#fff;text-decoration:none;font-size:13px;font-weight:900;letter-spacing:2.5px}
+.logo span{color:#ff35aa}
+.nav-link{color:#aaa;text-decoration:none;font-size:9px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;transition:.2s}
+.nav-link:hover{color:#ff55b4}
+main{width:min(100% - 40px,900px);margin:0 auto;padding:clamp(76px,11vw,130px) 0 110px}
+.eyebrow{color:#ff45ad;font-size:10px;font-weight:800;letter-spacing:4px;text-transform:uppercase;margin-bottom:20px}
+h1{max-width:100%;font-size:clamp(48px,10vw,104px);line-height:.92;letter-spacing:-.065em;font-weight:900;overflow-wrap:anywhere;margin-bottom:24px}
+.meta{color:#aaa;font-size:13px;line-height:1.8;letter-spacing:.2px}
+.status{display:inline-flex;align-items:center;margin-top:28px;padding:9px 14px;border:1px solid rgba(255,255,255,.18);border-radius:30px;font-size:9px;font-weight:800;letter-spacing:1.4px}
+.status.released{color:#8be0b8;border-color:rgba(100,220,160,.35);background:rgba(100,220,160,.06)}
+.status.upcoming{color:#ffd08a;border-color:rgba(255,190,90,.35);background:rgba(255,190,90,.06)}
+.status.unreleased{color:#c0adff;border-color:rgba(170,145,255,.35);background:rgba(170,145,255,.06)}
+.card{margin-top:48px;padding:clamp(22px,5vw,34px);border:1px solid rgba(255,255,255,.09);border-radius:20px;background:linear-gradient(145deg,rgba(255,0,153,.09),rgba(100,0,255,.06),rgba(255,255,255,.02));box-shadow:0 22px 70px rgba(0,0,0,.2)}
+.card h2{font-size:22px;letter-spacing:-.7px;margin-bottom:14px}
+.card p{max-width:720px;color:#b8b0c1;font-size:14px;line-height:1.9}
+.details{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.detail{padding:17px;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:rgba(255,255,255,.025);min-width:0}
+.detail span{display:block;color:#777;font-size:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}
+.detail strong{font-size:13px;line-height:1.6;overflow-wrap:anywhere}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 17px;border:1px solid rgba(255,255,255,.16);border-radius:30px;color:#fff;text-decoration:none;font-size:9px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;transition:.2s}
+.btn.primary{background:linear-gradient(90deg,#ff008c,#8c00ff);border-color:transparent}
+.btn:hover{transform:translateY(-2px);border-color:rgba(255,60,175,.6)}
+footer{border-top:1px solid rgba(255,255,255,.08);padding:25px 7%;color:#777;text-align:center;font-size:9px;letter-spacing:1.2px;text-transform:uppercase}
+footer a{color:inherit;text-decoration:none}
+@media(max-width:600px){nav{height:62px;padding:0 20px}main{width:calc(100% - 36px);padding-top:78px}.details{grid-template-columns:1fr}h1{letter-spacing:-.055em}.card{margin-top:36px}footer{padding:22px 18px}}
   </style>
 </head>
 <body>
-  <nav><a href="/">BURAK TOKAT</a><a href="/#music">All Music</a></nav>
+  <nav><a class="logo" href="/">BURAK <span>TOKAT</span></a><a class="nav-link" href="/#music">All Music</a></nav>
   <main>
-    <div class="eyebrow">Burak Tokat · Original Production</div>
+    <div class="eyebrow">Upcoming Release</div>
     <h1>LOTUS</h1>
-    <p class="sub">Melodic Techno · Freegrant / Big Toys Production</p>
-    <div class="status">Scheduled release · 5 March 2027</div>
-    <div class="panel">
-      <p><strong>Lotus</strong> is a Melodic Techno single by Turkish DJ and electronic music producer Burak Tokat, scheduled for release through Freegrant / Big Toys Production on 5 March 2027.</p>
-      <p>Pre-release links and additional release information will be added when available.</p>
-    </div>
-    <div class="links">
-      <a href="/">Official Artist Website</a>
-      <a href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5" target="_blank" rel="noopener">Spotify</a>
-      <a href="https://www.beatport.com/artist/burak-tokat/1174596" target="_blank" rel="noopener">Beatport</a>
-      <a href="https://www.youtube.com/@BurakTokatMusic" target="_blank" rel="noopener">YouTube</a>
-    </div>
+    <p class="meta">Burak Tokat · Melodic Techno · Freegrant / Big Toys Production</p>
+    <div class="status upcoming">COMING 5 MARCH 2027</div>
+    <section class="card">
+      <h2>Release Information</h2>
+      <p>Lotus is a Melodic Techno single by Turkish DJ and electronic music producer Burak Tokat, scheduled for release through Freegrant / Big Toys Production on 5 March 2027.</p>
+      <div class="details">
+        <div class="detail"><span>Label</span><strong>Freegrant / Big Toys Production</strong></div>
+        <div class="detail"><span>Status</span><strong>5 March 2027</strong></div>
+      </div>
+      <div class="actions">
+        
+        <a class="btn" href="https://open.spotify.com/artist/2lSECyE7vZiH9M3YwAgsy5" target="_blank" rel="noopener">Spotify Artist</a>
+        <a class="btn" href="https://www.beatport.com/artist/burak-tokat/1174596" target="_blank" rel="noopener">Beatport</a>
+        <a class="btn" href="/about.html">Artist Biography</a>
+      </div>
+    </section>
   </main>
-  <footer>© 2026 Burak Tokat · <a href="/about.html" style="color:inherit">Artist Biography</a></footer>
+  <footer><a href="/">buraktokat.com</a> · © 2026 Burak Tokat</footer>
 </body>
 </html>
